@@ -30,7 +30,7 @@ Extract the `<prerequisites>` element text. It may be empty. Save the raw text a
 
 ## Step 3 — Parse prereq text using LLM reasoning
 
-Read `course_sheets/prereq-patterns.md` first for the full pattern catalog and signal phrase table.
+Read `ai_agents/prereq-patterns.md` first for the full pattern catalog and signal phrase table.
 
 For each course, analyze the raw text and produce:
 - `prereqs: string[][]` — AND-of-ORs: outer array is AND, inner arrays are OR groups. The student must satisfy ONE course from EACH group.

@@ -8,6 +8,7 @@ the project's conventions instead of rediscovering them.
 |---|---|
 | `encoding-pipeline.md` | Project overview, the encoding pipeline, schema rules, remaining work, tech notes |
 | `encoding-mistakes.md` | Every mistake past encodings made. Read before encoding a program |
+| `prereq-patterns.md` | Catalogue of prerequisite phrasings and how each parses. Read before extracting prereqs |
 
 ## Agent definitions stay where the tools look for them
 
