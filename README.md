@@ -96,4 +96,9 @@ discrepancy. Please run `npm run build` before opening a pull request.
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+Apache License 2.0. See [LICENSE](LICENSE).
+
+The license covers this project's source code. The bundled Stanford imagery and
+the course and degree requirement data under `src/data/` are third-party
+material included so the app builds and runs; see [NOTICE](NOTICE) before
+redistributing or deploying a fork.

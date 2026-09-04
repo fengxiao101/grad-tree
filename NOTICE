@@ -1,0 +1,43 @@
+Grad Tree
+Copyright 2026 Grace Lee
+
+This product includes software developed by Grace Lee, licensed under the
+Apache License, Version 2.0 (see LICENSE).
+
+
+Third-party material included in this repository
+------------------------------------------------
+
+The Apache License covers the source code of this project. The following
+material is included so that the application builds and runs as deployed, is
+not the work of this project's author, and is not licensed for reuse by this
+project. Section 6 of the Apache License already withholds any grant of
+trademark rights.
+
+Images
+
+    stanford_quad_background_image.jpg
+    src/assets/fear_the_tree_DVD_3.png
+    cardinal_meme_background.png
+
+  These are not the author's work and carry no grant of reuse. Replace them
+  before redistributing or deploying a fork.
+
+Stanford course and degree requirement data
+
+    src/data/catalog/courses-2526.json
+    src/data/catalog/courses-2627.json
+    src/data/catalog/courses-core-2526.json
+    src/data/catalog/courses-core-2627.json
+    src/data/majors/
+    src/data/minors/
+    src/data/cotermPrograms/
+
+  Degree requirements and course records are transcribed from the publicly
+  published Stanford Bulletin (https://bulletin.stanford.edu) and remain the
+  property of Stanford University. Course descriptions in particular are
+  Stanford's text, reproduced here only so the planner can display them.
+
+  Grad Tree is an independent student project. It is not affiliated with,
+  endorsed by, or operated by Stanford University. Encoded requirements are a
+  convenience and not an official degree audit.
