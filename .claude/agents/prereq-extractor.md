@@ -126,7 +126,7 @@ When both labels appear, parse the hard block only.
 
 **PHYS:** Uses `"PHYSICS"` in prereq text → normalize to `PHYS`. `"Physics placement diagnostic"` is not a course — strip it.
 
-**STATS:** `STATS 116` may not appear in its own ExploreCourses search for 2025-26 (data gap), but it is a real course. If asked to fetch it and you get no results, set `prereqs: [], coreqs: []` and note the data gap.
+**STATS:** `STATS 116` did not appear in its own ExploreCourses search for 2025-26, though it is a real course. Check whether the gap persists in the year you query. If asked to fetch it and you get no results, set `prereqs: [], coreqs: []` and note the data gap.
 
 ---
 

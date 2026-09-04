@@ -295,6 +295,9 @@ enough to be worth knowing before re-auditing them.
 | History MA | `history-ma-2526.ts` | advisor-designed, 9 courses / 7 HISTORY |
 | Sociology MA | `socio-ma-2526.ts` | SOC270 + SOC280A required, advisor-designed rest |
 | Symbolic Systems MS | `symbo-ms-2526.ts` | 4 breadth areas + seminar×3 + thesis |
+
+---
+
 ## Remaining work
 
 Every program in the queue has been encoded: 39 majors, 34 minors and 20
@@ -319,7 +322,7 @@ Three-script chain: `parse_catalog.py` → `build_prereq_groups.py` → `apply_p
 
 `parse_catalog.py` extracts `prerequisites` text inline; the former `extract_prereqs.py` was merged into it and removed. Both the full and core JSON files get the `prerequisites` field. `build_prereq_groups.py` reads core+full (2627 paths), writes `prereqGroups` to the core file, and emits `flagged_prereqs.json` for AI review.
 
-### Known parser weaknesses / edge cases (from 2526 AI review)
+### Known parser weaknesses and edge cases
 
 These patterns cause incorrect `prereqGroups` output and require AI review after each pipeline run.
 
