@@ -7,6 +7,10 @@
  * not "you broke something", and the diff says exactly which program moved.
  */
 import { describe, expect, it } from 'vitest';
+import { existsSync, readdirSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { PROGRAM_MODULE_PATHS, PROGRAM_SUMMARIES } from '../src/data/programManifest.generated';
+import type { ProgramCategory } from '../src/data/programRegistry';
 import { BUILT_IN_MAJORS } from '../src/data/majors';
 import { BUILT_IN_MINORS } from '../src/data/minors';
 import { BUILT_IN_COTERMS } from '../src/data/cotermPrograms';
@@ -131,6 +135,48 @@ describe('program registry', () => {
       if (dupes.length) offenders.push(`${config.id}: ${[...new Set(dupes)].join(', ')}`);
     }
     expect(offenders).toEqual([]);
+  });
+});
+
+describe('program registration', () => {
+  // The manifest is generated from the category index.ts barrels. A program
+  // file added without a matching barrel entry silently never reaches the
+  // picker, which is how the Global Studies minor stayed invisible.
+  const DIRECTORIES: Array<[string, ProgramCategory]> = [
+    ['majors', 'major'],
+    ['minors', 'minor'],
+    ['cotermPrograms', 'coterm'],
+  ];
+
+  it('lists every program file on disk exactly once in the manifest', () => {
+    const manifestIds = new Set(PROGRAM_SUMMARIES.map(p => p.id));
+    const missing: string[] = [];
+    for (const [directory] of DIRECTORIES) {
+      const dir = resolve(__dirname, '..', 'src', 'data', directory);
+      for (const file of readdirSync(dir)) {
+        if (!file.endsWith('-2526.ts')) continue;
+        const id = file.replace(/\.ts$/, '');
+        if (!manifestIds.has(id)) missing.push(`${directory}/${file}`);
+      }
+    }
+    expect(missing).toEqual([]);
+  });
+
+  it('points every manifest entry at a module that exists', () => {
+    const orphans = Object.entries(PROGRAM_MODULE_PATHS)
+      .filter(([, modulePath]) => !existsSync(resolve(__dirname, '..', 'src', 'data', modulePath.replace(/^\.\//, ''))))
+      .map(([id]) => id);
+    expect(orphans).toEqual([]);
+  });
+
+  it('files each program under the directory matching its category', () => {
+    const wrong = PROGRAM_SUMMARIES
+      .filter(p => {
+        const expected = DIRECTORIES.find(([, category]) => category === p.category)?.[0];
+        return expected ? !PROGRAM_MODULE_PATHS[p.id].startsWith(`./${expected}/`) : true;
+      })
+      .map(p => `${p.id} (${p.category}) -> ${PROGRAM_MODULE_PATHS[p.id]}`);
+    expect(wrong).toEqual([]);
   });
 });
 
