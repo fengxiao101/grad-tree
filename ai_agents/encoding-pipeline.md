@@ -1,6 +1,11 @@
 # Grad Tree - encoding pipeline
 
-## CRITICAL: Never commit or push unless the user explicitly says to.
+How Stanford degree programs get encoded into `MajorConfig` files, and the rules
+that keep those encodings faithful to the bulletin.
+
+Conventions for anyone working here, human or agent: do not commit or push
+unless you have been asked to, and never re-fetch a bulletin page that is
+already cached.
 
 ---
 
@@ -235,106 +240,61 @@ the "N of M areas" shape, and how tagged overflow courses count.
 
 ---
 
-## Programs completed and verified (2025-26)
+## Program encoding notes
+
+`src/data/programManifest.generated.ts` is the authoritative list of what is
+encoded. This section records only the programs whose structure is unusual
+enough to be worth knowing before re-auditing them.
 
 ### Majors
-| Program | File | Status |
-|---|---|---|
-| CS BS (9 tracks) | `cs-bs-2526.ts` | Done |
-| Econ BA | `econ-ba-2526.ts` | Done |
-| Econ BS | `econ-bs-2526.ts` | Done |
-| EE BS | `ee-bs-2526.ts` | Done + checked |
-| Math BS | `math-bs-2526.ts` | Done + checked |
-| ME BS | `me-bs-2526.ts` | Done |
-| MS&E BS | `mse-bs-2526.ts` | Done (flat, depth F&D/O&A/OTP + 2 additional) |
-| Physics BS (8 pathways) | `phys-bs-2526.ts` | Done |
-| Symbolic Systems BS | `symbo-bs-2526.ts` | Done + checked |
-| Bio BS | `bio-bs-2526.ts` | Done + checked |
-| Bioengineering BS | `bioe-bs-2526.ts` | Done |
-| Biomedical Computation BS | `bioc-bs-2526.ts` | Done (4 concentration tracks) |
-| Chemistry BS | `chem-bs-2526.ts` | Done (2 pathway tracks: Traditional + Biological Chemistry; WIM=CHEM131, Capstone=CHEM185) |
-| Materials Science BS | `matsci-bs-2526.ts` | Done (9 focus area tracks + self-defined; WIM from MATSCI160/161/162/164 depth labs; 3 capstone tracks) |
-| Design BS | `design-bs-2526.ts` | Done (3 Methods tracks, 4 domains) |
-| Human Biology BS | `humbi-bs-2526.ts` | Done |
-| Psychology BA | `psych-ba-2526.ts` | Done + checked |
-| Political Science BA | `polisci-ba-2526.ts` | Done + checked |
-| STS BA | `sts-ba-2526.ts` | Done (6 pathway tracks; pathway core encoded inline, depth any-approved; BA list approx. from BS bulletin) |
-| STS BS | `sts-bs-2526.ts` | Done (6 pathway tracks; pathway core encoded inline, depth any-approved; exact from BS bulletin) |
-| International Relations BA | `ir-ba-2526.ts` | Done (11 pathways as any-approved, full core + capstone) |
-| Data Science BS | `datasci-bs-2526.ts` | Done (4 subplan tracks: Math&Comp, Bio&Med, Comp Neuro, Quant Finance) |
-| Earth Systems BS | `earthsys-bs-2526.ts` | Done (8 subplan tracks: Biosphere, Energy S&T, Env Geoscience, Human Env Systems, Land Systems, OAC, Sust Food & Ag, Sust Societies & Env) |
-| History BA | `history-ba-2526.ts` | Done (Sources & Methods, Doing History, pre-1700, concentration any-approved, WIM 209S, capstone 3 options) |
-| Communication BA | `comm-ba-2526.ts` | Done (core 3 courses, Area I+II 4 total, WIM, pre-approved non-COMM electives, capstone 3 options) |
-| English BA | `english-ba-2526.ts` | Done (5 fields of study: Literature, CW Prose, CW Poetry, Interdisciplinary, Lit&Phil, CCA; WIM=5XX WISE seminars; 5 capstone options) |
-| Sociology BA | `socio-ba-2526.ts` | Done (2 tracks: Standard BA + DSMM subplan; 5 foundation areas pick-3; WIM=SOC 202 or 204A) |
-| Public Policy BA | `publpol-ba-2526.ts` | Done (14 concentration tracks; prep/core/WIM/capstone sections; PUBLPOL 200H satisfies both WIM+capstone) |
-| Aeronautics & Astronautics BS | `aa-bs-2526.ts` | Done (math 24u with 3 pick-ones + optional, science 17u, TiS, ENGR fund, 11 depth courses, focus electives ≥9u, Spacecraft/Aircraft capstone+WIM track) |
-| Chemical Engineering BS | `chemeng-bs-2526.ts` | Done (math CME100 or MATH51+52, CHEM+PHYS science, TiS pick-from-list, 11 depth courses; WIM=185A, Capstone=185B) |
 
-### Minors (34 total)
-| Program | File | Status |
+| Program | File | Structure |
 |---|---|---|
-| Music | `music-minor-2526.ts` | Done + checked |
-| CS | `cs-minor-2526.ts` | Done + checked |
-| Econ | `econ-minor-2526.ts` | Done + checked |
-| Math | `math-minor-2526.ts` | Done + checked |
-| Stats | `stats-minor-2526.ts` | Done + checked |
-| Data Science | `datasci-minor-2526.ts` | Done + checked |
-| Biology | `bio-minor-2526.ts` | Done |
-| Psychology | `psych-minor-2526.ts` | Done |
-| Physics | `phys-minor-2526.ts` | Done |
-| Political Science | `polisci-minor-2526.ts` | Done |
-| History | `history-minor-2526.ts` | Done |
-| Chemistry | `chem-minor-2526.ts` | Done |
-| Communication | `comm-minor-2526.ts` | Done |
-| Earth Systems | `earthsys-minor-2526.ts` | Done |
-| English | `english-minor-2526.ts` | Done |
-| Philosophy | `phil-minor-2526.ts` | Done |
-| Electrical Engineering | `ee-minor-2526.ts` | Done |
-| Materials Science | `matsci-minor-2526.ts` | Done |
-| Film and Media Studies | `film-minor-2526.ts` | Done |
-| Ethics in Society | `ethso-minor-2526.ts` | Done (2 tracks) |
-| Creative Writing | `crwrit-minor-2526.ts` | Done (3 tracks) |
-| Human Biology | `humbi-minor-2526.ts` | Done (4 tracks) |
-| International Relations | `intlr-minor-2526.ts` | Done (11 pathway tracks) |
-| Symbolic Systems | `symbo-minor-2526.ts` | Done (2 option tracks) |
-| Management Science & Engineering | `mse-minor-2526.ts` | Done |
-| Mechanical Engineering | `me-minor-2526.ts` | Done (3 option tracks) |
-| Energy Science & Engineering | `energy-minor-2526.ts` | Done |
-| Public Policy | `pubpol-minor-2526.ts` | Done |
-| Linguistics | `ling-minor-2526.ts` | Done |
-| Sociology | `socio-minor-2526.ts` | Done (2 tracks: Traditional + PIP) |
-| Anthropology | `anthro-minor-2526.ts` | Done (advisor-driven, any-approved) |
-| Human Rights | `humrts-minor-2526.ts` | Done (3-stream breadth) |
-| Comparative Literature | `complit-minor-2526.ts` | Done |
-| Geophysics | `geoph-minor-2526.ts` | Done |
+| MS&E BS | `mse-bs-2526.ts` | flat, depth F&D/O&A/OTP + 2 additional |
+| Biomedical Computation BS | `bioc-bs-2526.ts` | 4 concentration tracks |
+| Chemistry BS | `chem-bs-2526.ts` | 2 pathway tracks: Traditional + Biological Chemistry; WIM=CHEM131, Capstone=CHEM185 |
+| Materials Science BS | `matsci-bs-2526.ts` | 9 focus area tracks + self-defined; WIM from MATSCI160/161/162/164 depth labs; 3 capstone tracks |
+| Design BS | `design-bs-2526.ts` | 3 Methods tracks, 4 domains |
+| STS BA | `sts-ba-2526.ts` | 6 pathway tracks; pathway core encoded inline, depth any-approved; BA list approx. from BS bulletin |
+| STS BS | `sts-bs-2526.ts` | 6 pathway tracks; pathway core encoded inline, depth any-approved; exact from BS bulletin |
+| International Relations BA | `ir-ba-2526.ts` | 11 pathways as any-approved, full core + capstone |
+| Data Science BS | `datasci-bs-2526.ts` | 4 subplan tracks: Math&Comp, Bio&Med, Comp Neuro, Quant Finance |
+| Earth Systems BS | `earthsys-bs-2526.ts` | 8 subplan tracks: Biosphere, Energy S&T, Env Geoscience, Human Env Systems, Land Systems, OAC, Sust Food & Ag, Sust Societies & Env |
+| History BA | `history-ba-2526.ts` | Sources & Methods, Doing History, pre-1700, concentration any-approved, WIM 209S, capstone 3 options |
+| Communication BA | `comm-ba-2526.ts` | core 3 courses, Area I+II 4 total, WIM, pre-approved non-COMM electives, capstone 3 options |
+| English BA | `english-ba-2526.ts` | 5 fields of study: Literature, CW Prose, CW Poetry, Interdisciplinary, Lit&Phil, CCA; WIM=5XX WISE seminars; 5 capstone options |
+| Sociology BA | `socio-ba-2526.ts` | 2 tracks: Standard BA + DSMM subplan; 5 foundation areas pick-3; WIM=SOC 202 or 204A |
+| Public Policy BA | `publpol-ba-2526.ts` | 14 concentration tracks; prep/core/WIM/capstone sections; PUBLPOL 200H satisfies both WIM+capstone |
+| Aeronautics & Astronautics BS | `aa-bs-2526.ts` | math 24u with 3 pick-ones + optional, science 17u, TiS, ENGR fund, 11 depth courses, focus electives ≥9u, Spacecraft/Aircraft capstone+WIM track |
+| Chemical Engineering BS | `chemeng-bs-2526.ts` | math CME100 or MATH51+52, CHEM+PHYS science, TiS pick-from-list, 11 depth courses; WIM=185A, Capstone=185B |
+
+### Minors
+
+| Program | File | Structure |
+|---|---|---|
+| Ethics in Society | `ethso-minor-2526.ts` | 2 tracks |
+| Creative Writing | `crwrit-minor-2526.ts` | 3 tracks |
+| Human Biology | `humbi-minor-2526.ts` | 4 tracks |
+| International Relations | `intlr-minor-2526.ts` | 11 pathway tracks |
+| Symbolic Systems | `symbo-minor-2526.ts` | 2 option tracks |
+| Mechanical Engineering | `me-minor-2526.ts` | 3 option tracks |
+| Sociology | `socio-minor-2526.ts` | 2 tracks: Traditional + PIP |
+| Anthropology | `anthro-minor-2526.ts` | advisor-driven, any-approved |
+| Human Rights | `humrts-minor-2526.ts` | 3-stream breadth |
 
 ### Coterms
-| Program | File | Status |
+
+| Program | File | Structure |
 |---|---|---|
-| CS MS | `cs-ms-2526.ts` | Done + checked |
-| Management Science & Engineering MS | `mse-ms-2526.ts` | Done + checked |
-| CEE MS | `cee-ms-2526.ts` | Done |
-| AA MS | `aa-ms-2526.ts` | Done |
-| MatSci MS | `matsci-ms-2526.ts` | Done |
-| ChemEng MS | `chemeng-ms-2526.ts` | Done |
-| EE MS | `ee-ms-2526.ts` | Done |
-| Stats MS | `stats-ms-2526.ts` | Done |
-| BioE MS | `bioe-ms-2526.ts` | Done |
-| ME MS | `me-ms-2526.ts` | Done |
-| CME MS | `cme-ms-2526.ts` | Done (4 tracks: General CME, Data Science, Imaging Science, MCF) |
-| Biomedical Data Science MS | `bmds-ms-2526.ts` | Done |
-| International Policy MA | `intlpol-ma-2526.ts` | Done (4 subplan tracks: Cyber, ENRE, GovDev, ISEC) |
-| Public Policy MA | `publpol-ma-2526.ts` | Done (3 path tracks: Path A/PP major, Path B/Econ major, Path C/others) |
-| Biology MS | `bio-ms-2526.ts` | Done (advisor-designed, any-approved) |
-| Design MS | `design-ms-2526.ts` | Done (3 Methods tracks: Physical Form, Emerging Tech, Human Behavior) |
-| Communication MA | `comm-ma-2526.ts` | Done (2 subplan tracks: Media Studies, Journalism) |
-| History MA | `history-ma-2526.ts` | Done (advisor-designed, 9 courses / 7 HISTORY) |
-| Sociology MA | `socio-ma-2526.ts` | Done (SOC270 + SOC280A required, advisor-designed rest) |
-| Symbolic Systems MS | `symbo-ms-2526.ts` | Done (4 breadth areas + seminar×3 + thesis) |
-
----
-
+| CME MS | `cme-ms-2526.ts` | 4 tracks: General CME, Data Science, Imaging Science, MCF |
+| International Policy MA | `intlpol-ma-2526.ts` | 4 subplan tracks: Cyber, ENRE, GovDev, ISEC |
+| Public Policy MA | `publpol-ma-2526.ts` | 3 path tracks: Path A/PP major, Path B/Econ major, Path C/others |
+| Biology MS | `bio-ms-2526.ts` | advisor-designed, any-approved |
+| Design MS | `design-ms-2526.ts` | 3 Methods tracks: Physical Form, Emerging Tech, Human Behavior |
+| Communication MA | `comm-ma-2526.ts` | 2 subplan tracks: Media Studies, Journalism |
+| History MA | `history-ma-2526.ts` | advisor-designed, 9 courses / 7 HISTORY |
+| Sociology MA | `socio-ma-2526.ts` | SOC270 + SOC280A required, advisor-designed rest |
+| Symbolic Systems MS | `symbo-ms-2526.ts` | 4 breadth areas + seminar×3 + thesis |
 ## Remaining work
 
 Every program in the queue has been encoded: 39 majors, 34 minors and 20
