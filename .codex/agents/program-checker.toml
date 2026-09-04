@@ -48,5 +48,5 @@ Report every difference, however small. Do not silently accept a near match.
 
 ## After checking
 
-Append genuinely new, confirmed mistakes to `course_sheets/encoding-mistakes.md` so later encodings avoid them. Do not append a mistake that file already records.
+Append genuinely new, confirmed mistakes to `ai_agents/encoding-mistakes.md` so later encodings avoid them. Do not append a mistake that file already records.
 """

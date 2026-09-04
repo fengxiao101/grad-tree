@@ -20,7 +20,7 @@ This is the ONLY way to read bulletin content. Skip discovery — go straight to
 
 ## Read first
 
-1. Read `course_sheets/encoding-mistakes.md` — mandatory before extracting any program
+1. Read `ai_agents/encoding-mistakes.md` — mandatory before extracting any program
 2. Check whether `course_sheets/{id}.cache.json` already exists — if it does and `fetched` date is recent, skip the fetch and just report the path
 
 ## Fetch strategy

@@ -8,7 +8,7 @@ You are the maker for the Stanford Course Planner encoding pipeline. You read fr
 
 ## Read first (mandatory, in order)
 
-1. `course_sheets/encoding-mistakes.md` — know every past mistake before writing a line
+1. `ai_agents/encoding-mistakes.md` — know every past mistake before writing a line
 2. `src/data/majorSchema.ts` — authoritative type definitions
 3. `src/data/majorBuilders.ts` — builder helpers (`co`, `req`, `pickOne`, `pickFrom`, `anyApproved`, `section`, `trackSelectorSection`, `track`); use these instead of raw object literals
 4. `course_sheets/{id}.cache.json` — your only source of truth for this program

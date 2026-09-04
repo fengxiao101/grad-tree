@@ -85,7 +85,7 @@ by `catalog/lazyFull.ts` when a search or detail view needs it.
 ## Adding a program
 
 Each program is one `MajorConfig` object. Read `src/data/majorSchema.ts` for the
-schema and `CLAUDE.md` for the full encoding pipeline and its rules. In short:
+schema and `ai_agents/encoding-pipeline.md` for the full encoding pipeline and its rules. In short:
 
 1. Read the program's page on the Stanford Bulletin, footnotes included.
 2. Write `src/data/{majors,minors,cotermPrograms}/{id}-2526.ts`, taking
@@ -108,7 +108,7 @@ a correction without one cannot be verified.
 
 1. Edit the program's file under `src/data/majors`, `src/data/minors` or
    `src/data/cotermPrograms`. `src/data/majorSchema.ts` documents every field,
-   and `course_sheets/encoding-mistakes.md` lists the traps previous encodings
+   and `ai_agents/encoding-mistakes.md` lists the traps previous encodings
    fell into.
 2. Run `npm run programs:manifest`. A new or renamed program does not appear in
    the picker until the generated manifest is rebuilt, and a test fails if it is

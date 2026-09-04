@@ -116,7 +116,7 @@ Required fixes:
 ```
 
 ### On PASS
-Append to `course_sheets/encoding-mistakes.md`:
+Append to `ai_agents/encoding-mistakes.md`:
 ```md
 ## {PROGRAM-NAME} (checked {date})
 - [List every non-obvious thing that was correct so future encoders know what to watch for]
