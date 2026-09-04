@@ -31,7 +31,16 @@ export function ClassCard({ card, onEdit, onDoubleClick, onMove, contextTag, noD
   const testCreditChecks = usePlannerStore(s => s.testCreditChecks);
   const transferCredits = usePlannerStore(s => s.transferCredits);
   const ignoreCardPrereq = usePlannerStore(s => s.ignoreCardPrereq);
-  const { centerId, prereqIds, dependentIds } = useHighlightStore();
+  // Select the derived values rather than the whole store: calling
+  // useHighlightStore() with no selector subscribes to every field, so each
+  // card re-rendered on any highlight change anywhere in the plan.
+  const isHighlightActive = useHighlightStore(s => s.centerId !== null);
+  const highlightRole = useHighlightStore(s =>
+    s.centerId === card.id ? 'center' :
+    s.prereqIds.has(card.id) ? 'prereq' :
+    s.dependentIds.has(card.id) ? 'dependent' :
+    s.centerId !== null ? 'dim' : null
+  );
   const testCoveredCourses = useMemo(() => {
     const s = computeTestCovered(testCreditChecks);
     computeTransferCovered(transferCredits).forEach(k => s.add(k));
@@ -80,13 +89,6 @@ export function ClassCard({ card, onEdit, onDoubleClick, onMove, contextTag, noD
     card.courseName,
   ].filter(Boolean);
   const displayText = parts.join(' ');
-
-  const isHighlightActive = centerId !== null;
-  const highlightRole =
-    centerId === card.id ? 'center' :
-    prereqIds.has(card.id) ? 'prereq' :
-    dependentIds.has(card.id) ? 'dependent' :
-    isHighlightActive ? 'dim' : null;
 
   const highlightRing =
     highlightRole === 'center'    ? 'ring-2 ring-cardinal-500' :
