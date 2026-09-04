@@ -16,9 +16,9 @@ trademark rights.
 
 Images
 
-    stanford_quad_background_image.jpg
+    src/assets/stanford_quad_background_image.jpg
     src/assets/fear_the_tree_DVD_3.png
-    cardinal_meme_background.png
+    src/assets/cardinal_meme_background.png
 
   These are not the author's work and carry no grant of reuse. Replace them
   before redistributing or deploying a fork.

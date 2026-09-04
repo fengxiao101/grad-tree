@@ -55,8 +55,8 @@ import { TermsModal } from './components/TermsModal';
 import { PrivacyModal } from './components/PrivacyModal';
 import { FearTheTree } from './components/FearTheTree';
 import type { CatalogCourse } from './data/catalog';
-import stanfordQuadBackground from '../stanford_quad_background_image.jpg';
-import cardinalMemeBackground from '../cardinal_meme_background.png';
+import stanfordQuadBackground from './assets/stanford_quad_background_image.jpg';
+import cardinalMemeBackground from './assets/cardinal_meme_background.png';
 
 const PrintView = lazy(() => import('./components/PrintView').then(module => ({ default: module.PrintView })));
 const CompareView = lazy(() => import('./components/CompareView').then(module => ({ default: module.CompareView })));
