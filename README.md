@@ -9,6 +9,10 @@ requirements are a convenience, not an official audit. Always confirm your plan
 against the [Stanford Bulletin](https://bulletin.stanford.edu) and your academic
 advisor.
 
+## Demo
+
+[Watch a walkthrough of the planner](https://youtu.be/DwPdG_RABAY)
+
 ## What it does
 
 - **Plan by quarter.** Drag and drop courses across a 4 or 5 year grid, with an
@@ -46,6 +50,8 @@ See `.env.example` for what each variable does.
 | `npm run build` | Manifest, typecheck, production build, bundle size check |
 | `npm run preview` | Serves the production build locally |
 | `npm run programs:manifest` | Rebuilds `src/data/programManifest.generated.ts` |
+| `npm test` | Runs the characterization tests |
+| `npm run lint` | ESLint over source, tests and scripts |
 
 ## Architecture
 
@@ -90,9 +96,31 @@ Helper builders in `src/data/majorBuilders.ts` cut down the boilerplate.
 
 ## Contributing
 
-Requirement corrections are the most valuable contribution. If a program is
-encoded wrong, open an issue citing the bulletin page and the specific
-discrepancy. Please run `npm run build` before opening a pull request.
+Requirement corrections are the most valuable contribution: there are 93
+programs encoded by hand, and the bulletin changes every year.
+
+**Reporting a wrong requirement.** Open an issue with a link to the program's
+page on the [Stanford Bulletin](https://bulletin.stanford.edu) and quote the
+line that disagrees with the app. The bulletin page is the source of truth, so
+a correction without one cannot be verified.
+
+**Fixing one yourself.**
+
+1. Edit the program's file under `src/data/majors`, `src/data/minors` or
+   `src/data/cotermPrograms`. `src/data/majorSchema.ts` documents every field,
+   and `course_sheets/encoding-mistakes.md` lists the traps previous encodings
+   fell into.
+2. Run `npm run programs:manifest`. A new or renamed program does not appear in
+   the picker until the generated manifest is rebuilt, and a test fails if it is
+   stale.
+3. Run `npm run build`. It regenerates the manifest, typechecks, builds and
+   checks the bundle budgets. Run `npm run lint` and `npm test` too. CI runs all
+   three on every pull request.
+4. Cite the bulletin page in your pull request, the same as for an issue.
+
+Taking `totalMinUnits` from the bulletin header rather than summing sections,
+and only marking a course WIM when the bulletin says so, are the two mistakes
+that come up most often.
 
 ## License
 

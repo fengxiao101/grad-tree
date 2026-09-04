@@ -29,6 +29,9 @@ jobs:
       - name: Lint
         run: npm run lint
 
+      - name: Tests
+        run: npm test
+
       # Runs the manifest, typecheck, production build and bundle budget check.
       - name: Typecheck and build
         run: npm run build

@@ -13,6 +13,8 @@
     "build": "npm run programs:manifest && tsc && vite build && npm run bundle:check",
     "bundle:check": "node scripts/check-bundle-size.mjs",
     "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "preview": "vite preview"
   },
   "dependencies": {
