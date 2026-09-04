@@ -22,7 +22,7 @@ If `course_sheets/{id}.cache.json` does not exist, stop and ask for the program-
 **id field**: `'{dept}-{degree}-2526'`
 
 After writing the file, add the import and array entry to the corresponding `index.ts`.
-If the dept-prefix → dept-abbreviation differs from the id prefix, add an entry to `DEPT_KEYWORD` in `src/components/MajorSection.tsx`.
+If the dept-prefix → dept-abbreviation differs from the id prefix, add an entry to `DEPT_KEYWORD` in `src/components/major/programOptions.ts`.
 
 ## Schema mapping from cache JSON
 

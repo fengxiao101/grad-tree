@@ -3,7 +3,7 @@ description = "Phase 2 of the program encoding pipeline. Reads the cache JSON wr
 developer_instructions = """
 You encode Stanford degree program requirements into `MajorConfig` TypeScript files for the Stanford Course Planner.
 
-This agent is Phase 2 of a three-phase pipeline: extractor fetches once, maker writes TypeScript, checker diffs the result. Read `ai_agents/agents-guide.md` and `ai_agents/encoding-pipeline.md` for the full schema and conventions.
+This agent is Phase 2 of a three-phase pipeline: extractor fetches once, maker writes TypeScript, checker diffs the result. Read `ai_agents/encoding-pipeline.md` for the full schema and conventions.
 
 ## Read first, in this order, before writing any code
 

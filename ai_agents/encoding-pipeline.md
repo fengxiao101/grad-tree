@@ -142,7 +142,7 @@ Mistake log: `ai_agents/encoding-mistakes.md` - read before every extraction.
 ### To add a new program to the dropdown
 1. Create the file in the correct subfolder (`majors/`, `minors/`, `cotermPrograms/`)
 2. Import it in the corresponding `index.ts` and add to the `BUILT_IN_*` array
-3. Add its dept-prefix → dept-abbreviation entry to `DEPT_KEYWORD` in `MajorSection.tsx` if the abbreviation differs from the id prefix
+3. Add its dept-prefix → dept-abbreviation entry to `DEPT_KEYWORD` in `src/components/major/programOptions.ts` if the abbreviation differs from the id prefix
 
 ### MajorConfig schema (see `src/data/majorSchema.ts` for full spec)
 ```ts
@@ -346,71 +346,23 @@ Checker must flag:
 
 ---
 
-## Programs to encode next (priority order)
+## Remaining work
 
-### Coterms - needs elective audit
-Open each coterm's bulletin page and fill in the actual approved elective course lists.
-| Program | File | Issue |
-|---|---|---|
-| CS MS | `cs-ms-2526.ts` | Elective slots empty - needs actual course list |
-| Management Science & Engineering MS | `mse-ms-2526.ts` | Elective slots empty |
-| AA MS | `aa-ms-2526.ts` | Elective slots empty |
-| ChemEng MS | `chemeng-ms-2526.ts` | Elective slots empty |
-| BioE MS | `bioe-ms-2526.ts` | Elective slots empty |
+Every program in the queue has been encoded: 39 majors, 34 minors and 20
+co-terms, all listed above. Two items are left.
 
-### Coterms - to encode next
-All co-terms complete. Queue is empty.
+**Engineering BS.** Never encoded. The bulletin ID was not confirmed; check
+whether the program is `ENGR-BS` or `ENGPHYS-BS` before starting.
 
-| Priority | Program | Bulletin ID | Notes |
-|---|---|---|---|
-| ~~Done~~ | ~~Computational and Mathematical Engineering MS~~ | `CME-MS` | Done |
-| ~~Done~~ | ~~Biomedical Data Science MS~~ | `BMDS-MS` | Done |
-| ~~Done~~ | ~~International Policy MA~~ | `INPOL-MA` | Done - it's an MA not MS; bulletin ID is INPOL-MA |
-| ~~Done~~ | ~~Public Policy MA~~ | `PUBPO-MA` | Done - it's an MA not MS; bulletin ID is PUBPO-MA |
-| ~~Done~~ | ~~Biology MS~~ | `BIO-MS` | Done |
-| ~~Done~~ | ~~Design MS~~ | `DESIGN-MS` | Done - 3 Methods tracks |
-| ~~Done~~ | ~~Communication MA~~ | `COMMU-MA` | Done - 2 tracks: Media Studies, Journalism |
-| ~~Done~~ | ~~History MA~~ | `HSTRY-MA` | Done - advisor-designed |
-| ~~Done~~ | ~~Sociology MA~~ | `SOCIO-MA` | Done - SOC270+SOC280A + advisor rest |
-| ~~Done~~ | ~~Symbolic Systems MS~~ | `SYMBO-MS` | Done - 4 breadth areas + seminar×3 |
+**Optional elective enumeration.** CS MS, AA MS, ChemEng MS and BioE MS each
+carry one or two `any-approved` elective slots with `options: []`. That is the
+documented pattern where the bulletin gives no finite list, so they work as
+intended and render as Search and add slots. Enumerating the lists would only
+make the picker more helpful.
 
-### Majors - in progress / queued (priority order by enrollment)
-| Priority | Program | Bulletin ID | Notes |
-|---|---|---|---|
-| ~~Done~~ | ~~MS&E BS~~ | `MGTSC-BS` | Done - flat depth (F&D/O&A/OTP), MS&E 108 triple-duties |
-| ~~Done~~ | ~~Bioengineering BS~~ | `BIOE-BS` | Done - BIOE 131 is TiS+WIM; BIOE 141A/B are Core+Capstone |
-| ~~Done~~ | ~~Design BS~~ | `DESIGN-BS` | Done - 3 Methods tracks, 4 domains (List A/B slots) |
-| Next | Engineering BS | `ENGR-BS` | ~92/yr; may be `ENGPHYS-BS` - verify actual program |
-| ~~Done~~ | ~~International Relations BA~~ | `INTLR-BA` | Done - 6 core slots, 11 pathways as any-approved, full capstone |
-| ~~Done~~ | ~~Data Science BS~~ | `DATSC-BS` | Done - 4 subplan tracks; bulletin ID is DATSC-BS (not DATASCI-BS) |
-| ~~Done~~ | ~~STS BA~~ | `STS-BA` | Done |
-| ~~Done~~ | ~~STS BS~~ | `STS-BS` | Done |
-| ~~Done~~ | ~~Earth Systems BS~~ | `EASYS-BS` | Done - 8 subplan tracks |
-| ~~Done~~ | ~~History BA~~ | `HSTRY-BA` | Done - Sources & Methods, Doing History, pre-1700, concentration (any-approved), WIM (209S), capstone |
-| ~~Done~~ | ~~Communication BA~~ | `COMMU-BA` | Done - core, Area I+II, WIM, electives, capstone |
-| ~~Done~~ | ~~English BA~~ | `ENGL-BA` | Done - 5 fields of study tracks, WIM=5XX WISE seminars, 5 capstone options |
-| ~~Done~~ | ~~Sociology BA~~ | `SOCIO-BA` | Done - 2 tracks (Standard + DSMM), SOC 202/204A WIM |
-| ~~Done~~ | ~~CSRE BA~~ | `CSRE-BA` | Done |
-| ~~Done~~ | ~~Aeronautics & Astronautics BS~~ | `AA-BS` | Done |
-| ~~Done~~ | ~~Chemical Engineering BS~~ | `CHEME-BS` | Done |
-| ~~Done~~ | ~~Public Policy BA~~ | `PUBLPOL-BA` | Done |
-| ~~Done~~ | ~~Chemistry BS~~ | `CHEM-BS` | Done |
-| ~~Done~~ | ~~Materials Science BS~~ | `MATSC-BS` | Done |
-| ~~Done~~ | ~~Civil Engineering BS~~ | `CEE-BS` | Done (7 focus area tracks; depth ≥12u + 3 breadth ≥6u each; WIM=CEE100; Capstone=CEE183; ABET ≥2 of CEE101A/B/C/D) |
-| ~~Done~~ | ~~Art History BA~~ | `ARTHISTORY-BA` | Done |
-| ~~Done~~ | ~~Biomedical Computation BS~~ | `BIOC-BS` | Done (4 concentration tracks) |
-| ~~Done~~ | ~~Music BA~~ | `MUSIC-BA` | Done |
-| ~~Done~~ | ~~Philosophy BA~~ | `PHIL-BA` | Done |
-| ~~Done~~ | ~~Linguistics BA~~ | `LING-BA` | Done |
-| ~~Done~~ | ~~Urban Studies BA~~ | `URBANST-BA` | Done |
-
-### Notes on bulletin IDs
-- Bulletin IDs above are best guesses - verify actual ID when fetching (e.g. `INTNLREL-BA` vs `IR-BA`)
-- MS&E BS bulletin ID may be `MGTSC-BS` or `MSE-BS` - check
-- Engineering BS may be general Engineering or Engineering Physics - confirm which program at `ENGR-BS` or `ENGPHYS-BS`
-- Design may be `DESIGN-BA`, `DESIGN-BS`, or `PRODUCT-DESIGN-BS` - check
-
----
+Confirm a bulletin ID by opening `https://bulletin.stanford.edu/programs/{ID}/`
+rather than guessing from the department abbreviation: several differ from the
+obvious form, such as `DATSC-BS`, `INPOL-MA` and `PUBPO-MA`.
 
 ## Prereq parsing pipeline (scripts/)
 
@@ -471,5 +423,5 @@ These patterns cause incorrect `prereqGroups` output and require AI review after
 
 - **Tailwind JIT**: use exact class strings, never concatenate (e.g. `text-${color}-500` breaks)
 - **Zustand selectors**: always select minimal state; avoid selecting the whole store object
-- **Dropdown search**: `SearchableSelect` in `MajorSection.tsx` - accepts `options[]` with `{ value, label, keywords, group }`. `keywords` string is searched alongside `label`. Dept abbreviations are in `DEPT_KEYWORD` map.
+- **Dropdown search**: `SearchableSelect` in `src/components/major/ProgramSelector.tsx` - accepts `options[]` with `{ value, label, keywords, group }`. `keywords` string is searched alongside `label`. Dept abbreviations are in `DEPT_KEYWORD` map.
 - **Stanford Bulletin**: bulletin.stanford.edu pages render course numbers as readable text (e.g. "CS 161 Design and Analysis of Algorithms") - extract dept+number directly, no ExploreCourses lookups needed.

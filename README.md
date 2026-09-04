@@ -94,10 +94,17 @@ schema and `ai_agents/encoding-pipeline.md` for the full encoding pipeline and i
 
 Helper builders in `src/data/majorBuilders.ts` cut down the boilerplate.
 
+Programs are encoded with AI assistance: an agent reads the bulletin page into a
+cache, a second writes the TypeScript, and a third diffs the two, with the result
+reviewed by hand. The agent definitions live in `.claude/agents` and
+`.codex/agents`, and `ai_agents/` documents the pipeline and the mistakes past
+encodings made. None of it is required to build or run the app.
+
 ## Contributing
 
 Requirement corrections are the most valuable contribution: there are 93
-programs encoded by hand, and the bulletin changes every year.
+programs transcribed one at a time from the bulletin, and the bulletin changes
+every year.
 
 **Reporting a wrong requirement.** Open an issue with a link to the program's
 page on the [Stanford Bulletin](https://bulletin.stanford.edu) and quote the
