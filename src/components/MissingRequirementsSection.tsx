@@ -19,7 +19,8 @@ import {
   getEffectiveProgramSections,
   cardSatisfiesWim,
 } from '../utils/majorUtils';
-import { TAG_COLORS, WAY_TAGS, type Affiliation, type CourseCard, type WayTag } from '../types';
+import { TAG_COLORS, type Affiliation, type CourseCard, type WayTag } from '../types';
+import { getWayTags } from '../utils/catalogUtils';
 import type { MajorConfig } from '../data/majorSchema';
 import {
   clearPendingRequirementReveal,
@@ -52,9 +53,6 @@ const PROGRAM_PILLS = {
   'double-major': 'bg-cardinal-50 text-cardinal-700 border-cardinal-200',
   'secondary-major': 'bg-cardinal-50 text-cardinal-700 border-cardinal-200',
 };
-
-const getWayTags = (card: CourseCard) =>
-  card.tags.filter(tag => (WAY_TAGS as string[]).includes(tag)) as WayTag[];
 
 function effectiveProgram(config: MajorConfig, selectedTracks: Record<string, string>) {
   return { ...config, sections: getEffectiveProgramSections(config, selectedTracks) };

@@ -18,7 +18,7 @@ import { usePlannerStore } from '../store/usePlannerStore';
 import { PriorityIcon } from './PriorityIcon';
 import { searchCourses, lookupCourse, type CatalogCourse } from '../data/catalog/full';
 import { CourseRow } from './CourseRow';
-import { parseHighUnit } from '../utils/catalogUtils';
+import { parseHighUnit, tagsFromCatalog } from '../utils/catalogUtils';
 import { onCourseUrl, exploreCourseUrl } from './CourseHoverDetail';
 
 const YEAR_OPTIONS = [1, 2, 3, 4, 5] as const;
@@ -29,19 +29,6 @@ const SEASON_OPTIONS = [
   { label: 'Summer', id: 'SUM' },
 ] as const;
 
-function tagsFromCatalog(course: CatalogCourse): SectionTag[] {
-  // Some catalog entries list the same WAY tag twice (a data artifact from
-  // the bulletin scrape, e.g. DANCE 1's ways: ["CE", "CE"]) - dedupe so a
-  // card doesn't end up with a duplicate tag double-counting toward progress.
-  return [...new Set([
-    ...(course.ways as SectionTag[]),
-    ...(course.writing === '1' ? ['W1' as SectionTag] : []),
-    ...(course.writing === '2' ? ['W2' as SectionTag] : []),
-    ...(course.writing === 'WIM' ? ['WIM' as SectionTag] : []),
-    ...(course.college ? ['COLLEGE' as SectionTag] : []),
-    ...(course.language ? ['LANG' as SectionTag] : []),
-  ])];
-}
 
 interface Props {
   defaultQuarterId?: string;

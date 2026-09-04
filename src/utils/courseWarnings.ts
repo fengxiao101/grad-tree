@@ -14,10 +14,12 @@ export function getQuarterSeason(quarterId: string): string | null {
   return q ? SEASON_MAP[q.season] : null;
 }
 
+/** Words that look like a department code but never are. */
+const STOP_WORDS = new Set(['AND', 'OR', 'FOR', 'THE', 'WITH', 'IN', 'OF', 'NO', 'NOT', 'TO', 'A', 'AN']);
+
 export function extractCourseCodes(text: string): string[] {
   const upper = text.toUpperCase();
   const codes = new Set<string>();
-  const STOP = new Set(['AND', 'OR', 'FOR', 'THE', 'WITH', 'IN', 'OF', 'NO', 'NOT', 'TO', 'A', 'AN']);
 
   // Primary: "DEPT NUM" pairs, plus continuation numbers immediately after (e.g., "MATH 19, 20, 21")
   const DEPT_NUM = /\b([A-Z][A-Z0-9&]{0,9})\s+(\d{1,3}[A-Z]{0,4})\b/g;
@@ -26,7 +28,7 @@ export function extractCourseCodes(text: string): string[] {
   let m: RegExpExecArray | null;
   while ((m = DEPT_NUM.exec(upper)) !== null) {
     const dept = m[1];
-    if (STOP.has(dept)) continue;
+    if (STOP_WORDS.has(dept)) continue;
     codes.add(`${dept} ${m[2]}`);
 
     // Consume continuation numbers like ", 20, 21" after "MATH 19"
@@ -43,14 +45,13 @@ export function extractCourseCodes(text: string): string[] {
   const COMPACT = /\b([A-Z]{1,6})(\d{1,3}[A-Z]{0,2})\b/g;
   while ((m = COMPACT.exec(upper)) !== null) {
     const dept = m[1];
-    if (STOP.has(dept) || dept.length === 1 && !/^[A-Z]$/.test(dept)) continue;
+    if (STOP_WORDS.has(dept) || dept.length === 1 && !/^[A-Z]$/.test(dept)) continue;
     codes.add(`${dept} ${m[2]}`);
   }
 
   return [...codes];
 }
 
-const STOP_WORDS = new Set(['AND', 'OR', 'FOR', 'THE', 'WITH', 'IN', 'OF', 'NO', 'NOT', 'TO', 'A', 'AN']);
 
 // Extracts course codes from a short text chunk and groups them by OR relationships.
 // Adjacent course codes connected by "or" form a single OR group (any one satisfies it).
@@ -177,7 +178,8 @@ export function extractPrereqGroups(
   return groups;
 }
 
-function allCodesForCard(card: CourseCard): Set<string> {
+/** Every "DEPT NUMBER" code this card is known by, including cross-listings. */
+export function allCodesForCard(card: CourseCard): Set<string> {
   const catalog = lookupCourse(card.department, card.courseNumber);
   if (catalog) return new Set(catalog.depts.map((d, i) => `${d} ${catalog.numbers[i]}`));
   return new Set([`${card.department.toUpperCase()} ${card.courseNumber.toUpperCase()}`]);

@@ -1,5 +1,5 @@
 import type { CatalogCourse } from '../data/catalog';
-import type { SectionTag } from '../types';
+import { WAY_TAGS, type CourseCard, type SectionTag, type WayTag } from '../types';
 
 /** Extract all gen-ed / way / writing tags from a catalog course. */
 export function tagsFromCatalog(course: CatalogCourse): SectionTag[] {
@@ -27,3 +27,7 @@ export function parseHighUnit(units: string | undefined | null): number | null {
   const n = parseInt(units, 10);
   return isNaN(n) ? null : n;
 }
+
+/** The WAYS tags a card carries, ignoring writing and other gen-ed tags. */
+export const getWayTags = (card: CourseCard): WayTag[] =>
+  card.tags.filter(tag => (WAY_TAGS as string[]).includes(tag)) as WayTag[];

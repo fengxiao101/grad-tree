@@ -1,15 +1,7 @@
 import { create } from 'zustand';
 import type { CourseCard } from '../types';
 import { lookupCourse } from '../data/catalog';
-import { extractCourseCodes } from '../utils/courseWarnings';
-
-function allCodesForCard(card: CourseCard): Set<string> {
-  const catalog = lookupCourse(card.department, card.courseNumber);
-  if (catalog) {
-    return new Set(catalog.depts.map((d, i) => `${d} ${catalog.numbers[i]}`));
-  }
-  return new Set([`${card.department.toUpperCase()} ${card.courseNumber.toUpperCase()}`]);
-}
+import { allCodesForCard, extractCourseCodes } from '../utils/courseWarnings';
 
 interface HighlightState {
   centerId: string | null;

@@ -2,7 +2,8 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { DndContext, DragOverlay, useDraggable, useDroppable, DragEndEvent, DragStartEvent, MouseSensor, TouchSensor, useSensor, useSensors, pointerWithin } from '@dnd-kit/core';
 import { CSS } from '@dnd-kit/utilities';
 import { ExternalLink, ChevronDown, ChevronRight } from 'lucide-react';
-import { CourseCard, WayTag, TAG_COLORS, WAY_TAGS } from '../types';
+import { CourseCard, WayTag, TAG_COLORS } from '../types';
+import { getWayTags } from '../utils/catalogUtils';
 import { WAYS_CONFIG } from '../data/requirements';
 import { ClassCard } from './ClassCard';
 import { usePlannerStore } from '../store/usePlannerStore';
@@ -65,9 +66,6 @@ function WayDroppable({ wayId, ring, className, onBoxClick, children }: {
     </div>
   );
 }
-
-const getWayTags = (card: CourseCard) =>
-  card.tags.filter(t => (WAY_TAGS as string[]).includes(t)) as WayTag[];
 
 export function WaysSection({ cards, onAddClick, onEditCard, onDoubleClickCard, completedQuarters }: Props) {
   const [collapsed, setCollapsed] = useState(false);

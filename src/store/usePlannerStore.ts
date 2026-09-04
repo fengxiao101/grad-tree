@@ -3,7 +3,6 @@ import { persist, createJSONStorage } from 'zustand/middleware';
 import { arrayMove } from '@dnd-kit/sortable';
 import { CourseCard, WAY_TAGS } from '../types';
 import { ALL_TEST_GROUPS, SubjectArea, SINGLE_SELECT_AREAS } from '../data/testCredits';
-import type { MajorConfig } from '../data/majorSchema';
 
 interface Snapshot {
   cards: Record<string, CourseCard>;

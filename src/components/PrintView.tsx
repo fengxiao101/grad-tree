@@ -28,7 +28,7 @@ import {
 } from '../utils/majorUtils';
 import { getRequirementStateStyles } from '../utils/requirementStyles';
 import { lookupCourse } from '../data/catalog';
-import { parseHighUnit } from '../utils/catalogUtils';
+import { getWayTags, parseHighUnit } from '../utils/catalogUtils';
 import { getTestCreditSatisfiers, getTransferSatisfiers, type Satisfier } from '../data/testCreditUtils';
 
 function requirementUnits(
@@ -94,9 +94,6 @@ interface DocOptions {
 
 const SEASONS = ['AUT', 'WIN', 'SPR'] as const;
 const SEASON_LABEL: Record<string, string> = { AUT: 'Aut', WIN: 'Win', SPR: 'Spr', SUM: 'Sum' };
-
-const getWayTags = (card: CourseCard) =>
-  card.tags.filter(t => (WAY_TAGS as string[]).includes(t)) as WayTag[];
 
 function PrintMetaRequirementsPanel({
   requirements,
