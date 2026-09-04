@@ -27,6 +27,8 @@ import {
   isSectionVerificationComplete,
 } from '../utils/majorUtils';
 import { getRequirementStateStyles } from '../utils/requirementStyles';
+import { lookupCourse } from '../data/catalog';
+import { parseHighUnit } from '../utils/catalogUtils';
 import { getTestCreditSatisfiers, getTransferSatisfiers, type Satisfier } from '../data/testCreditUtils';
 
 function requirementUnits(
@@ -56,7 +58,12 @@ function requirementUnits(
       }
     }
   }
-  return cards.filter(card => cardIds.has(card.id)).reduce((sum, card) => sum + (card.units ?? 0), 0) + testUnits;
+  return cards
+    .filter(card => cardIds.has(card.id))
+    .reduce(
+      (sum, card) => sum + (card.units ?? parseHighUnit(lookupCourse(card.department, card.courseNumber)?.units ?? '') ?? 0),
+      0,
+    ) + testUnits;
 }
 
 // Inline SVG icons for social platforms
