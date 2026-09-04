@@ -26,7 +26,7 @@ advisor.
 - **Test and transfer credit.** AP, IB, and A-Level scores plus transfer courses
   feed into requirement satisfaction.
 - **Scenarios.** Keep up to 10 alternative plans side by side and compare them.
-- **Export and share.** Print or export a plan as a PDF.
+- **Export and share.** Print a plan, export it as a PDF, or share it directly.
 
 ## Getting started
 
