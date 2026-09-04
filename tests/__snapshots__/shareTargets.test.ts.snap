@@ -1,0 +1,27 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`buildShareTargets > builds the header share links 1`] = `
+{
+  "Email": "mailto:?subject=Grad%20Tree%20-%20Stanford%20Degree%20Planner&body=Plan%20your%20Stanford%20degree%20for%20free%20with%20Grad%20Tree%0A%0Ahttps%3A%2F%2Fgradtree.app",
+  "Facebook": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgradtree.app",
+  "LinkedIn": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fgradtree.app",
+  "Messages": "sms:&body=Plan%20your%20Stanford%20degree%20for%20free%20with%20Grad%20Tree%20https%3A%2F%2Fgradtree.app",
+  "Reddit": "https://reddit.com/submit?url=https%3A%2F%2Fgradtree.app&title=Plan%20your%20Stanford%20degree%20for%20free%20with%20Grad%20Tree",
+  "Telegram": "https://t.me/share/url?url=https%3A%2F%2Fgradtree.app&text=Plan%20your%20Stanford%20degree%20for%20free%20with%20Grad%20Tree",
+  "WhatsApp": "https://wa.me/?text=Plan%20your%20Stanford%20degree%20for%20free%20with%20Grad%20Tree%20https%3A%2F%2Fgradtree.app",
+  "X / Twitter": "https://x.com/intent/tweet?text=Plan%20your%20Stanford%20degree%20for%20free%20with%20Grad%20Tree&url=https%3A%2F%2Fgradtree.app",
+}
+`;
+
+exports[`buildShareTargets > builds the print dialog share links 1`] = `
+{
+  "Email": "mailto:?subject=My%20Grad%20Tree%20Degree%20Plan&body=Plan%20your%20Stanford%20degree%20for%20free%20with%20Grad%20Tree%0A%0Ahttps%3A%2F%2Fgradtree.app",
+  "Facebook": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgradtree.app",
+  "LinkedIn": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fgradtree.app",
+  "Messages": "sms:&body=Plan%20your%20Stanford%20degree%20for%20free%20with%20Grad%20Tree%20https%3A%2F%2Fgradtree.app",
+  "Reddit": "https://reddit.com/submit?url=https%3A%2F%2Fgradtree.app&title=Plan%20your%20Stanford%20degree%20for%20free%20with%20Grad%20Tree",
+  "Telegram": "https://t.me/share/url?url=https%3A%2F%2Fgradtree.app&text=Plan%20your%20Stanford%20degree%20for%20free%20with%20Grad%20Tree",
+  "WhatsApp": "https://wa.me/?text=Plan%20your%20Stanford%20degree%20for%20free%20with%20Grad%20Tree%20https%3A%2F%2Fgradtree.app",
+  "X": "https://x.com/intent/tweet?text=Plan%20your%20Stanford%20degree%20for%20free%20with%20Grad%20Tree&url=https%3A%2F%2Fgradtree.app",
+}
+`;
