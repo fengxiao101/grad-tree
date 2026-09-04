@@ -25,7 +25,7 @@ First check if `course_sheets/prereq-db.json` exists. If it does, read prereq da
 
 If a course is not yet cached, fetch from ExploreCourses XML:
 ```
-https://explorecourses.stanford.edu/search?view=xml&academicYear=20252026&q={DEPT}+{NUMBER}&filter-coursestatus-Active=on
+https://explorecourses.stanford.edu/search?view=xml&academicYear=20262027&q={DEPT}+{NUMBER}&filter-coursestatus-Active=on
 ```
 
 Parse the `<prerequisites>` field from the XML. Apply the parsing rules below. Save to `course_sheets/prereq-db.json` (fetch each course only once ever).
@@ -171,8 +171,8 @@ Read the plan from a JSON file passed as argument, or read from `course_sheets/p
 ```json
 {
   "quarters": [
-    { "id": "frosh-autumn", "label": "Freshman Autumn", "courses": ["MATH 51", "CS 106A", "ECON 1"] },
-    { "id": "frosh-winter", "label": "Freshman Winter", "courses": ["MATH 52", "CS 106B", "ECON 2"] }
+    { "id": "Y1-AUT", "label": "Autumn", "courses": ["MATH 51", "CS 106A", "ECON 1"] },
+    { "id": "Y1-WIN", "label": "Winter", "courses": ["MATH 52", "CS 106B", "ECON 2"] }
   ]
 }
 ```
@@ -189,23 +189,23 @@ PREREQ CHECK: {plan name}
 VIOLATIONS:
 
 [CRITICAL] CS 107: no alternative from group ["CS 106B", "CS 106X"] is in the plan
-  → CS 107 scheduled: Sophomore Autumn
+  → CS 107 scheduled: Y2-AUT
   → CS 106B, CS 106X: absent from all quarters
-  → Action: add CS 106B before Sophomore Autumn
+  → Action: add CS 106B before Y2-AUT
 
 [CRITICAL] EE 101A: prereq group ["MATH 51", "CME 100"] — neither in plan
-  → EE 101A scheduled: Sophomore Winter
-  → Action: add MATH 51 before Sophomore Winter
+  → EE 101A scheduled: Y2-WIN
+  → Action: add MATH 51 before Y2-WIN
 
 [ORDER] EE 102A: prereq group ["EE 101A"] — EE 101A is in plan but AFTER EE 102A
-  → EE 102A: Sophomore Winter
-  → EE 101A: Junior Autumn
-  → Action: move EE 102A to Junior Winter or later
+  → EE 102A: Y2-WIN
+  → EE 101A: Y3-AUT
+  → Action: move EE 102A to Y3-WIN or later
 
 [COREQ] CS 103: coreq CS 106B must be in same or earlier quarter
-  → CS 103: Freshman Autumn
-  → CS 106B: Freshman Winter (one quarter later)
-  → Action: move CS 106B to Freshman Autumn
+  → CS 103: Y1-AUT
+  → CS 106B: Y1-WIN (one quarter later)
+  → Action: move CS 106B to Y1-AUT
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 RESULT: 4 violations (2 critical, 1 order, 1 coreq)
@@ -221,7 +221,7 @@ A course in the plan can be tagged for a specific program (major, minor, coterm)
 
 1. A course tagged `"minor:music"` counts ONLY toward the Music minor — not toward any major, coterm, or other minor requirement
 2. A course tagged `"coterm:cs-ms"` counts ONLY toward the CS MS coterm — NOT toward the CS major, unless the course is listed as a **coterm fundamental** in the coterm config
-3. A course tagged `"major:cs-ai"` counts ONLY toward the CS AI major — not toward any minor or coterm
+3. A course tagged `"major:cs-bs"` counts ONLY toward the CS major — not toward any minor or coterm
 4. An untagged course can count toward any program (current behavior — this is the default)
 5. A course can have multiple tags if it legitimately double-counts (e.g., a course that satisfies both a major and minor requirement and the bulletin explicitly permits this)
 
@@ -236,11 +236,11 @@ TAG ATTRIBUTION CHECK: {plan name}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 VIOLATIONS:
 
-[TAG CONFLICT] CS 221: tagged "minor:cs" but also being claimed by CS AI major (section: AI Methods Electives)
+[TAG CONFLICT] CS 221: tagged "minor:cs" but also being claimed by the CS major (section: AI Track Electives)
   → CS 221 tagged for CS minor only — it must not count toward major
-  → Action: remove CS 221 from major AI Methods Electives, or retag as "major:cs-ai"
+  → Action: remove CS 221 from the major's AI Track Electives, or retag as "major:cs-bs"
 
-[ALLOWED] MATH 51: no tag, counts toward CS AI major math requirement — OK
+[ALLOWED] MATH 51: no tag, counts toward the CS major math requirement — OK
 
 [ALLOWED] EE 102A: tagged "coterm:cs-ms", section "Fundamentals" has allowDoubleCount: true — OK
 

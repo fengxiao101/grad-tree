@@ -21,7 +21,7 @@ For each requested course: if it already has an entry, skip fetching. Only fetch
 For uncached courses, fetch:
 
 ```
-https://explorecourses.stanford.edu/search?view=xml&academicYear=20252026&q={DEPT}+{NUMBER}&filter-coursestatus-Active=on
+https://explorecourses.stanford.edu/search?view=xml&academicYear=20262027&q={DEPT}+{NUMBER}&filter-coursestatus-Active=on
 ```
 
 Extract the `<prerequisites>` element text. It may be empty. Save the raw text as `prereq_raw`.

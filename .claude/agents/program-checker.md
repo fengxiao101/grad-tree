@@ -116,11 +116,16 @@ Required fixes:
 ```
 
 ### On PASS
-Append to `ai_agents/encoding-mistakes.md`:
+Append to `ai_agents/encoding-mistakes.md` only if the check surfaced something a
+future encoder could get wrong: a trap this program happened to avoid, or a flag
+that turned out to be a cache extraction problem rather than a TypeScript bug.
+
 ```md
 ## {PROGRAM-NAME} (checked {date})
-- [List every non-obvious thing that was correct so future encoders know what to watch for]
-- [List every flag that turned out to be a cache extraction issue rather than a TS bug]
+- [the trap, and what the correct handling is]
 ```
+
+A clean pass with nothing new to say gets no entry. That file is a log of
+mistakes to avoid, not a record of programs checked.
 
 Then print: `CHECKER DONE — ready to hand off or commit`

@@ -12,19 +12,20 @@ Key data files: `src/data/majors/`, `src/data/minors/`, `src/data/cotermPrograms
 
 ### UI text rules (apply everywhere: components and data file strings)
 - **NEVER use `u` as a unit abbreviation** - always write ` units` (e.g. `4/6 units`, not `4/6u`)
-- **NEVER use em dashes (-)** - use `:` or `,` instead (e.g. `Path A: Public Policy Majors`, not `Path A - Public Policy Majors`)
+- **NEVER use an em dash (the long dash) in user-facing text** - use a colon or a comma instead, e.g. `Path A: Public Policy Majors`
 
 ---
 
-## End goal - full Stanford program coverage
+## Program coverage
 
-Encode every program listed at:
-**https://bulletin.stanford.edu/programs?page=1&pq=**
+93 programs are encoded: 39 majors, 34 minors and 20 co-terms. See Remaining work
+below for what is left.
 
-- **Majors & Minors**: filter → Program Level = Undergraduate (deselect all others)
-- **Coterms**: filter → Co-terminal = Yes (deselect Undergraduate)
+To find a program that is not yet covered, browse
+**https://bulletin.stanford.edu/programs?page=1&pq=** across all its pages:
 
-The bulletin has multiple pages. Scrape all pages to get the full list, then encode each program systematically in batches.
+- **Majors and minors**: filter → Program Level = Undergraduate, deselect the rest
+- **Coterms**: filter → Co-terminal = Yes, deselect Undergraduate
 
 ---
 
@@ -57,7 +58,7 @@ Key things to verify before coding:
 #### Mode A - New program (no cache yet)
 Spawn **one combined agent per program** that does all three phases: fetch → cache → TypeScript. Run multiple programs in parallel.
 
-**Use subagent_type `claude` (the general agent), NOT `program-maker` or `program-extractor`.** The specialized agents are split: extractor has WebFetch but won't write TS; maker has Write but won't fetch. Only the general agent has both.
+**Use subagent_type `claude` (the general agent) when you want one agent to do all three phases.** The specialised agents are deliberately split so that only the extractor can reach the network: the extractor fetches and writes the cache but never writes TypeScript, and the maker writes TypeScript but cannot fetch. Use them separately when you want that separation enforced, and the general agent when you would rather pay one agent's overhead.
 
 ```
 Agent prompt: "Read encoding-mistakes.md first. The bulletin is a JS SPA - use 
@@ -116,6 +117,7 @@ Run program-extractor agent first to create the cache, then do Mode B inline.
 - **program-extractor** - fetch once, save cache JSON (raw text + structured courses)
 - **program-maker** - read cache, write TypeScript (no fetching)
 - **program-checker** - JSON diff cache vs TypeScript (no fetching, cheap)
+- **prereq-extractor** - reads prerequisite text from ExploreCourses into `course_sheets/prereq-db.json`
 - **prereq-tagger** - validates prereq ordering in a plan; checks coterm/minor tags don't auto-count toward major
 
 Cache files: `course_sheets/` (local only, not committed).
@@ -162,7 +164,7 @@ Use `allowDoubleCount: true` on a section when the bulletin explicitly permits d
 
 ---
 
-## Maker agent - lessons learned (2025-26 wave)
+## Maker agent - lessons learned
 
 ### BEFORE writing any code, do ALL of these:
 1. **Read the entire bulletin page** including footnotes, restriction tables, and any "notes" sections below the main requirements. Critical rules are almost always in footnotes.
@@ -174,6 +176,9 @@ Use `allowDoubleCount: true` on a section when the bulletin explicitly permits d
 
 ### Common mistakes to avoid
 
+These apply to any program. Mistakes specific to one program, such as the EE-BS
+core or the HumBio capstone, live in `ai_agents/encoding-mistakes.md`.
+
 | Mistake | Correct approach |
 |---|---|
 | Adding `count` to unit-based slots | Use `minUnits` alone when the bulletin specifies a unit minimum with no fixed course count. Only add `count` when the bulletin explicitly requires a specific number of courses (e.g. "take 4 of the 6", "≥3 courses"). Never infer a count from units ÷ 3. |
@@ -182,19 +187,7 @@ Use `allowDoubleCount: true` on a section when the bulletin explicitly permits d
 | Using outdated course numbers | The bulletin shows current course numbers - read the page text carefully |
 | Assuming WIM = courses with 191W/194W suffix | Find the explicit WIM list in the bulletin |
 | Treating optional capstone tracks as major sections | Mark capstone slots with `optional: true` |
-| Including excluded courses in approved lists | Read the explicit exclusion notes (e.g. STATS 60 for HumBio) |
-| Encoding fixed tracks when program has student-designed concentrations | HumBio has NO fixed tracks - remove all `tracks:` |
-| Encoding 4-subfield breadth for PolySci when it uses path system | Read the actual structure, not assumptions from similar programs |
-| Using `PSYCH 10` as optional when it's required alongside `PSYCH 1` | Both intros can be required simultaneously |
-| Assuming AP credit is accepted | Read the AP credit note; PSYCH explicitly says AP NOT accepted |
 | Using a dead `listUrl` instead of listing courses | If bulletin shows courses inline, encode them all - no listUrl |
-| Wrong EE core (pick-one between EE102A/EE108) | EE core = ALL 5 required: EE42+EE100+EE101A+EE102A+EE108 |
-| Separate "Physics E&M" slot in EE science section | EE science = PHYS41+EE65 OR PHYS61+EE65; E&M is not a science slot |
-| Wrong EE engineering fundamentals elective list | 18 approved ENGR courses - not ME/CEE courses |
-| Wrong EE track design/elective courses | Each track has completely different design+elective lists; read each separately |
-| Wrong EE WIM list (191W/192/194W/214B) | EE WIM = CS194W, EE109, EE133, EE134, EE153, EE155, EE168, EE191W, EE264W, EE267W |
-| Wrong EE PTS required course (EE218) | PTS requires EE101B; EE218 doesn't appear in EE-BS at all |
-| EE Math elective MATH 151 | Correct is MATH 113 (Linear Algebra and Matrix Theory) |
 
 ### Priority checklist for every program
 
@@ -234,15 +227,11 @@ Checker must flag:
 - Use `any-approved` + `options: []` + URL in `note` when the approved list is too large to enumerate AND the bulletin itself doesn't list them inline. Encode inline when the bulletin gives a finite list (even 80+ courses).
 - For tracks: only create `tracks[]` when the bulletin has named/fixed specialization tracks. Student-designed concentrations = no tracks.
 
-### Minor-specific schema patterns (learned 2026-07)
+### Minor-specific schema patterns
 
-- **Always add `trackSelector` section** when minor has `tracks[]` - without it, UI renders nothing
-- **Electives: use one `any-approved, count: N` slot** instead of N separate slots - cleaner UI
-- **`pick-from-list, count: 2` replaces duplicate pick-one slots** - e.g., two slots with the same 18-course list → one slot with count: 2
-- **`phase: 'pre-major'` + `allowDoubleCount: true`** on prereq sections - these don't count toward minor unit total and can overlap with major
-- **"N of M areas" pattern**: single section with `minCourses: N`, M slots each `optional: true, type: 'pick-from-list', count: 1` - Music minor uses this for "3 of 5 areas"
-- **Extra tagged courses count toward unit total** - cards tagged as 'minor' now add to `totalAssignedUnits` even without a matching slot; students can track overflow electives this way
-- **Hover popup on pinned chips** - `any-approved` slot chips have CourseChipHoverCard on hover with Delete button
+Recorded in `ai_agents/encoding-mistakes.md` under Schema / UI patterns:
+trackSelector sections, consolidating elective slots, `phase: 'pre-major'`,
+the "N of M areas" shape, and how tagged overflow courses count.
 
 ---
 

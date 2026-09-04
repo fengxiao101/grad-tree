@@ -4,7 +4,7 @@ Read this file FIRST before extracting or encoding any program. Every mistake he
 
 ---
 
-## EE-BS (wave 2, 2026-07)
+## EE-BS (2026-07)
 - **Core is ALL 5 required** (EE42 + EE100 + EE101A + EE102A + EE108) - not pick-one between EE102A and EE108
 - **Physics E&M is not a separate slot** - science section is PHYS41+EE65 OR PHYS61+EE65 (two full-path options), E&M is subsumed
 - **Engineering fundamentals electives**: exactly 18 ENGR courses approved - not ME or CEE courses
@@ -14,7 +14,7 @@ Read this file FIRST before extracting or encoding any program. Every mistake he
 - **Math elective is MATH 113** (Linear Algebra and Matrix Theory) - not MATH 151
 - **Technology in Society**: 20+ courses listed inline - encode all of them, never emit a listUrl
 
-## HUMBI-BS (wave 2, 2026-07)
+## HUMBI-BS (2026-07)
 - **totalMinUnits: 81** not 90
 - **Core courses are 118A/B, 120A/B, 125A/B** - old HUMBIO 101/102/103/104 are retired
 - **WIM = all three B-series courses** (118B + 120B + 125B together) - not HUMBIO 191W/192/198
@@ -22,26 +22,26 @@ Read this file FIRST before extracting or encoding any program. Every mistake he
 - **Capstone has 5 options** (Practicum, Synthesis, HumBio Honors, IDH, Sci Comm) - old encode had only 2
 - **No fixed tracks** - concentration is student-designed; never emit `tracks[]` for HumBio
 
-## BIO-BS (wave 2, 2026-07)
+## BIO-BS (2026-07)
 - **totalMinUnits: 89** not 90
 - **BioFoundations series is BIO 87–95** - old BIO 82/83/84 are retired
 - **WIM courses**: BIO 115, 126, 149, 216, 218, 254 - not BIO 191W/194W
 - **7 subplans** with completely different course requirements each - read every subplan separately
 - BIO Math series dept code was unknown; used CME 100 as confirmed equivalent with note
 
-## PSYCH-BA (wave 2, 2026-07)
+## PSYCH-BA (2026-07)
 - **totalMinUnits: 70** not 65
 - **Both PSYCH 1 AND PSYCH 10 are required** - PSYCH 10 is not optional or a substitute
 - **AP credit NOT accepted** for any psychology requirement - must be noted explicitly
 - **WIM courses**: PSYCH 138, 164, 175, 180 - not PSYCH 191/194/195
 - **Capstone: PSYCH 198** (Honors, apply April 15 junior year) OR **PSYCH 196** (Applied)
 
-## POLISCI-BA (wave 2, 2026-07)
+## POLISCI-BA (2026-07)
 - **totalMinUnits: 70** not 60
 - **Structure is 5-path primary/secondary system** (25+15 units) - not the 4-subfield breadth model
 - Double-counting rules are complex and must be encoded fully in section notes
 
-## Minors with tracks (2026-07 wave)
+## Minors with tracks (2026-07)
 - **Always add a `trackSelector` section** - if a minor has `tracks[]`, the UI renders nothing for those tracks unless `sections[]` includes `{ trackSelector: true, slots: [] }`. Creative Writing, Ethics in Society, Human Biology, IR Minor were all broken for this reason.
 - **trackSelector position matters** - if there are shared required sections (e.g., HumBio Core, IR Core Course), put trackSelector AFTER them in `sections[]`; shared sections always render, track-specific ones only render when a track is selected
 - **Minor track sections must be merged before computeAssignments** - in MajorSection.tsx, the `minorAssignments` loop must build `effectiveMinor` (merge active track's sections) before calling `computeAssignments`, same as the major's `effectiveMajorConfig` pattern; without this, all track-section slots show as unfilled and contribute 0 units
