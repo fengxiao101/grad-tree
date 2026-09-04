@@ -1,0 +1,97 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function validPlan(data) {
+      return data.keys().hasAll(['plan_data', 'updated_at'])
+        && data.keys().hasOnly(['plan_data', 'updated_at'])
+        && data.plan_data is map
+        && data.plan_data.scenarios is list
+        && data.plan_data.scenarios.size() <= 10
+        && data.updated_at is string;
+    }
+
+    function owns(userId) {
+      return signedIn() && request.auth.uid == userId;
+    }
+
+    function validUserProfile(data) {
+      return data.keys().hasAll([
+          'storage_version',
+          'active_plan_id',
+          'plan_order',
+          'ignored_prereq_card_ids',
+          'congrats_shown',
+          'banner_dismissed',
+          'onboarding_steps',
+          'updated_at'
+        ])
+        && data.keys().hasOnly([
+          'storage_version',
+          'active_plan_id',
+          'plan_order',
+          'ignored_prereq_card_ids',
+          'congrats_shown',
+          'banner_dismissed',
+          'onboarding_steps',
+          'updated_at'
+        ])
+        && data.storage_version == 2
+        && data.active_plan_id is string
+        && data.plan_order is list
+        && data.plan_order.size() >= 1
+        && data.plan_order.size() <= 10
+        && data.plan_order.hasAll([data.active_plan_id])
+        && data.ignored_prereq_card_ids is list
+        && data.congrats_shown is bool
+        && data.banner_dismissed is bool
+        && data.onboarding_steps is list
+        && data.updated_at is string;
+    }
+
+    function validPrivatePlan(data) {
+      return data.keys().hasAll(['name', 'color', 'created_at', 'data', 'updated_at'])
+        && data.keys().hasOnly(['name', 'color', 'created_at', 'data', 'updated_at'])
+        && data.name is string
+        && data.name.size() <= 120
+        && data.color is string
+        && data.color.size() <= 32
+        && data.created_at is string
+        && data.data is map
+        && data.updated_at is string;
+    }
+
+    match /users/{userId} {
+      allow get: if owns(userId);
+      allow list: if false;
+      allow create, update: if owns(userId) && validUserProfile(request.resource.data);
+      allow delete: if owns(userId);
+
+      match /plans/{planId} {
+        allow get, list: if owns(userId);
+        allow create, update:
+          if owns(userId)
+          && validPrivatePlan(request.resource.data)
+          && getAfter(/databases/$(database)/documents/users/$(userId)).data.plan_order.hasAll([planId]);
+        allow delete: if owns(userId);
+      }
+    }
+
+    // Owner-only legacy documents remain temporarily readable and writable so
+    // existing accounts can migrate safely to /users/{uid}/plans/{planId}.
+    match /plans/{userId} {
+      allow get: if owns(userId);
+      allow list: if false;
+
+      allow create, update:
+        if owns(userId)
+        && validPlan(request.resource.data);
+
+      allow delete: if owns(userId);
+    }
+  }
+}

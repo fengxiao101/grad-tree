@@ -1,0 +1,1430 @@
+[
+  {
+    "id": "aa-bs",
+    "name": "Aeronautics and Astronautics",
+    "url": "https://bulletin.stanford.edu/programs/AA-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "aa-eng",
+    "name": "Aeronautics and Astronautics",
+    "url": "https://bulletin.stanford.edu/programs/AA-ENG",
+    "suffix": "ENG",
+    "category": "major"
+  },
+  {
+    "id": "aa-min",
+    "name": "Aeronautics and Astronautics",
+    "url": "https://bulletin.stanford.edu/programs/AA-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "aa-ms",
+    "name": "Aeronautics and Astronautics",
+    "url": "https://bulletin.stanford.edu/programs/AA-MS",
+    "suffix": "MS",
+    "category": "coterm"
+  },
+  {
+    "id": "aa-pmn",
+    "name": "Aeronautics and Astronautics",
+    "url": "https://bulletin.stanford.edu/programs/AA-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "aephy-ms",
+    "name": "Applied and Engineering Physics",
+    "url": "https://bulletin.stanford.edu/programs/AEPHY-MS",
+    "suffix": "MS",
+    "category": "coterm"
+  },
+  {
+    "id": "afram-ba",
+    "name": "African and African American Studies",
+    "url": "https://bulletin.stanford.edu/programs/AFRAM-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "afram-min",
+    "name": "African and African American Studies",
+    "url": "https://bulletin.stanford.edu/programs/AFRAM-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "amstu-ba",
+    "name": "American Studies",
+    "url": "https://bulletin.stanford.edu/programs/AMSTU-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "amstu-min",
+    "name": "American Studies",
+    "url": "https://bulletin.stanford.edu/programs/AMSTU-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "anthr-ba",
+    "name": "Anthropology",
+    "url": "https://bulletin.stanford.edu/programs/ANTHR-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "anthr-min",
+    "name": "Anthropology",
+    "url": "https://bulletin.stanford.edu/programs/ANTHR-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "anthr-pmn",
+    "name": "Anthropology",
+    "url": "https://bulletin.stanford.edu/programs/ANTHR-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "archa-ba",
+    "name": "Archaeology",
+    "url": "https://bulletin.stanford.edu/programs/ARCHA-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "archa-min",
+    "name": "Archaeology",
+    "url": "https://bulletin.stanford.edu/programs/ARCHA-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "art-min",
+    "name": "Art History",
+    "url": "https://bulletin.stanford.edu/programs/ART-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "arths-ba",
+    "name": "Art History",
+    "url": "https://bulletin.stanford.edu/programs/ARTHS-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "arths-pmn",
+    "name": "Art History",
+    "url": "https://bulletin.stanford.edu/programs/ARTHS-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "artp-ba",
+    "name": "Art Practice",
+    "url": "https://bulletin.stanford.edu/programs/ARTP-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "artp-min",
+    "name": "Art Practice",
+    "url": "https://bulletin.stanford.edu/programs/ARTP-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "arts-min",
+    "name": "Interdisciplinary Arts",
+    "url": "https://bulletin.stanford.edu/programs/ARTS-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "asam-ba",
+    "name": "Asian American Studies",
+    "url": "https://bulletin.stanford.edu/programs/ASAM-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "asam-min",
+    "name": "Asian American Studies",
+    "url": "https://bulletin.stanford.edu/programs/ASAM-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "bio-bs",
+    "name": "Biology",
+    "url": "https://bulletin.stanford.edu/programs/BIO-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "bio-min",
+    "name": "Biology",
+    "url": "https://bulletin.stanford.edu/programs/BIO-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "bio-ms",
+    "name": "Biology",
+    "url": "https://bulletin.stanford.edu/programs/BIO-MS",
+    "suffix": "MS",
+    "category": "coterm"
+  },
+  {
+    "id": "bioe-bs",
+    "name": "Bioengineering",
+    "url": "https://bulletin.stanford.edu/programs/BIOE-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "bioe-ms",
+    "name": "Bioengineering",
+    "url": "https://bulletin.stanford.edu/programs/BIOE-MS",
+    "suffix": "MS",
+    "category": "coterm"
+  },
+  {
+    "id": "bioe-pmn",
+    "name": "Bioengineering",
+    "url": "https://bulletin.stanford.edu/programs/BIOE-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "bioph-ms",
+    "name": "Biophysics",
+    "url": "https://bulletin.stanford.edu/programs/BIOPH-MS",
+    "suffix": "MS",
+    "category": "coterm"
+  },
+  {
+    "id": "bmds-pmn",
+    "name": "Biomedical Data Science",
+    "url": "https://bulletin.stanford.edu/programs/BMDS-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "ce-bs",
+    "name": "Civil Engineering",
+    "url": "https://bulletin.stanford.edu/programs/CE-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "ce-min",
+    "name": "Civil Engineering",
+    "url": "https://bulletin.stanford.edu/programs/CE-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "cee-eng",
+    "name": "Civil and Environmental Engineering",
+    "url": "https://bulletin.stanford.edu/programs/CEE-ENG",
+    "suffix": "ENG",
+    "category": "major"
+  },
+  {
+    "id": "cee-ms",
+    "name": "Civil and Environmental Engineering",
+    "url": "https://bulletin.stanford.edu/programs/CEE-MS",
+    "suffix": "MS",
+    "category": "coterm"
+  },
+  {
+    "id": "cee-pmn",
+    "name": "Civil and Environmental Engineering",
+    "url": "https://bulletin.stanford.edu/programs/CEE-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "chem-bs",
+    "name": "Chemistry",
+    "url": "https://bulletin.stanford.edu/programs/CHEM-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "chem-min",
+    "name": "Chemistry",
+    "url": "https://bulletin.stanford.edu/programs/CHEM-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "chem-ms",
+    "name": "Chemistry",
+    "url": "https://bulletin.stanford.edu/programs/CHEM-MS",
+    "suffix": "MS",
+    "category": "coterm"
+  },
+  {
+    "id": "chem-pmn",
+    "name": "Chemistry",
+    "url": "https://bulletin.stanford.edu/programs/CHEM-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "cheme-bs",
+    "name": "Chemical Engineering",
+    "url": "https://bulletin.stanford.edu/programs/CHEME-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "cheme-eng",
+    "name": "Chemical Engineering",
+    "url": "https://bulletin.stanford.edu/programs/CHEME-ENG",
+    "suffix": "ENG",
+    "category": "major"
+  },
+  {
+    "id": "cheme-min",
+    "name": "Chemical Engineering",
+    "url": "https://bulletin.stanford.edu/programs/CHEME-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "cheme-pmn",
+    "name": "Chemical Engineering",
+    "url": "https://bulletin.stanford.edu/programs/CHEME-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "chilt-ba",
+    "name": "Chicana/o-Latina/o Studies",
+    "url": "https://bulletin.stanford.edu/programs/CHILT-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "chilt-min",
+    "name": "Chicana/o-Latina/o Studies",
+    "url": "https://bulletin.stanford.edu/programs/CHILT-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "chpr-ms",
+    "name": "Community Health and Prevention Research",
+    "url": "https://bulletin.stanford.edu/programs/CHPR-MS",
+    "suffix": "MS",
+    "category": "coterm"
+  },
+  {
+    "id": "class-ba",
+    "name": "Classics",
+    "url": "https://bulletin.stanford.edu/programs/CLASS-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "class-min",
+    "name": "Classics",
+    "url": "https://bulletin.stanford.edu/programs/CLASS-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "class-pmn",
+    "name": "Classics",
+    "url": "https://bulletin.stanford.edu/programs/CLASS-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "cme-ms",
+    "name": "Computational and Mathematical Engineering",
+    "url": "https://bulletin.stanford.edu/programs/CME-MS",
+    "suffix": "MS",
+    "category": "coterm"
+  },
+  {
+    "id": "cme-pmn",
+    "name": "Computational and Mathematical Engineering",
+    "url": "https://bulletin.stanford.edu/programs/CME-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "commu-ba",
+    "name": "Communication",
+    "url": "https://bulletin.stanford.edu/programs/COMMU-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "commu-min",
+    "name": "Communication",
+    "url": "https://bulletin.stanford.edu/programs/COMMU-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "commu-pmn",
+    "name": "Communication",
+    "url": "https://bulletin.stanford.edu/programs/COMMU-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "cplit-ba",
+    "name": "Comparative Literature",
+    "url": "https://bulletin.stanford.edu/programs/CPLIT-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "cplit-min",
+    "name": "Comparative Literature",
+    "url": "https://bulletin.stanford.edu/programs/CPLIT-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "cplit-pmn",
+    "name": "Comparative Literature",
+    "url": "https://bulletin.stanford.edu/programs/CPLIT-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "crwrit-min",
+    "name": "Creative Writing",
+    "url": "https://bulletin.stanford.edu/programs/CRWRIT-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "cs-bs",
+    "name": "Computer Science",
+    "url": "https://bulletin.stanford.edu/programs/CS-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "cs-min",
+    "name": "Computer Science",
+    "url": "https://bulletin.stanford.edu/programs/CS-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "cs-ms",
+    "name": "Computer Science",
+    "url": "https://bulletin.stanford.edu/programs/CS-MS",
+    "suffix": "MS",
+    "category": "coterm"
+  },
+  {
+    "id": "cs-pmn",
+    "name": "Computer Science",
+    "url": "https://bulletin.stanford.edu/programs/CS-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "csre-ba",
+    "name": "Comparative Studies in Race and Ethnicity",
+    "url": "https://bulletin.stanford.edu/programs/CSRE-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "csre-min",
+    "name": "Comparative Studies in Race and Ethnicity",
+    "url": "https://bulletin.stanford.edu/programs/CSRE-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "csre-pmn",
+    "name": "Comparative Studies in Race and Ethnicity",
+    "url": "https://bulletin.stanford.edu/programs/CSRE-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "datsc-ba",
+    "name": "Data Science",
+    "url": "https://bulletin.stanford.edu/programs/DATSC-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "datsc-bs",
+    "name": "Data Science",
+    "url": "https://bulletin.stanford.edu/programs/DATSC-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "datsci-min",
+    "name": "Data Science",
+    "url": "https://bulletin.stanford.edu/programs/DATSCI-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "design-bs",
+    "name": "Design",
+    "url": "https://bulletin.stanford.edu/programs/DESIGN-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "dighum-min",
+    "name": "Digital Humanities",
+    "url": "https://bulletin.stanford.edu/programs/DIGHUM-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "easst-ba",
+    "name": "East Asian Languages and Cultures",
+    "url": "https://bulletin.stanford.edu/programs/EASST-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "easst-min",
+    "name": "East Asian Languages and Cultures",
+    "url": "https://bulletin.stanford.edu/programs/EASST-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "easys-bs",
+    "name": "Earth Systems",
+    "url": "https://bulletin.stanford.edu/programs/EASYS-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "easys-min",
+    "name": "Earth Systems",
+    "url": "https://bulletin.stanford.edu/programs/EASYS-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "easys-ms",
+    "name": "Earth Systems",
+    "url": "https://bulletin.stanford.edu/programs/EASYS-MS",
+    "suffix": "MS",
+    "category": "coterm"
+  },
+  {
+    "id": "econ-ba",
+    "name": "Economics",
+    "url": "https://bulletin.stanford.edu/programs/ECON-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "econ-bs",
+    "name": "Economics",
+    "url": "https://bulletin.stanford.edu/programs/ECON-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "econ-min",
+    "name": "Economics",
+    "url": "https://bulletin.stanford.edu/programs/ECON-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "econ-pmn",
+    "name": "Economics",
+    "url": "https://bulletin.stanford.edu/programs/ECON-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "ed-pmn",
+    "name": "Education",
+    "url": "https://bulletin.stanford.edu/programs/ED-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "educ-min",
+    "name": "Educ",
+    "url": "https://bulletin.stanford.edu/programs/EDUC-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "ee-bs",
+    "name": "Electrical Engineering",
+    "url": "https://bulletin.stanford.edu/programs/EE-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "ee-min",
+    "name": "Electrical Engineering",
+    "url": "https://bulletin.stanford.edu/programs/EE-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "ee-ms",
+    "name": "Electrical Engineering",
+    "url": "https://bulletin.stanford.edu/programs/EE-MS",
+    "suffix": "MS",
+    "category": "coterm"
+  },
+  {
+    "id": "ee-pmn",
+    "name": "Electrical Engineering",
+    "url": "https://bulletin.stanford.edu/programs/EE-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "energy-bs",
+    "name": "Energy",
+    "url": "https://bulletin.stanford.edu/programs/ENERGY-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "energy-min",
+    "name": "Energy",
+    "url": "https://bulletin.stanford.edu/programs/ENERGY-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "energy-pmn",
+    "name": "Energy",
+    "url": "https://bulletin.stanford.edu/programs/ENERGY-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "engl-ba",
+    "name": "Engl",
+    "url": "https://bulletin.stanford.edu/programs/ENGL-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "engl-min",
+    "name": "Engl",
+    "url": "https://bulletin.stanford.edu/programs/ENGL-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "engr-bs",
+    "name": "Engineering",
+    "url": "https://bulletin.stanford.edu/programs/ENGR-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "envse-bs",
+    "name": "Envse",
+    "url": "https://bulletin.stanford.edu/programs/ENVSE-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "envse-min",
+    "name": "Envse",
+    "url": "https://bulletin.stanford.edu/programs/ENVSE-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "eps-bs",
+    "name": "Eps",
+    "url": "https://bulletin.stanford.edu/programs/EPS-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "eps-min",
+    "name": "Eps",
+    "url": "https://bulletin.stanford.edu/programs/EPS-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "eps-pmn",
+    "name": "Eps",
+    "url": "https://bulletin.stanford.edu/programs/EPS-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "ethso-min",
+    "name": "Ethso",
+    "url": "https://bulletin.stanford.edu/programs/ETHSO-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "fgss-ba",
+    "name": "Fgss",
+    "url": "https://bulletin.stanford.edu/programs/FGSS-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "fgss-min",
+    "name": "Fgss",
+    "url": "https://bulletin.stanford.edu/programs/FGSS-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "fgss-pmn",
+    "name": "Fgss",
+    "url": "https://bulletin.stanford.edu/programs/FGSS-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "film-ba",
+    "name": "Film",
+    "url": "https://bulletin.stanford.edu/programs/FILM-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "film-min",
+    "name": "Film",
+    "url": "https://bulletin.stanford.edu/programs/FILM-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "frenc-ba",
+    "name": "Frenc",
+    "url": "https://bulletin.stanford.edu/programs/FRENC-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "frenc-min",
+    "name": "Frenc",
+    "url": "https://bulletin.stanford.edu/programs/FRENC-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "frenc-pmn",
+    "name": "Frenc",
+    "url": "https://bulletin.stanford.edu/programs/FRENC-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "geoph-bs",
+    "name": "Geophysics",
+    "url": "https://bulletin.stanford.edu/programs/GEOPH-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "geoph-min",
+    "name": "Geophysics",
+    "url": "https://bulletin.stanford.edu/programs/GEOPH-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "geoph-pmn",
+    "name": "Geophysics",
+    "url": "https://bulletin.stanford.edu/programs/GEOPH-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "gerst-ba",
+    "name": "German Studies",
+    "url": "https://bulletin.stanford.edu/programs/GERST-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "gerst-min",
+    "name": "German Studies",
+    "url": "https://bulletin.stanford.edu/programs/GERST-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "gerst-pmn",
+    "name": "German Studies",
+    "url": "https://bulletin.stanford.edu/programs/GERST-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "glblst-min",
+    "name": "Global Studies",
+    "url": "https://bulletin.stanford.edu/programs/GLBLST-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "hstry-ba",
+    "name": "History",
+    "url": "https://bulletin.stanford.edu/programs/HSTRY-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "hstry-min",
+    "name": "History",
+    "url": "https://bulletin.stanford.edu/programs/HSTRY-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "hstry-pmn",
+    "name": "History",
+    "url": "https://bulletin.stanford.edu/programs/HSTRY-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "humbi-ba",
+    "name": "Human Biology",
+    "url": "https://bulletin.stanford.edu/programs/HUMBI-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "humbi-bs",
+    "name": "Human Biology",
+    "url": "https://bulletin.stanford.edu/programs/HUMBI-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "humbi-min",
+    "name": "Human Biology",
+    "url": "https://bulletin.stanford.edu/programs/HUMBI-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "humrts-min",
+    "name": "Human Rights",
+    "url": "https://bulletin.stanford.edu/programs/HUMRTS-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "idmen-bs",
+    "name": "Interdisciplinary Medical Neuroscience",
+    "url": "https://bulletin.stanford.edu/programs/IDMEN-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "ilac-ba",
+    "name": "Iberian and Latin American Cultures",
+    "url": "https://bulletin.stanford.edu/programs/ILAC-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "ilac-pmn",
+    "name": "Iberian and Latin American Cultures",
+    "url": "https://bulletin.stanford.edu/programs/ILAC-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "intlr-ba",
+    "name": "International Relations",
+    "url": "https://bulletin.stanford.edu/programs/INTLR-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "intlr-min",
+    "name": "International Relations",
+    "url": "https://bulletin.stanford.edu/programs/INTLR-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "ital-ba",
+    "name": "Italian",
+    "url": "https://bulletin.stanford.edu/programs/ITAL-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "ital-min",
+    "name": "Italian",
+    "url": "https://bulletin.stanford.edu/programs/ITAL-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "ital-pmn",
+    "name": "Italian",
+    "url": "https://bulletin.stanford.edu/programs/ITAL-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "jewsh-ba",
+    "name": "Jewish Studies",
+    "url": "https://bulletin.stanford.edu/programs/JEWSH-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "jewsh-min",
+    "name": "Jewish Studies",
+    "url": "https://bulletin.stanford.edu/programs/JEWSH-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "ling-ba",
+    "name": "Linguistics",
+    "url": "https://bulletin.stanford.edu/programs/LING-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "ling-min",
+    "name": "Linguistics",
+    "url": "https://bulletin.stanford.edu/programs/LING-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "ling-pmn",
+    "name": "Linguistics",
+    "url": "https://bulletin.stanford.edu/programs/LING-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "math-bs",
+    "name": "Mathematics",
+    "url": "https://bulletin.stanford.edu/programs/MATH-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "math-min",
+    "name": "Mathematics",
+    "url": "https://bulletin.stanford.edu/programs/MATH-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "math-pmn",
+    "name": "Mathematics",
+    "url": "https://bulletin.stanford.edu/programs/MATH-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "matsc-bs",
+    "name": "Materials Science and Engineering",
+    "url": "https://bulletin.stanford.edu/programs/MATSC-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "matsc-eng",
+    "name": "Materials Science and Engineering",
+    "url": "https://bulletin.stanford.edu/programs/MATSC-ENG",
+    "suffix": "ENG",
+    "category": "major"
+  },
+  {
+    "id": "matsc-min",
+    "name": "Materials Science and Engineering",
+    "url": "https://bulletin.stanford.edu/programs/MATSC-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "matsc-ms",
+    "name": "Materials Science and Engineering",
+    "url": "https://bulletin.stanford.edu/programs/MATSC-MS",
+    "suffix": "MS",
+    "category": "coterm"
+  },
+  {
+    "id": "matsc-pmn",
+    "name": "Materials Science and Engineering",
+    "url": "https://bulletin.stanford.edu/programs/MATSC-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "me-bs",
+    "name": "Mechanical Engineering",
+    "url": "https://bulletin.stanford.edu/programs/ME-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "me-eng",
+    "name": "Mechanical Engineering",
+    "url": "https://bulletin.stanford.edu/programs/ME-ENG",
+    "suffix": "ENG",
+    "category": "major"
+  },
+  {
+    "id": "me-min",
+    "name": "Mechanical Engineering",
+    "url": "https://bulletin.stanford.edu/programs/ME-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "me-ms",
+    "name": "Mechanical Engineering",
+    "url": "https://bulletin.stanford.edu/programs/ME-MS",
+    "suffix": "MS",
+    "category": "coterm"
+  },
+  {
+    "id": "me-pmn",
+    "name": "Mechanical Engineering",
+    "url": "https://bulletin.stanford.edu/programs/ME-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "medhum-min",
+    "name": "Medical Humanities",
+    "url": "https://bulletin.stanford.edu/programs/MEDHUM-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "medst-min",
+    "name": "Medieval Studies",
+    "url": "https://bulletin.stanford.edu/programs/MEDST-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "mellc-min",
+    "name": "Middle Eastern Languages and Cultures",
+    "url": "https://bulletin.stanford.edu/programs/MELLC-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "mgtsc-bs",
+    "name": "Management Science and Engineering",
+    "url": "https://bulletin.stanford.edu/programs/MGTSC-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "mgtsc-min",
+    "name": "Management Science and Engineering",
+    "url": "https://bulletin.stanford.edu/programs/MGTSC-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "mgtsc-ms",
+    "name": "Management Science and Engineering",
+    "url": "https://bulletin.stanford.edu/programs/MGTSC-MS",
+    "suffix": "MS",
+    "category": "coterm"
+  },
+  {
+    "id": "mgtsc-pmn",
+    "name": "Management Science and Engineering",
+    "url": "https://bulletin.stanford.edu/programs/MGTSC-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "modlan-min",
+    "name": "Modern Languages",
+    "url": "https://bulletin.stanford.edu/programs/MODLAN-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "music-ba",
+    "name": "Music",
+    "url": "https://bulletin.stanford.edu/programs/MUSIC-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "music-min",
+    "name": "Music",
+    "url": "https://bulletin.stanford.edu/programs/MUSIC-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "natam-ba",
+    "name": "Native American Studies",
+    "url": "https://bulletin.stanford.edu/programs/NATAM-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "natam-min",
+    "name": "Native American Studies",
+    "url": "https://bulletin.stanford.edu/programs/NATAM-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "neurs-ms",
+    "name": "Neurosciences",
+    "url": "https://bulletin.stanford.edu/programs/NEURS-MS",
+    "suffix": "MS",
+    "category": "coterm"
+  },
+  {
+    "id": "philo-ba",
+    "name": "Philosophy",
+    "url": "https://bulletin.stanford.edu/programs/PHILO-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "philo-min",
+    "name": "Philosophy",
+    "url": "https://bulletin.stanford.edu/programs/PHILO-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "philo-pmn",
+    "name": "Philosophy",
+    "url": "https://bulletin.stanford.edu/programs/PHILO-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "phrel-ba",
+    "name": "Philosophy and Religious Studies",
+    "url": "https://bulletin.stanford.edu/programs/PHREL-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "phys-bs",
+    "name": "Physics",
+    "url": "https://bulletin.stanford.edu/programs/PHYS-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "phys-min",
+    "name": "Physics",
+    "url": "https://bulletin.stanford.edu/programs/PHYS-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "phys-ms",
+    "name": "Physics",
+    "url": "https://bulletin.stanford.edu/programs/PHYS-MS",
+    "suffix": "MS",
+    "category": "coterm"
+  },
+  {
+    "id": "phys-pmn",
+    "name": "Physics",
+    "url": "https://bulletin.stanford.edu/programs/PHYS-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "pla-pmn",
+    "name": "Product Life Analytics",
+    "url": "https://bulletin.stanford.edu/programs/PLA-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "polsc-ba",
+    "name": "Political Science",
+    "url": "https://bulletin.stanford.edu/programs/POLSC-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "polsc-min",
+    "name": "Political Science",
+    "url": "https://bulletin.stanford.edu/programs/POLSC-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "polsc-pmn",
+    "name": "Political Science",
+    "url": "https://bulletin.stanford.edu/programs/POLSC-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "port-min",
+    "name": "Portuguese",
+    "url": "https://bulletin.stanford.edu/programs/PORT-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "psych-ba",
+    "name": "Psychology",
+    "url": "https://bulletin.stanford.edu/programs/PSYCH-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "psych-min",
+    "name": "Psychology",
+    "url": "https://bulletin.stanford.edu/programs/PSYCH-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "psych-pmn",
+    "name": "Psychology",
+    "url": "https://bulletin.stanford.edu/programs/PSYCH-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "pubpo-ba",
+    "name": "Public Policy",
+    "url": "https://bulletin.stanford.edu/programs/PUBPO-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "pubpo-min",
+    "name": "Public Policy",
+    "url": "https://bulletin.stanford.edu/programs/PUBPO-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "relst-ba",
+    "name": "Religious Studies",
+    "url": "https://bulletin.stanford.edu/programs/RELST-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "relst-min",
+    "name": "Religious Studies",
+    "url": "https://bulletin.stanford.edu/programs/RELST-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "relst-pmn",
+    "name": "Religious Studies",
+    "url": "https://bulletin.stanford.edu/programs/RELST-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "slav-ba",
+    "name": "Slavic Languages and Literatures",
+    "url": "https://bulletin.stanford.edu/programs/SLAV-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "slav-min",
+    "name": "Slavic Languages and Literatures",
+    "url": "https://bulletin.stanford.edu/programs/SLAV-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "slav-pmn",
+    "name": "Slavic Languages and Literatures",
+    "url": "https://bulletin.stanford.edu/programs/SLAV-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "socio-ba",
+    "name": "Sociology",
+    "url": "https://bulletin.stanford.edu/programs/SOCIO-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "socio-min",
+    "name": "Sociology",
+    "url": "https://bulletin.stanford.edu/programs/SOCIO-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "socio-pmn",
+    "name": "Sociology",
+    "url": "https://bulletin.stanford.edu/programs/SOCIO-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "span-ba",
+    "name": "Spanish and Portuguese",
+    "url": "https://bulletin.stanford.edu/programs/SPAN-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "span-min",
+    "name": "Spanish and Portuguese",
+    "url": "https://bulletin.stanford.edu/programs/SPAN-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "stats-min",
+    "name": "Statistics",
+    "url": "https://bulletin.stanford.edu/programs/STATS-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "stats-ms",
+    "name": "Statistics",
+    "url": "https://bulletin.stanford.edu/programs/STATS-MS",
+    "suffix": "MS",
+    "category": "coterm"
+  },
+  {
+    "id": "stats-pmn",
+    "name": "Statistics",
+    "url": "https://bulletin.stanford.edu/programs/STATS-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "stmrm-ms",
+    "name": "Stem Cell Biology and Regenerative Medicine",
+    "url": "https://bulletin.stanford.edu/programs/STMRM-MS",
+    "suffix": "MS",
+    "category": "coterm"
+  },
+  {
+    "id": "sts-ba",
+    "name": "Science, Technology, and Society",
+    "url": "https://bulletin.stanford.edu/programs/STS-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "sts-bs",
+    "name": "Science, Technology, and Society",
+    "url": "https://bulletin.stanford.edu/programs/STS-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "sustsci-ms",
+    "name": "Sustainability Science and Practice",
+    "url": "https://bulletin.stanford.edu/programs/SUSTSCI-MS",
+    "suffix": "MS",
+    "category": "coterm"
+  },
+  {
+    "id": "symbo-bs",
+    "name": "Symbolic Systems",
+    "url": "https://bulletin.stanford.edu/programs/SYMBO-BS",
+    "suffix": "BS",
+    "category": "major"
+  },
+  {
+    "id": "symbo-min",
+    "name": "Symbolic Systems",
+    "url": "https://bulletin.stanford.edu/programs/SYMBO-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "symbo-ms",
+    "name": "Symbolic Systems",
+    "url": "https://bulletin.stanford.edu/programs/SYMBO-MS",
+    "suffix": "MS",
+    "category": "coterm"
+  },
+  {
+    "id": "thpst-ba",
+    "name": "Theater and Performance Studies",
+    "url": "https://bulletin.stanford.edu/programs/THPST-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "thpst-min",
+    "name": "Theater and Performance Studies",
+    "url": "https://bulletin.stanford.edu/programs/THPST-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "thpst-pmn",
+    "name": "Theater and Performance Studies",
+    "url": "https://bulletin.stanford.edu/programs/THPST-PMN",
+    "suffix": "PMN",
+    "category": "minor"
+  },
+  {
+    "id": "trans-min",
+    "name": "Transatlantic Studies",
+    "url": "https://bulletin.stanford.edu/programs/TRANS-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  },
+  {
+    "id": "urbst-ba",
+    "name": "Urban Studies",
+    "url": "https://bulletin.stanford.edu/programs/URBST-BA",
+    "suffix": "BA",
+    "category": "major"
+  },
+  {
+    "id": "urbst-min",
+    "name": "Urban Studies",
+    "url": "https://bulletin.stanford.edu/programs/URBST-MIN",
+    "suffix": "MIN",
+    "category": "minor"
+  }
+]

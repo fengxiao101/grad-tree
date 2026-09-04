@@ -1,0 +1,299 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Keep wide, internally scrollable planner rows from widening the page itself.
+   `clip` avoids creating a scroll container, so sticky headers still work. */
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 100%;
+  margin: 0;
+  overflow-x: clip;
+}
+
+@media print {
+  body > *:not(#sp-print-root) { display: none !important; }
+  #sp-print-root { display: block !important; }
+}
+
+@layer base {
+  body {
+    @apply text-gray-900 antialiased;
+    font-family: 'Manrope', system-ui, sans-serif;
+    background-color: var(--color-page);
+  }
+}
+
+/* A real fixed layer works consistently where background-attachment: fixed
+   is ignored (notably mobile Safari). The focal point shifts on narrow screens
+   so Hoover Tower remains in view despite the wide source photograph. */
+.app-background {
+  position: relative;
+  isolation: isolate;
+}
+
+.app-background::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-color: var(--app-background-color);
+  background-image:
+    linear-gradient(var(--background-overlay), var(--background-overlay)),
+    var(--app-background-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 18% 45%;
+}
+
+.app-background.meme-mode::before {
+  background-image:
+    linear-gradient(var(--meme-overlay), var(--meme-overlay)),
+    var(--app-background-image);
+  background-position: center 45%;
+  filter: saturate(0.55) contrast(0.88) brightness(1.08);
+}
+
+/* Meme mode deliberately changes the whole live interface, including portaled
+   menus and dialogs. Removing the class restores every normal font rule. */
+body.meme-mode-active,
+body.meme-mode-active * {
+  font-family: "Comic Sans MS", "Chalkboard SE", "Comic Sans", cursive !important;
+}
+
+/* Use one consistent glass layer. Tailwind's various /40, /60, /70 and /80
+   utilities otherwise create radically different image visibility. */
+.app-background :is(
+  .bg-white,
+  .bg-white\/60,
+  .bg-white\/70,
+  .bg-white\/80
+) {
+  background-color: var(--glass-white);
+  backdrop-filter: blur(2px);
+}
+
+.app-background :is(
+  .bg-gray-50,
+  .bg-gray-50\/40,
+  .bg-gray-50\/50,
+  .bg-gray-50\/60,
+  .bg-gray-50\/80
+) {
+  background-color: var(--glass-muted);
+}
+
+.app-background .bg-gray-100 {
+  background-color: rgb(var(--color-surface-hover) / 0.82);
+}
+
+.app-background .bg-cardinal-50 { background-color: rgb(var(--tint-cardinal-50) / 0.82); }
+.app-background .bg-cardinal-100 { background-color: rgb(var(--tint-cardinal-100) / 0.82); }
+.app-background .bg-red-50 { background-color: rgb(var(--tint-red-50) / 0.82); }
+.app-background .bg-red-100 { background-color: rgb(var(--tint-red-100) / 0.82); }
+.app-background .bg-rose-50,
+.app-background .bg-rose-50\/40 { background-color: rgb(var(--tint-rose-50) / 0.82); }
+.app-background .bg-rose-100 { background-color: rgb(var(--tint-rose-100) / 0.82); }
+.app-background .bg-orange-50 { background-color: rgb(var(--tint-orange-50) / 0.82); }
+.app-background .bg-orange-100 { background-color: rgb(var(--tint-orange-100) / 0.82); }
+.app-background .bg-amber-50 { background-color: rgb(var(--tint-amber-50) / 0.82); }
+.app-background .bg-amber-100 { background-color: rgb(var(--tint-amber-100) / 0.82); }
+.app-background .bg-yellow-50 { background-color: rgb(var(--tint-yellow-50) / 0.82); }
+.app-background .bg-yellow-100 { background-color: rgb(var(--tint-yellow-100) / 0.82); }
+.app-background .bg-green-50,
+.app-background .bg-green-50\/40,
+.app-background .bg-green-50\/50 { background-color: rgb(var(--tint-green-50) / 0.82); }
+.app-background .bg-green-100 { background-color: rgb(var(--tint-green-100) / 0.82); }
+.app-background .bg-teal-50 { background-color: rgb(var(--tint-teal-50) / 0.82); }
+.app-background .bg-teal-100 { background-color: rgb(var(--tint-teal-100) / 0.82); }
+.app-background .bg-sky-50 { background-color: rgb(var(--tint-sky-50) / 0.82); }
+.app-background .bg-sky-100 { background-color: rgb(var(--tint-sky-100) / 0.82); }
+.app-background .bg-blue-50 { background-color: rgb(var(--tint-blue-50) / 0.82); }
+.app-background .bg-blue-100 { background-color: rgb(var(--tint-blue-100) / 0.82); }
+.app-background .bg-indigo-50 { background-color: rgb(var(--tint-indigo-50) / 0.82); }
+.app-background .bg-indigo-100 { background-color: rgb(var(--tint-indigo-100) / 0.82); }
+.app-background .bg-violet-50 { background-color: rgb(var(--tint-violet-50) / 0.82); }
+.app-background .bg-violet-100 { background-color: rgb(var(--tint-violet-100) / 0.82); }
+
+/* A panel already sitting on glass should not add another nearly-opaque veil.
+   Its border, shadow and subtle tint provide the visual hierarchy instead. */
+.app-background :is(
+  .bg-white,
+  .bg-white\/60,
+  .bg-white\/70,
+  .bg-white\/80,
+  .bg-gray-50,
+  .bg-gray-50\/40,
+  .bg-gray-50\/50,
+  .bg-gray-50\/60,
+  .bg-gray-50\/80
+) :is(
+  .bg-white,
+  .bg-white\/60,
+  .bg-white\/70,
+  .bg-white\/80,
+  .bg-gray-50,
+  .bg-gray-50\/40,
+  .bg-gray-50\/50,
+  .bg-gray-50\/60,
+  .bg-gray-50\/80
+) {
+  background-color: var(--glass-subtle);
+  backdrop-filter: none;
+}
+
+.app-background header.bg-cardinal-700 {
+  background-color: var(--header-surface);
+  backdrop-filter: blur(4px);
+}
+
+/* Featured planner surfaces should reveal a little more of the campus image
+   than the general-purpose glass treatment while preserving text contrast. */
+.app-background .planner-glass.bg-white {
+  background-color: var(--glass-panel);
+  backdrop-filter: blur(2px);
+}
+
+.app-background .quarter-glass.bg-white,
+.app-background .quarter-glass.bg-gray-50\/80 {
+  background-color: var(--glass-quarter);
+  backdrop-filter: blur(1.5px);
+}
+
+.app-background .onboarding-glass.bg-cardinal-700 {
+  background-color: var(--onboarding-surface);
+  backdrop-filter: blur(2px);
+}
+
+/* Navigation chrome can be translucent, but must not use backdrop-filter:
+   that property traps fixed menus in a lower stacking context. */
+.app-background .planner-chrome.bg-white {
+  background-color: var(--glass-chrome);
+  backdrop-filter: none;
+}
+
+/* Requirement panels keep their colored state but never become so transparent
+   that the photograph competes with labels, notes, and selection controls. */
+.app-background .requirement-glass {
+  background-image: linear-gradient(
+    var(--glass-requirement),
+    var(--glass-requirement)
+  );
+  backdrop-filter: blur(2px);
+}
+
+/* Keep completed Ways and Gen Ed cards visibly green through the shared
+   readability overlay. */
+.app-background .requirement-glass.requirement-complete {
+  background-image: linear-gradient(
+    rgb(var(--complete-panel) / 0.55),
+    rgb(var(--complete-panel) / 0.55)
+  );
+}
+
+/* Tooling and document overlays are work surfaces, not part of the scenic
+   canvas. Keep every panel inside them fully opaque and easy to scan. */
+.app-background .solid-ui.bg-white,
+.app-background .solid-ui .bg-white,
+.app-background .solid-ui .bg-white\/60,
+.app-background .solid-ui .bg-white\/70,
+.app-background .solid-ui .bg-white\/80 {
+  background-color: rgb(var(--color-surface-raised));
+  backdrop-filter: none;
+}
+
+.app-background .solid-ui .bg-gray-50,
+.app-background .solid-ui .bg-gray-50\/40,
+.app-background .solid-ui .bg-gray-50\/50,
+.app-background .solid-ui .bg-gray-50\/60,
+.app-background .solid-ui .bg-gray-50\/80 {
+  background-color: rgb(var(--color-surface-muted));
+}
+
+.app-background .solid-ui .bg-gray-100 {
+  background-color: rgb(var(--color-surface-hover));
+}
+
+.app-background .solid-ui .bg-cardinal-50 { background-color: rgb(var(--tint-cardinal-50)); }
+.app-background .solid-ui .bg-cardinal-100 { background-color: rgb(var(--tint-cardinal-100)); }
+.app-background .solid-ui .bg-red-50 { background-color: rgb(var(--tint-red-50)); }
+.app-background .solid-ui .bg-red-100 { background-color: rgb(var(--tint-red-100)); }
+.app-background .solid-ui .bg-rose-50,
+.app-background .solid-ui .bg-rose-50\/40 { background-color: rgb(var(--tint-rose-50)); }
+.app-background .solid-ui .bg-rose-100 { background-color: rgb(var(--tint-rose-100)); }
+.app-background .solid-ui .bg-orange-50 { background-color: rgb(var(--tint-orange-50)); }
+.app-background .solid-ui .bg-orange-100 { background-color: rgb(var(--tint-orange-100)); }
+.app-background .solid-ui .bg-amber-50 { background-color: rgb(var(--tint-amber-50)); }
+.app-background .solid-ui .bg-amber-100 { background-color: rgb(var(--tint-amber-100)); }
+.app-background .solid-ui .bg-yellow-50 { background-color: rgb(var(--tint-yellow-50)); }
+.app-background .solid-ui .bg-yellow-100 { background-color: rgb(var(--tint-yellow-100)); }
+.app-background .solid-ui .bg-green-50,
+.app-background .solid-ui .bg-green-50\/40,
+.app-background .solid-ui .bg-green-50\/50 { background-color: rgb(var(--tint-green-50)); }
+.app-background .solid-ui .bg-green-100 { background-color: rgb(var(--tint-green-100)); }
+.app-background .solid-ui .bg-teal-50 { background-color: rgb(var(--tint-teal-50)); }
+.app-background .solid-ui .bg-teal-100 { background-color: rgb(var(--tint-teal-100)); }
+.app-background .solid-ui .bg-sky-50 { background-color: rgb(var(--tint-sky-50)); }
+.app-background .solid-ui .bg-sky-100 { background-color: rgb(var(--tint-sky-100)); }
+.app-background .solid-ui .bg-blue-50 { background-color: rgb(var(--tint-blue-50)); }
+.app-background .solid-ui .bg-blue-100 { background-color: rgb(var(--tint-blue-100)); }
+.app-background .solid-ui .bg-indigo-50 { background-color: rgb(var(--tint-indigo-50)); }
+.app-background .solid-ui .bg-indigo-100 { background-color: rgb(var(--tint-indigo-100)); }
+.app-background .solid-ui .bg-violet-50 { background-color: rgb(var(--tint-violet-50)); }
+.app-background .solid-ui .bg-violet-100 { background-color: rgb(var(--tint-violet-100)); }
+
+@media (max-width: 639px) {
+  /* iOS Safari zooms the page when focusing controls rendered below 16px. */
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+@media (min-width: 640px) {
+  .app-background::before {
+    background-position: 30% 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .app-background::before {
+    background-position: 42% 45%;
+  }
+}
+
+@media print {
+  .app-background::before {
+    display: none;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar) transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 4px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar);
+    border-radius: 2px;
+  }
+}
+
+.fear-the-tree-img {
+  filter: brightness(0.35) saturate(1.5);
+}
+body.dark-mode-active .fear-the-tree-img {
+  filter: none;
+}

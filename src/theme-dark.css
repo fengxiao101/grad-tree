@@ -1,0 +1,146 @@
+/*
+ * GRAD TREE - DARK PALETTE
+ * Every dark-mode color value belongs in this file.
+ */
+body.dark-mode-active {
+  color-scheme: dark;
+
+  --color-page: #171513;
+  --color-surface: 36 33 30;
+  --color-surface-muted: 43 39 35;
+  --color-surface-raised: 49 45 41;
+  --color-surface-hover: 57 52 47;
+  --color-text: #f3ede3;
+  --color-text-secondary: #eee5d9;
+  --color-text-muted: #d5cbbd;
+  --color-text-faint: #bfb5a7;
+  --color-border: #625a52;
+  --color-border-strong: #807568;
+  --color-border-warm: #806f51;
+  --color-beige: #e7d5b0;
+  --color-cardinal: #b83a3a;
+  --color-cardinal-soft: #4c2b2c;
+  --color-cardinal-text: #e8a8a8;
+  --color-danger-text: #efaaaa;
+  --color-warning-text: #e9b07f;
+  --color-info-text: #a9cfe2;
+  --color-success-text: #9ed4ae;
+
+  --overlay: rgb(0 0 0 / 0.68);
+  --focus-ring: #789cb1;
+  --hover-neutral: rgb(57 52 47 / 0.90);
+  --glass-white: rgb(49 45 41 / 0.92);
+  --glass-muted: rgb(43 39 35 / 0.90);
+  --glass-subtle: rgb(49 45 41 / 0.42);
+  --glass-panel: rgb(36 33 30 / 0.88);
+  --glass-quarter: rgb(36 33 30 / 0.86);
+  --glass-chrome: rgb(36 33 30 / 0.94);
+  --glass-requirement: rgb(36 33 30 / 0.64);
+  --background-overlay: rgb(23 21 19 / 0.76);
+  --meme-overlay: rgb(23 21 19 / 0.74);
+  --header-surface: rgb(140 21 21 / 0.96);
+  --onboarding-surface: rgb(140 21 21 / 0.88);
+  --scrollbar: #625a52;
+  --tint-cardinal-50: 68 41 42; --tint-cardinal-100: 76 43 44;
+  --tint-red-50: 66 40 41; --tint-red-100: 76 43 44;
+  --tint-rose-50: 59 45 47; --tint-rose-100: 68 48 52;
+  --tint-orange-50: 67 47 34; --tint-orange-100: 78 52 35;
+  --tint-amber-50: 72 57 32; --tint-amber-100: 83 64 33;
+  --tint-yellow-50: 68 61 34; --tint-yellow-100: 79 70 36;
+  --tint-green-50: 34 54 42; --tint-green-100: 38 64 47;
+  --tint-teal-50: 35 54 51; --tint-teal-100: 39 65 60;
+  --tint-sky-50: 38 51 60; --tint-sky-100: 42 61 72;
+  --tint-blue-50: 39 50 61; --tint-blue-100: 43 59 74;
+  --tint-indigo-50: 43 48 60; --tint-indigo-100: 49 55 70;
+  --tint-violet-50: 48 44 57; --tint-violet-100: 57 50 68;
+
+  --progress-color: #efb6b6;
+  --progress-track: rgb(239 182 182 / 0.18);
+  --progress-gradient-start: #e58f98;
+  --progress-gradient-middle: #f8c7c2;
+  --progress-gradient-end: #dc7f8b;
+  --progress-shine: rgb(255 245 238 / 0.68);
+  --coterm-progress-track: rgb(12 74 110 / 0.56);
+  --coterm-gradient-start: #5dbce5;
+  --coterm-gradient-middle: #b8ecf8;
+  --coterm-gradient-end: #55add8;
+  --coterm-shine: rgb(238 252 255 / 0.72);
+  --section-tabs: rgb(38 35 32 / 0.96);
+  --plan-tabs: rgb(36 33 30 / 0.96);
+  --plan-inactive-text: #e2d8ca;
+  --plan-active-text: #fff4e3;
+  --section-inactive-text: #d5cbbd;
+  --section-active-text: #fff4e3;
+  --compare-text: #9fc5ff;
+  --print-text: #111827;
+  --print-background: #ffffff;
+  --social-messages: #22c55e; --social-messages-hover: #16a34a;
+  --social-whatsapp: #25d366; --social-whatsapp-hover: #20bd59;
+  --social-telegram: #0088cc; --social-telegram-hover: #0077b3;
+  --social-email: #3b82f6; --social-email-hover: #2563eb;
+  --social-x: #111111; --social-x-hover: #27272a;
+  --social-reddit: #ff4500; --social-reddit-hover: #e03d00;
+  --social-facebook: #1877f2; --social-facebook-hover: #166fe5;
+  --social-linkedin: #0a66c2; --social-linkedin-hover: #0958a8;
+
+  --major-card: #3b2d2f; --major-badge: #493236; --major-text: #f0b8c2; --major-border: #76505a;
+  --minor-card: #263936; --minor-badge: #2d4541; --minor-text: #acd9cf; --minor-border: #527c73;
+  --coterm-card: #293741; --coterm-badge: #304451; --coterm-text: #b4d5e7; --coterm-border: #54778c;
+  --double-major-card: #3b2d2f; --double-major-badge: #493236; --double-major-text: #f0b8c2; --double-major-border: #76505a;
+  --secondary-major-card: #3b2d2f; --secondary-major-badge: #493236; --secondary-major-text: #f0b8c2; --secondary-major-border: #76505a;
+  --notice-bg: #283743; --notice-text: #bfd5e5; --notice-border: #4d687c; --notice-icon: #8dbbd9;
+  --shortcut-text: #a99f92; --shortcut-key-bg: #37322e; --shortcut-key-text: #ddd4c8; --shortcut-key-border: #5a524a;
+
+  --complete-panel: 31 69 48;
+  --complete-row: 37 82 57;
+  --complete-border: #4f9a6d;
+  --complete-text: #bce7ca;
+  --complete-accent: #6fc58d;
+  --incomplete-panel: 58 49 43;
+  --incomplete-row: 68 56 48;
+  --incomplete-border: #8f6847;
+  --incomplete-text: #efc097;
+  --incomplete-count: #e7a66d;
+  --incomplete-check: #c99163;
+  --note-panel-bg: 57 48 38;
+  --note-panel-border: #806543;
+  --note-panel-title: #efc894;
+  --note-panel-text: #d8b68a;
+  --drop-hint-text: #4a453f;
+  --drop-hint-border: #3a3530;
+  --drop-target-bg: 67 40 41;
+  --drop-target-border: #a95d5d;
+  --unit-track: #544d46;
+  --course-required-bg: #493236;
+  --course-required-border: #76505a;
+  --course-option-bg: #3f3032;
+  --course-option-border: #65474e;
+  --status-danger-border: #76505a;
+  --status-warning-border: #806543;
+  --status-success-border: #527c64;
+  --status-info-border: #54778c;
+
+  --way-aii-bg: #234e54; --way-aii-text: #c5edf0; --way-aii-border: #559da5;
+  --way-sma-bg: #1e4146; --way-sma-text: #d0f0f1; --way-sma-border: #477f86;
+  --way-si-bg: #2b5d63;  --way-si-text: #d8f3f4;  --way-si-border: #62aeb5;
+  --way-ce-bg: #24494f;  --way-ce-text: #caedf0;  --way-ce-border: #4f9098;
+  --way-aqr-bg: #28565c; --way-aqr-text: #d2f1f2; --way-aqr-border: #5ba3aa;
+  --way-edp-bg: #203f44; --way-edp-text: #c8e9eb; --way-edp-border: #477f86;
+  --way-er-bg: #265158;  --way-er-text: #d0eff1;  --way-er-border: #5599a1;
+  --way-fr-bg: #22474c;  --way-fr-text: #c9ecee;  --way-fr-border: #4c8990;
+
+  --college-bg: #5a4520; --college-text: #f9dda1; --college-border: #95743a;
+  --language-bg: #5a351f; --language-text: #ffd2ad; --language-border: #9f623a;
+  --writing-1-bg: #67381f; --writing-1-text: #ffd2ad; --writing-1-border: #aa653b;
+  --writing-2-bg: #79401f; --writing-2-text: #ffe0c2; --writing-2-border: #c2733d;
+  --writing-wim-bg: #8c481f; --writing-wim-text: #fff0df; --writing-wim-border: #dd8444;
+
+  --dark-cardinal-text: #e8a8a8;
+  --dark-orange-text: #e9b07f;
+  --dark-teal-text: #9dcfc5;
+  --dark-sky-text: #a9cfe2;
+  --dark-cardinal-bg: rgb(76 43 44 / 0.90);
+  --dark-rose-bg: rgb(59 45 47 / 0.92);
+  --dark-sky-bg: rgb(41 55 65 / 0.92);
+  --dark-teal-bg: rgb(38 57 54 / 0.92);
+}

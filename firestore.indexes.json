@@ -1,0 +1,15 @@
+{
+  "indexes": [],
+  "fieldOverrides": [
+    {
+      "collectionGroup": "plans",
+      "fieldPath": "plan_data",
+      "indexes": []
+    },
+    {
+      "collectionGroup": "plans",
+      "fieldPath": "data",
+      "indexes": []
+    }
+  ]
+}

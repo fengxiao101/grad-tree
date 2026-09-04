@@ -1,0 +1,503 @@
+/* Structural theme rules only. All actual color values live in
+   theme-light.css and theme-dark.css. */
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-page);
+}
+
+.print-share-popover,
+.pdf-document-surface {
+  background-color: var(--print-background) !important;
+  background-image: none !important;
+  backdrop-filter: none !important;
+  opacity: 1;
+}
+
+.grad-progress-label,
+.grad-progress-count { color: var(--progress-color); }
+.grad-progress-track { background-color: var(--progress-track); }
+.grad-progress-fill {
+  background-image: linear-gradient(
+    105deg,
+    var(--progress-gradient-start),
+    var(--progress-gradient-middle),
+    var(--progress-gradient-end),
+    var(--progress-gradient-start)
+  );
+}
+.coterm-progress-track { background-color: var(--coterm-progress-track); }
+.coterm-progress-fill {
+  background-image: linear-gradient(
+    105deg,
+    var(--coterm-gradient-start),
+    var(--coterm-gradient-middle),
+    var(--coterm-gradient-end),
+    var(--coterm-gradient-start)
+  );
+}
+.progress-fill-animated {
+  position: relative;
+  overflow: hidden;
+  background-size: 240% 100%;
+  animation: progress-gradient-flow 1.2s ease-out 1;
+}
+.progress-fill-animated::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    110deg,
+    transparent 14%,
+    var(--bar-shine, var(--progress-shine)) 48%,
+    transparent 82%
+  );
+  transform: translateX(-140%);
+  animation: progress-highlight-sweep 1.2s ease-out 1;
+}
+.grad-progress-fill { --bar-shine: var(--progress-shine); }
+.coterm-progress-fill { --bar-shine: var(--coterm-shine); }
+
+@keyframes progress-gradient-flow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+@keyframes progress-highlight-sweep {
+  0% { transform: translateX(-140%); }
+  100% { transform: translateX(140%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progress-fill-animated,
+  .progress-fill-animated::after {
+    animation: none;
+  }
+}
+
+.section-tabs {
+  color: var(--color-text);
+  background-color: var(--section-tabs);
+  border-color: var(--color-border);
+}
+.planner-chrome {
+  background-color: var(--plan-tabs) !important;
+  border-color: var(--color-border) !important;
+}
+.planner-chrome button[data-active="false"] { color: var(--plan-inactive-text); }
+.planner-chrome button[data-active="true"] { color: var(--plan-active-text); }
+.compare-button { color: var(--compare-text); }
+.social-messages { background-color: var(--social-messages); }
+.social-messages:hover { background-color: var(--social-messages-hover); }
+.social-whatsapp { background-color: var(--social-whatsapp); }
+.social-whatsapp:hover { background-color: var(--social-whatsapp-hover); }
+.social-telegram { background-color: var(--social-telegram); }
+.social-telegram:hover { background-color: var(--social-telegram-hover); }
+.social-email { background-color: var(--social-email); }
+.social-email:hover { background-color: var(--social-email-hover); }
+.social-x { background-color: var(--social-x); }
+.social-x:hover { background-color: var(--social-x-hover); }
+.social-reddit { background-color: var(--social-reddit); }
+.social-reddit:hover { background-color: var(--social-reddit-hover); }
+.social-facebook { background-color: var(--social-facebook); }
+.social-facebook:hover { background-color: var(--social-facebook-hover); }
+.social-linkedin { background-color: var(--social-linkedin); }
+.social-linkedin:hover { background-color: var(--social-linkedin-hover); }
+.brand-text { color: var(--color-beige); }
+.brand-subtext { color: color-mix(in srgb, var(--color-beige) 80%, transparent); }
+.planner-border { border-color: var(--color-border-warm); }
+.intro-panel { color: var(--color-text); background-color: color-mix(in srgb, var(--color-beige) 75%, transparent); }
+.intro-panel-trigger:hover { background-color: color-mix(in srgb, var(--color-beige) 35%, transparent); }
+
+.affiliation-major-card { background-color: var(--major-card); }
+.affiliation-major-badge { color: var(--major-text); background-color: var(--major-badge); border-color: var(--major-border); }
+.affiliation-minor-card { background-color: var(--minor-card); }
+.affiliation-minor-badge { color: var(--minor-text); background-color: var(--minor-badge); border-color: var(--minor-border); }
+.affiliation-coterm-card { background-color: var(--coterm-card); }
+.affiliation-coterm-badge { color: var(--coterm-text); background-color: var(--coterm-badge); border-color: var(--coterm-border); }
+.affiliation-double-major-card { background-color: var(--double-major-card); }
+.affiliation-double-major-badge { color: var(--double-major-text); background-color: var(--double-major-badge); border-color: var(--double-major-border); }
+.affiliation-secondary-major-card { background-color: var(--secondary-major-card); }
+.affiliation-secondary-major-badge { color: var(--secondary-major-text); background-color: var(--secondary-major-badge); border-color: var(--secondary-major-border); }
+
+.external-credit-notice {
+  color: var(--notice-text);
+  background-color: var(--notice-bg);
+  border-color: var(--notice-border);
+}
+.external-credit-notice-icon { color: var(--notice-icon); }
+
+.intro-shortcuts { color: var(--shortcut-text); }
+.intro-shortcuts kbd {
+  color: var(--shortcut-key-text);
+  background-color: var(--shortcut-key-bg);
+  border: 1px solid var(--shortcut-key-border);
+}
+
+.theme-complete-panel {
+  border-color: var(--complete-border);
+  background-color: rgb(var(--complete-panel) / 0.82);
+}
+.theme-complete-row { background-color: rgb(var(--complete-row) / 0.78); }
+.theme-complete-title { color: var(--complete-text); }
+.theme-complete-count, .theme-complete-check { color: var(--complete-accent); }
+.theme-incomplete-panel {
+  border-color: var(--incomplete-border);
+  background-color: rgb(var(--incomplete-panel) / 0.72);
+}
+.theme-incomplete-row { background-color: rgb(var(--incomplete-row) / 0.80); }
+.theme-incomplete-title { color: var(--incomplete-text); }
+.theme-incomplete-count { color: var(--incomplete-count); }
+.theme-incomplete-check { color: var(--incomplete-check); }
+.theme-note-panel {
+  border-color: var(--note-panel-border);
+  background-color: rgb(var(--note-panel-bg) / 0.82);
+}
+.theme-note-title { color: var(--note-panel-title); }
+.theme-note-text { color: var(--note-panel-text); }
+.theme-drop-target {
+  border-color: var(--drop-target-border) !important;
+  background-color: rgb(var(--drop-target-bg) / 0.82) !important;
+}
+.theme-unit-track { background-color: var(--unit-track); }
+.course-tier-required {
+  border-left-color: var(--course-required-border);
+  background-color: var(--course-required-bg);
+}
+.course-tier-option {
+  border-left-color: var(--course-option-border);
+  background-color: var(--course-option-bg);
+}
+
+/* Search program section headers */
+.search-section-major { background-color: var(--major-badge); color: var(--major-text); }
+.search-section-major:hover { background-color: var(--major-card); }
+.search-section-minor { background-color: var(--minor-badge); color: var(--minor-text); }
+.search-section-minor:hover { background-color: var(--minor-card); }
+.search-section-coterm { background-color: var(--coterm-badge); color: var(--coterm-text); }
+.search-section-coterm:hover { background-color: var(--coterm-card); }
+
+/* Search course rows within program sections */
+.search-row-major { background-color: var(--major-card); }
+.search-row-minor { background-color: var(--minor-card); }
+.search-row-coterm { background-color: var(--coterm-card); }
+:is(.border-red-200,.border-rose-100,.border-rose-200,.border-rose-300) {
+  border-color: var(--status-danger-border);
+}
+:is(.border-orange-200,.border-orange-300,.border-amber-200,.border-amber-300,.border-amber-400,.border-yellow-200) {
+  border-color: var(--status-warning-border);
+}
+:is(.border-green-200,.border-green-300,.border-emerald-200,.border-teal-200) {
+  border-color: var(--status-success-border);
+}
+:is(.border-sky-200,.border-sky-300,.border-blue-200,.border-blue-300,.border-indigo-200) {
+  border-color: var(--status-info-border);
+}
+
+.tag-aii-bg, .way-aii-panel { background-color: var(--way-aii-bg); }
+.tag-aii-text { color: var(--way-aii-text); }
+.tag-aii-border, .way-aii-panel { border-color: var(--way-aii-border); }
+.tag-sma-bg, .way-sma-panel { background-color: var(--way-sma-bg); }
+.tag-sma-text { color: var(--way-sma-text); }
+.tag-sma-border, .way-sma-panel { border-color: var(--way-sma-border); }
+.tag-si-bg, .way-si-panel { background-color: var(--way-si-bg); }
+.tag-si-text { color: var(--way-si-text); }
+.tag-si-border, .way-si-panel { border-color: var(--way-si-border); }
+.tag-ce-bg, .way-ce-panel { background-color: var(--way-ce-bg); }
+.tag-ce-text { color: var(--way-ce-text); }
+.tag-ce-border, .way-ce-panel { border-color: var(--way-ce-border); }
+.tag-aqr-bg, .way-aqr-panel { background-color: var(--way-aqr-bg); }
+.tag-aqr-text { color: var(--way-aqr-text); }
+.tag-aqr-border, .way-aqr-panel { border-color: var(--way-aqr-border); }
+.tag-edp-bg, .way-edp-panel { background-color: var(--way-edp-bg); }
+.tag-edp-text { color: var(--way-edp-text); }
+.tag-edp-border, .way-edp-panel { border-color: var(--way-edp-border); }
+.tag-er-bg, .way-er-panel { background-color: var(--way-er-bg); }
+.tag-er-text { color: var(--way-er-text); }
+.tag-er-border, .way-er-panel { border-color: var(--way-er-border); }
+.tag-fr-bg, .way-fr-panel { background-color: var(--way-fr-bg); }
+.tag-fr-text { color: var(--way-fr-text); }
+.tag-fr-border, .way-fr-panel { border-color: var(--way-fr-border); }
+
+.way-aii-ring:focus-within, .way-aii-ring.ring-2 { --tw-ring-color: var(--way-aii-border); }
+.way-sma-ring:focus-within, .way-sma-ring.ring-2 { --tw-ring-color: var(--way-sma-border); }
+.way-si-ring:focus-within, .way-si-ring.ring-2 { --tw-ring-color: var(--way-si-border); }
+.way-ce-ring:focus-within, .way-ce-ring.ring-2 { --tw-ring-color: var(--way-ce-border); }
+.way-aqr-ring:focus-within, .way-aqr-ring.ring-2 { --tw-ring-color: var(--way-aqr-border); }
+.way-edp-ring:focus-within, .way-edp-ring.ring-2 { --tw-ring-color: var(--way-edp-border); }
+.way-er-ring:focus-within, .way-er-ring.ring-2 { --tw-ring-color: var(--way-er-border); }
+.way-fr-ring:focus-within, .way-fr-ring.ring-2 { --tw-ring-color: var(--way-fr-border); }
+
+.tag-college-bg, .gened-college { background-color: var(--college-bg); }
+.tag-college-text { color: var(--college-text); }
+.tag-college-border, .gened-college { border-color: var(--college-border); }
+.tag-lang-bg, .gened-lang { background-color: var(--language-bg); }
+.tag-lang-text { color: var(--language-text); }
+.tag-lang-border, .gened-lang { border-color: var(--language-border); }
+.tag-w1-bg, .gened-w1 { background-color: var(--writing-1-bg); }
+.tag-w1-text { color: var(--writing-1-text); }
+.tag-w1-border, .gened-w1 { border-color: var(--writing-1-border); }
+.tag-w2-bg, .gened-w2 { background-color: var(--writing-2-bg); }
+.tag-w2-text { color: var(--writing-2-text); }
+.tag-w2-border, .gened-w2 { border-color: var(--writing-2-border); }
+.tag-wim-bg, .gened-wim { background-color: var(--writing-wim-bg); }
+.tag-wim-text { color: var(--writing-wim-text); }
+.tag-wim-border, .gened-wim { border-color: var(--writing-wim-border); }
+
+/* Dark mode remaps the existing utility vocabulary so legacy components inherit
+   the theme without duplicating a dark class on every element. */
+body.dark-mode-active .app-background::before {
+  background-image:
+    linear-gradient(var(--background-overlay), var(--background-overlay)),
+    var(--app-background-image);
+  filter: saturate(0.6) brightness(0.55);
+}
+
+/* Global legacy utility normalization. This intentionally includes portaled
+   hover cards, menus and dialogs, not only elements inside .app-background. */
+body.dark-mode-active :is(.bg-white,.bg-white\/60,.bg-white\/70,.bg-white\/80) {
+  background-color: rgb(var(--color-surface) / 0.90);
+}
+body.dark-mode-active :is(.bg-gray-50,.bg-gray-50\/40,.bg-gray-50\/50,.bg-gray-50\/60,.bg-gray-50\/80,.bg-gray-100) {
+  background-color: rgb(var(--color-surface-muted) / 0.90);
+}
+body.dark-mode-active :is(.bg-gray-200,.bg-gray-300) { background-color: rgb(var(--color-border) / 0.92); }
+body.dark-mode-active :is(.text-gray-900,.text-gray-800,.text-gray-700) { color: var(--color-text); }
+body.dark-mode-active :is(.text-gray-600,.text-gray-500) { color: var(--color-text-muted); }
+body.dark-mode-active :is(.text-gray-400,.text-gray-300) { color: var(--color-text-faint); }
+body.dark-mode-active :is(
+  .text-cardinal-600,.text-cardinal-700,.text-cardinal-800,.text-cardinal-900,
+  .text-red-600,.text-red-700,.text-red-800,.text-red-900
+) { color: var(--dark-cardinal-text); }
+body.dark-mode-active :is(.text-orange-600,.text-orange-700,.text-orange-800,.text-orange-900,.text-amber-600,.text-amber-700,.text-amber-800) { color: var(--dark-orange-text); }
+body.dark-mode-active :is(.text-teal-600,.text-teal-700,.text-teal-800,.text-teal-900,.text-green-600,.text-green-700,.text-green-800) { color: var(--dark-teal-text); }
+body.dark-mode-active :is(.text-sky-600,.text-sky-700,.text-sky-800,.text-sky-900,.text-blue-600,.text-blue-700,.text-blue-800,.text-indigo-600,.text-indigo-700) { color: var(--dark-sky-text); }
+body.dark-mode-active :is(.border-gray-100,.border-gray-200,.border-gray-300) {
+  border-color: var(--color-border);
+}
+body.dark-mode-active :is(
+  .hover\:bg-white\/70:hover,
+  .hover\:bg-gray-50:hover,
+  .hover\:bg-gray-50\/50:hover,
+  .hover\:bg-gray-50\/60:hover,
+  .hover\:bg-gray-50\/80:hover,
+  .hover\:bg-gray-100:hover,
+  .hover\:bg-gray-200:hover,
+  .hover\:bg-black\/\[0\.02\]:hover
+) {
+  background-color: rgb(var(--color-surface-hover) / 0.92);
+}
+body.dark-mode-active :is(
+  .hover\:bg-cardinal-50:hover,
+  .hover\:bg-cardinal-100:hover,
+  .hover\:bg-cardinal-200:hover,
+  .hover\:bg-red-50:hover
+) {
+  background-color: color-mix(in srgb, var(--dark-cardinal-bg) 78%, rgb(var(--color-surface-hover)));
+}
+body.dark-mode-active :is(.hover\:bg-amber-100:hover,.hover\:bg-orange-100:hover,.hover\:bg-yellow-100:hover) {
+  background-color: color-mix(in srgb, var(--college-bg) 78%, rgb(var(--color-surface-hover)));
+}
+body.dark-mode-active :is(.hover\:bg-sky-100:hover,.hover\:bg-blue-50:hover,.hover\:bg-blue-100:hover) {
+  background-color: color-mix(in srgb, var(--dark-sky-bg) 78%, rgb(var(--color-surface-hover)));
+}
+body.dark-mode-active :is(
+  .hover\:text-gray-600:hover,
+  .hover\:text-gray-700:hover,
+  .hover\:text-gray-800:hover,
+  .hover\:text-gray-900:hover
+) {
+  color: var(--color-text);
+}
+body.dark-mode-active .group:hover :is(.group-hover\:text-gray-400,.group-hover\:text-gray-700) {
+  color: var(--color-text);
+}
+body.dark-mode-active :is(
+  .hover\:text-cardinal-700:hover,
+  .hover\:text-cardinal-800:hover,
+  .hover\:text-red-500:hover,
+  .hover\:text-red-600:hover,
+  .hover\:text-red-700:hover,
+  .hover\:text-rose-700:hover
+) { color: var(--dark-cardinal-text); }
+body.dark-mode-active :is(
+  .hover\:text-blue-600:hover,
+  .hover\:text-blue-800:hover,
+  .hover\:text-indigo-800:hover
+) { color: var(--dark-sky-text); }
+body.dark-mode-active :is(
+  .hover\:text-green-600:hover,
+  .hover\:text-emerald-900:hover
+) { color: var(--dark-teal-text); }
+body.dark-mode-active :is(
+  .hover\:border-gray-300:hover,
+  .hover\:border-gray-500:hover
+) { border-color: var(--color-border-strong); }
+body.dark-mode-active :is(
+  .hover\:border-cardinal-200:hover,
+  .hover\:border-cardinal-300:hover,
+  .hover\:border-cardinal-400:hover
+) { border-color: var(--major-border); }
+body.dark-mode-active .hover\:border-blue-300:hover { border-color: var(--coterm-border); }
+
+/* Print preview is deliberately light even when the planner is dark. The
+   palette itself is supplied by .print-view-light in theme-light.css. */
+body.dark-mode-active .print-view-light {
+  color-scheme: light;
+  color: var(--color-text);
+  background-color: var(--print-background);
+}
+body.dark-mode-active .print-view-light :is(.bg-white,.bg-white\/60,.bg-white\/70,.bg-white\/80) {
+  background-color: rgb(var(--color-surface));
+}
+body.dark-mode-active .print-view-light :is(
+  .bg-gray-50,.bg-gray-50\/40,.bg-gray-50\/50,.bg-gray-50\/60,.bg-gray-50\/80,.bg-gray-100
+) {
+  background-color: rgb(var(--color-surface-muted));
+}
+body.dark-mode-active .print-view-light :is(.bg-gray-200,.bg-gray-300) {
+  background-color: rgb(var(--color-border));
+}
+body.dark-mode-active .print-view-light :is(.bg-gray-700,.bg-gray-800,.bg-gray-900) {
+  color: var(--print-background);
+  background-color: var(--print-text);
+}
+body.dark-mode-active .print-view-light :is(.text-gray-900,.text-gray-800,.text-gray-700) {
+  color: var(--color-text);
+}
+body.dark-mode-active .print-view-light :is(.text-gray-600,.text-gray-500) {
+  color: var(--color-text-muted);
+}
+body.dark-mode-active .print-view-light :is(.text-gray-400,.text-gray-300) {
+  color: var(--color-text-faint);
+}
+body.dark-mode-active .print-view-light :is(.border-gray-100,.border-gray-200,.border-gray-300) {
+  border-color: var(--color-border);
+}
+body.dark-mode-active .print-view-light :is(.bg-cardinal-50,.bg-red-50) {
+  background-color: rgb(var(--tint-cardinal-50));
+}
+body.dark-mode-active .print-view-light :is(.bg-cardinal-100,.bg-red-100) {
+  background-color: rgb(var(--tint-cardinal-100));
+}
+body.dark-mode-active .print-view-light :is(.bg-green-50,.bg-green-50\/40,.bg-green-50\/50,.bg-teal-50) {
+  background-color: rgb(var(--tint-green-50));
+}
+body.dark-mode-active .print-view-light :is(.bg-green-100,.bg-teal-100) {
+  background-color: rgb(var(--tint-green-100));
+}
+body.dark-mode-active .print-view-light :is(.bg-blue-50,.bg-sky-50,.bg-indigo-50) {
+  background-color: rgb(var(--tint-blue-50));
+}
+body.dark-mode-active .print-view-light :is(.bg-blue-100,.bg-sky-100,.bg-indigo-100) {
+  background-color: rgb(var(--tint-blue-100));
+}
+body.dark-mode-active .print-view-light :is(.bg-orange-50,.bg-amber-50,.bg-yellow-50) {
+  background-color: rgb(var(--tint-amber-50));
+}
+body.dark-mode-active .print-view-light :is(.bg-orange-100,.bg-amber-100,.bg-yellow-100) {
+  background-color: rgb(var(--tint-amber-100));
+}
+body.dark-mode-active .print-view-light :is(
+  .text-cardinal-600,.text-cardinal-700,.text-cardinal-800,.text-cardinal-900,
+  .text-red-600,.text-red-700,.text-red-800,.text-red-900
+) { color: var(--color-cardinal-text); }
+body.dark-mode-active .print-view-light :is(.text-green-500,.text-green-600,.text-green-700,.text-green-800) {
+  color: var(--color-success-text);
+}
+body.dark-mode-active .print-view-light :is(.text-blue-600,.text-blue-700,.text-blue-800,.text-sky-600,.text-indigo-600) {
+  color: var(--color-info-text);
+}
+body.dark-mode-active .print-view-light :is(.text-orange-600,.text-orange-700,.text-amber-600,.text-amber-700) {
+  color: var(--color-warning-text);
+}
+body.dark-mode-active .print-view-light :is(
+  .hover\:bg-gray-50:hover,.hover\:bg-gray-100:hover,.hover\:bg-gray-200:hover
+) {
+  background-color: rgb(var(--color-surface-hover));
+}
+body.dark-mode-active .print-view-light :is(input,select,textarea) {
+  color: var(--color-text);
+  background-color: rgb(var(--color-surface-raised));
+  border-color: var(--color-border);
+}
+body.dark-mode-active :is(input,select,textarea) {
+  color: var(--color-text);
+  background-color: rgb(var(--color-surface-raised));
+  border-color: var(--color-border);
+}
+body.dark-mode-active :is(input,textarea)::placeholder { color: var(--color-text-faint); }
+body.dark-mode-active .planner-glass,
+body.dark-mode-active .quarter-glass {
+  background-color: rgb(var(--color-surface) / 0.88) !important;
+  border-color: var(--color-border-warm) !important;
+}
+body.dark-mode-active .quarter-glass.theme-drop-target {
+  border-color: var(--drop-target-border) !important;
+  background-color: rgb(var(--drop-target-bg) / 0.82) !important;
+}
+body.dark-mode-active .planner-chrome {
+  background-color: rgb(var(--color-surface) / 0.88) !important;
+  border-color: var(--color-border) !important;
+}
+body.dark-mode-active .planner-chrome button[data-active="false"] {
+  color: var(--plan-inactive-text);
+}
+body.dark-mode-active .planner-chrome button[data-active="true"] {
+  color: var(--plan-active-text);
+}
+body.dark-mode-active .section-tabs button:not([aria-current="true"]) {
+  color: var(--section-inactive-text);
+}
+body.dark-mode-active .section-tabs button[aria-current="true"] {
+  color: var(--section-active-text);
+}
+
+/* Existing selected-state utilities are deliberately subdued in dark mode. */
+body.dark-mode-active :is(.bg-cardinal-50,.bg-cardinal-100,.bg-red-50,.bg-red-100) {
+  background-color: var(--dark-cardinal-bg);
+}
+body.dark-mode-active :is(.bg-rose-50,.bg-rose-50\/40,.bg-rose-100) {
+  background-color: var(--dark-rose-bg);
+}
+body.dark-mode-active :is(.bg-sky-50,.bg-sky-100,.bg-blue-50,.bg-blue-100,.bg-indigo-50,.bg-indigo-100) {
+  background-color: var(--dark-sky-bg);
+}
+body.dark-mode-active :is(.bg-teal-50,.bg-teal-100,.bg-emerald-50,.bg-emerald-100,.bg-green-50,.bg-green-50\/40,.bg-green-50\/50,.bg-green-100) {
+  background-color: var(--dark-teal-bg);
+}
+body.dark-mode-active :is(.bg-orange-50,.bg-orange-100,.bg-amber-50,.bg-amber-100,.bg-yellow-50,.bg-yellow-100) {
+  background-color: var(--college-bg);
+}
+body.dark-mode-active .requirement-glass {
+  background-image: linear-gradient(rgb(var(--color-surface) / 0.50), rgb(var(--color-surface) / 0.50));
+}
+body.dark-mode-active .requirement-glass.requirement-complete {
+  background-image: linear-gradient(rgb(var(--complete-panel) / 0.28), rgb(var(--complete-panel) / 0.28));
+}
+body.dark-mode-active .solid-ui {
+  color: var(--color-text);
+  background-color: rgb(var(--color-surface-raised));
+}
+body.dark-mode-active .solid-ui :is(.bg-white,.bg-white\/60,.bg-white\/70,.bg-white\/80) {
+  color: var(--color-text);
+  background-color: rgb(var(--color-surface-raised));
+}
+body.dark-mode-active .app-background .solid-ui :is(
+  .bg-gray-50,.bg-gray-50\/40,.bg-gray-50\/50,.bg-gray-50\/60,.bg-gray-50\/80,.bg-gray-100
+) {
+  color: var(--color-text);
+  background-color: rgb(var(--color-surface-muted));
+}
+body.dark-mode-active .app-background .solid-ui :is(.bg-gray-200,.bg-gray-300) {
+  background-color: rgb(var(--color-border));
+}
+
+@media print {
+  body.dark-mode-active,
+  body.dark-mode-active #sp-print-root {
+    color-scheme: light;
+    color: var(--print-text);
+    background: var(--print-background);
+  }
+}

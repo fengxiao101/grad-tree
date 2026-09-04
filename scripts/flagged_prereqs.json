@@ -1,0 +1,3753 @@
+[
+  {
+    "course": "AA 174A",
+    "prereqText": "Prerequisites: CS 106A or equivalent, CME 100 or equivalent (for linear algebra), and CME 106 or equivalent (for probability theory).",
+    "parsedGroups": [
+      [
+        "CS 106A"
+      ],
+      [
+        "CME 100"
+      ],
+      [
+        "CME 106"
+      ]
+    ]
+  },
+  {
+    "course": "AA 214",
+    "prereqText": "Prerequisites: basic knowledge of linear algebra and ODEs (CME 206 or equivalent).",
+    "parsedGroups": [
+      [
+        "CME 206"
+      ]
+    ]
+  },
+  {
+    "course": "AA 242A",
+    "prereqText": "Prerequisite: ENGR 15 or equivalent.",
+    "parsedGroups": [
+      [
+        "ENGR 15"
+      ]
+    ]
+  },
+  {
+    "course": "AA 256",
+    "prereqText": "Prerequisite: AA 156 or ME 80 or equivalent.",
+    "parsedGroups": [
+      [
+        "AA 156",
+        "ME 80"
+      ]
+    ]
+  },
+  {
+    "course": "AA 274A",
+    "prereqText": "Prerequisites: CS 106A or equivalent, CME 100 or equivalent (for linear algebra), and CME 106 or equivalent (for probability theory).",
+    "parsedGroups": [
+      [
+        "CS 106A"
+      ],
+      [
+        "CME 100"
+      ],
+      [
+        "CME 106"
+      ]
+    ]
+  },
+  {
+    "course": "AA 279B",
+    "prereqText": "Prerequisites: 279A or equivalent with permission of instructor. Fluency with MATLAB (or another mathematical programming language with 2D and 3D plotting capabilities).",
+    "parsedGroups": [
+      [
+        "AA 279A"
+      ]
+    ]
+  },
+  {
+    "course": "ANES 300A",
+    "prereqText": "PREREQUISITES: A major clerkship in medicine or surgery is strongly recommended. PERIODS AVAILABLE: 3-12, full-time for 2 weeks. 5 students per period. CLERKSHIP DIRECTOR: Patrick Sullivan, M.D., psulliv@stanford.edu and Lei Xu, M.D., leixu@stanford.edu. CLERKSHIP COORDINATOR: Yun Tao, yuntao@stanford.edu, 650-724-1706, H-3586, Stanford Hospital. REPORTING INSTRUCTIONS: Where: TBA (Coordinate with Yun Tao); Time: Mon 7:45am.",
+    "parsedGroups": [
+      [
+        "ANES 12"
+      ],
+      [
+        "ANES 650"
+      ],
+      [
+        "ANES 724"
+      ],
+      [
+        "MON 7"
+      ],
+      [
+        "ANES 45AM"
+      ]
+    ]
+  },
+  {
+    "course": "ANES 300B",
+    "prereqText": "PREREQUISITES: A major clerkship in medicine or surgery is strongly recommended. PERIODS AVAILABLE: 3B-12, full-time for 2 weeks, 2 students per period. CLERKSHIP DIRECTOR: Deborah Jeon, M.D., Deborah.Jeon@va.gov. CLERKSHIP COORDINATOR: Yun Tao (650-724-1706), H-3583, Stanford Hospital. REPORTING INSTRUCTIONS: Where: PAVAHCS, Building 101, Room A3-205, 3rd Floor; Time: 8:30 am. CALL CODE: 0. OTHER FACULTY: VAPAMC Anesthesia Faculty.",
+    "parsedGroups": [
+      [
+        "ANES 12"
+      ],
+      [
+        "ANES 650"
+      ],
+      [
+        "ANES 724"
+      ],
+      [
+        "BUILDING 101"
+      ],
+      [
+        "ANES 205"
+      ],
+      [
+        "ANES 30"
+      ]
+    ]
+  },
+  {
+    "course": "ANES 300C",
+    "prereqText": "PREREQUISITES: A major clerkship in medicine or surgery is strongly recommended. PERIODS AVAILABLE: 1-12, full-time for 2 weeks or 4 weeks. 1 student per period. CLERKSHIP DIRECTOR: Mark Lin, M.D. (408-885-2604), mark.lin@hhs.sccgov.org. CLERKSHIP COORDINATOR: Yun Tao (650-724-1706), H-3580, Stanford Hospital. REPORTING INSTRUCTIONS: Where: SCVMC Department of Anesthesia Room 2M106, Kit Hardin (408) 885-3109; Time: 8:00 am.",
+    "parsedGroups": [
+      [
+        "ANES 12"
+      ],
+      [
+        "ANES 408"
+      ],
+      [
+        "ANES 885"
+      ],
+      [
+        "ANES 650"
+      ],
+      [
+        "ANES 724"
+      ]
+    ]
+  },
+  {
+    "course": "ANES 300E",
+    "prereqText": "PREREQUISITES: A major clerkship in medicine or surgery is strongly recommended. PERIODS AVAILABLE: 1-12, full-time for 2 weeks. 1 student per period. CLERKSHIP DIRECTOR: Kurt Fink, M.D., kfink75@gmail.com. CLERKSHIP COORDINATOR: Yun Tao, 650-724-1706, yuntao@stanford.edu, Stanford Hospital. REPORTING INSTRUCTIONS: Where: Contact Dr. Kurt Fink one week prior; Time: TBA. CALL CODE: 0. OTHER FACULTY: Palo Alto Medical Clinic Anesthesiologist.",
+    "parsedGroups": [
+      [
+        "ANES 12"
+      ],
+      [
+        "KFINK 75"
+      ],
+      [
+        "ANES 650"
+      ],
+      [
+        "ANES 724"
+      ]
+    ]
+  },
+  {
+    "course": "ANES 300P",
+    "prereqText": "PREREQUISITES: Anes 300A. PERIODS AVAILABLE: 1-12, full-time for 2 weeks, 1 student per 2 week period. Please note: students who wish to do this clerkship MUST get pre-approval from Yun Tao, yuntao@stanford.edu. CLERKSHIP DIRECTOR: Asheen Rama, M.D. CLERKSHIP COORDINATOR: Yun Tao, 650-724- 1706, H-3583, Stanford Hospital. REPORTING INSTRUCTIONS: Where: Students should get in touch with the clerkship site director, Dr.",
+    "parsedGroups": [
+      [
+        "ANES 300A"
+      ],
+      [
+        "ANES 12"
+      ],
+      [
+        "PER 2"
+      ],
+      [
+        "ANES 650"
+      ],
+      [
+        "ANES 724"
+      ]
+    ]
+  },
+  {
+    "course": "ANES 302A",
+    "prereqText": "PREREQUISITES: Six months of clinical clerkships, preferably including Anesthesia 300A, 300B, 300C, or 300D. PERIODS AVAILABLE: 1-12, full-time for 2 weeks. 1 student per period. CLERKSHIP DIRECTOR: Dominique Arce, M.D., darce@stanford.edu. CLERKSHIP COORDINATOR: Yun Tao (650-724-1706), H-3583, Stanford Hospital. REPORTING INSTRUCTIONS: Where: Delivery Room (must be arranged in advance with Dr. Dominique Arce); Time: 7:00 am.",
+    "parsedGroups": [
+      [
+        "ANESTHESIA 300A"
+      ],
+      [
+        "ANESTHESIA 300B"
+      ],
+      [
+        "ANESTHESIA 300C"
+      ],
+      [
+        "ANES 300C",
+        "ANES 300D"
+      ],
+      [
+        "ANES 12"
+      ],
+      [
+        "ANES 650"
+      ],
+      [
+        "ANES 724"
+      ]
+    ]
+  },
+  {
+    "course": "ANES 304A",
+    "prereqText": "PREREQUISITES: Clinical experience. PERIODS AVAILABLE: 1-12, full time for 2 weeks or 4 weeks, 1-2 students per period. CLERKSHIP DIRECTORS: Natacha Telusca, M.D., ntelusca@stanford.edu. CLERKSHIP COORDINATOR: Yun Tao, 650-724-1706, yuntao@stanford.edu. REPORTING INSTRUCTIONS: Where: Contact Maria Preciado at maria19@stanford.edu for instructions/directions; Time: 7:00 am. CALL CODE: 0. OTHER FACULTY: Pain Management Faculty.",
+    "parsedGroups": [
+      [
+        "ANES 12"
+      ],
+      [
+        "ANES 650"
+      ],
+      [
+        "ANES 724"
+      ],
+      [
+        "MARIA 19"
+      ]
+    ]
+  },
+  {
+    "course": "ANES 306A",
+    "prereqText": "PREREQUISITES: Med 300A and Surg 300A. PERIODS AVAILABLE: P1-12, full-time for 4 weeks. 8 students per period. CLERKSHIP DIRECTOR: Nicole E. Arkin, M.D. & Tara Ramaswamy, M.D., 650-493-5000 X64452, PAVAMC (112A), Building 101, Room A-321. CLERKSHIP COORDINATOR: Bernadette F. Carvalho, berniec@stanford.edu. REPORTING INSTRUCTIONS: Where: TBA; Time: TBA. CALL CODE: 4. OTHER FACULTY: Staff. LOCATION: SUMC, PAVAMC.",
+    "parsedGroups": [
+      [
+        "MED 300A"
+      ],
+      [
+        "SURG 300A"
+      ],
+      [
+        "ANES 12"
+      ],
+      [
+        "ANES 650"
+      ],
+      [
+        "ANES 493"
+      ],
+      [
+        "ANES 112A"
+      ],
+      [
+        "BUILDING 101"
+      ],
+      [
+        "ANES 321"
+      ]
+    ]
+  },
+  {
+    "course": "ANES 306P",
+    "prereqText": "PREREQUISITES: Peds 300A and Surg 300A. PERIODS AVAILABLE: 1-12, full-time for 4 weeks. Maximum 4 students per period (2 PICU, 2 NICU). CLERKSHIP DIRECTOR: Nicole E. Arkin, M.D. & Tara Ramaswamy, M.D., 650-493-5000 X64452, PAVAMC (112A), Building 101, Room A-321. CLERKSHIP COORDINATOR: Bernadette F. Carvalho, berniec@stanford.edu. REPORTING INSTRUCTIONS: Where: PICU: If assigned to Team- A, report to on service Attending physician / PICU fellow in PICU, LPCH Main 420 Team room 4th floor; If assigned to Team-B, report to on service Attending physician / PICU fellow in PICU, LPCH Main 320 Team room 3rd floor, NICU: Report to on service Attending physician / NICU fellow in NICU, LPCH West 2nd floor; Time: 6:00 AM.",
+    "parsedGroups": [
+      [
+        "PEDS 300A"
+      ],
+      [
+        "SURG 300A"
+      ],
+      [
+        "ANES 12"
+      ],
+      [
+        "MAXIMUM 4"
+      ],
+      [
+        "ANES 650"
+      ],
+      [
+        "ANES 493"
+      ],
+      [
+        "ANES 112A"
+      ],
+      [
+        "BUILDING 101"
+      ],
+      [
+        "ANES 321"
+      ],
+      [
+        "MAIN 420"
+      ],
+      [
+        "ROOM 4TH"
+      ],
+      [
+        "MAIN 320"
+      ],
+      [
+        "ROOM 3RD"
+      ],
+      [
+        "WEST 2ND"
+      ]
+    ]
+  },
+  {
+    "course": "ANES 307A",
+    "prereqText": "PREREQUISITES: Anesthesia 300A, 300B, 300C, or 300D plus 6 months of clinical clerkships. PERIODS AVAILABLE: 1-12, full tine for 2 weeks, 2 students per period. CLERKSHIP DIRECTOR: Allen Ninh, M.D. CLERKSHIP COORDINATOR: Yun Tao (650-724-1706), H-3583, Stanford Hospital. REPORTING INSTRUCTIONS: Where: Contact Dr. Allen Ninh and Yun Tao one week prior to confirm time and location. Typically Stanford Hospital operating room front desk; Time: 6:45am.",
+    "parsedGroups": [
+      [
+        "ANESTHESIA 300A"
+      ],
+      [
+        "ANESTHESIA 300B"
+      ],
+      [
+        "ANESTHESIA 300C"
+      ],
+      [
+        "ANES 300C",
+        "ANES 300D"
+      ],
+      [
+        "PLUS 6"
+      ],
+      [
+        "ANES 12"
+      ],
+      [
+        "ANES 650"
+      ],
+      [
+        "ANES 724"
+      ],
+      [
+        "ANES 45AM"
+      ]
+    ]
+  },
+  {
+    "course": "ANES 311A",
+    "prereqText": "PREREQUISITES: ANES 300A (or ANES 300B, 300C, 300D, 300E). PERIODS AVAILABLE: 1A- 1B, 3B-12B, full time for 2 weeks, 1 student per period. CLERKSHIP DIRECTOR: Lei Xu, M.D. CLERKSHIP COORDINATOR: Yun Tao, yuntao@stanford.edu, 650-724-1706, H-3586, Stanford Hospital. REPORTING INSTRUCTIONS: Specific instructions will be sent by the clerkship coordinator. The student will join the regional team at 7:00 AM on Monday in the 500P Hospital Block Bays (Bays 36-40 in perioperative area).",
+    "parsedGroups": [
+      [
+        "ANES 300A"
+      ],
+      [
+        "ANES 300B"
+      ],
+      [
+        "ANES 300C"
+      ],
+      [
+        "ANES 300D"
+      ],
+      [
+        "ANES 300E"
+      ],
+      [
+        "ANES 12B"
+      ],
+      [
+        "ANES 650"
+      ],
+      [
+        "ANES 724"
+      ],
+      [
+        "ANES 500P"
+      ],
+      [
+        "BAYS 36"
+      ],
+      [
+        "ANES 40"
+      ]
+    ]
+  },
+  {
+    "course": "ANES 398A",
+    "prereqText": "PREREQUISITES: Consent of the designated Faculty preceptor. PERIODS AVAILABLE: 3-12. CLERKSHIP DIRECTOR: Patrick Sullivan, M.D., psulliv@stanford.edu, and Lei Xu, M.D., leixu@stanford.edu. CLERKSHIP COORDINATOR: Yun Tao, yuntao@stanford.edu, 650-724-1706, H-3586, Stanford Hospital. REPORTING INSTRUCTIONS: Where: TBA (Coordinate with Yun Tao); Time: TBA. CALL CODE: 2. OTHER FACULTY: Staff. LOCATION: SUMC, PAVAMC, SCVMC, KPMC.",
+    "parsedGroups": [
+      [
+        "ANES 12"
+      ],
+      [
+        "ANES 650"
+      ],
+      [
+        "ANES 724"
+      ]
+    ]
+  },
+  {
+    "course": "BIOE 150",
+    "prereqText": "Prerequisite: CHEMENG 181 or equivalent.",
+    "parsedGroups": [
+      [
+        "CHEMENG 181"
+      ]
+    ]
+  },
+  {
+    "course": "BIOE 279",
+    "prereqText": "Prerequisites: elementary programming background (CS 106A or equivalent) and an introductory course in biology or biochemistry.",
+    "parsedGroups": [
+      [
+        "CS 106A"
+      ]
+    ]
+  },
+  {
+    "course": "BIOE 355",
+    "prereqText": "Prerequisite: CHEMENG 181 (formerly 188) or BIOSCI 41, or equivalent.",
+    "parsedGroups": [
+      [
+        "CHEMENG 181"
+      ],
+      [
+        "FORMERLY 188"
+      ],
+      [
+        "BIOSCI 41"
+      ]
+    ]
+  },
+  {
+    "course": "BMDS 210",
+    "prereqText": "Prerequisites: CS106A or equivalent. Basic familiarity with programming, probability, and logic are helpful for taking this course.",
+    "parsedGroups": [
+      [
+        "CS 106A"
+      ]
+    ]
+  },
+  {
+    "course": "BMDS 215",
+    "prereqText": "Prerequisites: CS 106A or equivalent, STATS 60 or equivalent. Recommended: STATS 216, CS 145, STATS 305NOTE: For students in the Department of Biomedical Data Science Program, this core course MUST be taken as a letter grade only.",
+    "parsedGroups": [
+      [
+        "CS 106A"
+      ],
+      [
+        "STATS 60"
+      ]
+    ]
+  },
+  {
+    "course": "BMDS 221",
+    "prereqText": "Prerequisites: CS106A or equivalent, Stats 60 or equivalent.",
+    "parsedGroups": [
+      [
+        "CS 106A"
+      ],
+      [
+        "STATS 60"
+      ]
+    ]
+  },
+  {
+    "course": "CEE 146S",
+    "prereqText": "Prerequisites: MATH 19 or 20 or approved equivalent.)",
+    "parsedGroups": [
+      [
+        "MATH 19"
+      ],
+      [
+        "MATH 20"
+      ]
+    ]
+  },
+  {
+    "course": "CEE 154",
+    "prereqText": "Prerequisites: CS106A, CME 100/Math51, Stats110/101, or equivalent.",
+    "parsedGroups": [
+      [
+        "CS 106A"
+      ],
+      [
+        "CME 100"
+      ],
+      [
+        "MATH 51"
+      ],
+      [
+        "STATS 110"
+      ]
+    ]
+  },
+  {
+    "course": "CEE 162E",
+    "prereqText": "Prerequisite: CEE 101B or equivalent.",
+    "parsedGroups": [
+      [
+        "CEE 101B"
+      ]
+    ]
+  },
+  {
+    "course": "CEE 166B",
+    "prereqText": "Prerequisite: CEE 101B or equivalent.",
+    "parsedGroups": [
+      [
+        "CEE 101B"
+      ]
+    ]
+  },
+  {
+    "course": "CEE 223",
+    "prereqText": "Pre-requisites: CEE 101A or equivalent. Knowledge of structural design with reinforced concrete and steel recommended.",
+    "parsedGroups": [
+      [
+        "CEE 101A"
+      ]
+    ]
+  },
+  {
+    "course": "CEE 260C",
+    "prereqText": "Prerequisite: Physical Hydrogeology ESS 220 / CEE 260A (Gorelick) or equivalent and college-level course work in chemistry.",
+    "parsedGroups": [
+      [
+        "ESS 220"
+      ],
+      [
+        "CEE 260A"
+      ]
+    ]
+  },
+  {
+    "course": "CEE 262C",
+    "prereqText": "Prerequisites: CEE 262A, CME 206, or equivalent.",
+    "parsedGroups": [
+      [
+        "CEE 262A"
+      ],
+      [
+        "CME 206"
+      ]
+    ]
+  },
+  {
+    "course": "CEE 266F",
+    "prereqText": "Prerequisites: CEE 266A or equivalent and a class in probability and/or statistics.",
+    "parsedGroups": [
+      [
+        "CEE 266A"
+      ]
+    ]
+  },
+  {
+    "course": "CEE 278A",
+    "prereqText": "Prerequisites: MATH 51 or equivalent. Recommended: 101B, CHEM 31A, or equivalents.",
+    "parsedGroups": [
+      [
+        "MATH 51"
+      ]
+    ]
+  },
+  {
+    "course": "CEE 282",
+    "prereqText": "Prerequisites: 280 and an advanced course in structural behavior (e.g., 285A, 285B or equivalent).",
+    "parsedGroups": [
+      [
+        "CEE 280"
+      ],
+      [
+        "CEE 285A"
+      ],
+      [
+        "CEE 285B"
+      ]
+    ]
+  },
+  {
+    "course": "CEE 285B",
+    "prereqText": "Prerequisite: basic course in structural steel design CEE182 or equivalent.",
+    "parsedGroups": [
+      [
+        "CEE 182"
+      ]
+    ]
+  },
+  {
+    "course": "CEE 286",
+    "prereqText": "Prerequisites: CEE 203/CEE 254, CEE 283, CS 106A/X or equivalent",
+    "parsedGroups": [
+      [
+        "CEE 203"
+      ],
+      [
+        "CEE 254"
+      ],
+      [
+        "CEE 283"
+      ],
+      [
+        "CS 106A"
+      ]
+    ]
+  },
+  {
+    "course": "CEE 293",
+    "prereqText": "Prerequisite: 101C or equivalent.",
+    "parsedGroups": [
+      [
+        "CEE 101C"
+      ]
+    ]
+  },
+  {
+    "course": "CEE 297M",
+    "prereqText": "Prerequisite: CEE 203 or equivalent)",
+    "parsedGroups": [
+      [
+        "CEE 203"
+      ]
+    ]
+  },
+  {
+    "course": "CEE 310",
+    "prereqText": "Prerequisite: CEE 281, CEE 291, or equivalent",
+    "parsedGroups": [
+      [
+        "CEE 281"
+      ],
+      [
+        "CEE 291"
+      ]
+    ]
+  },
+  {
+    "course": "CEE 324",
+    "prereqText": "prerequisites: CEE100 or equivalent.",
+    "parsedGroups": [
+      [
+        "CEE 100"
+      ]
+    ]
+  },
+  {
+    "course": "CEE 362A",
+    "prereqText": "Prerequisite: Basic probability and statistics at the level of CME 106 or equivalent.",
+    "parsedGroups": [
+      [
+        "CME 106"
+      ]
+    ]
+  },
+  {
+    "course": "CEE 363J",
+    "prereqText": "Prerequisite: CEE262A or equivalent",
+    "parsedGroups": [
+      [
+        "CEE 262A"
+      ]
+    ]
+  },
+  {
+    "course": "CHEM 174",
+    "prereqText": "Prerequisites: CHEM 171 or equivalent.",
+    "parsedGroups": [
+      [
+        "CHEM 171"
+      ]
+    ]
+  },
+  {
+    "course": "CHEM 251",
+    "prereqText": "Prerequisite: advanced undergrad-level inorganic course (equivalent to CHEM 153).",
+    "parsedGroups": [
+      [
+        "CHEM 153"
+      ]
+    ]
+  },
+  {
+    "course": "CHEM 273",
+    "prereqText": "Prerequisites: either CHEM 173 or CHEM 171 for students who took CHEM 171 in Spring 2021 or later, or equivalent course.",
+    "parsedGroups": [
+      [
+        "CHEM 173",
+        "CHEM 171"
+      ],
+      [
+        "CHEM 171"
+      ]
+    ]
+  },
+  {
+    "course": "CHEM 275",
+    "prereqText": "Prerequisite: CHEM 271 or equivalent quantum mechanics course.",
+    "parsedGroups": [
+      [
+        "CHEM 271"
+      ]
+    ]
+  },
+  {
+    "course": "CHEMENG 345",
+    "prereqText": "Prerequisites: CME 104 or an equivalent intro to partial differential equations; CHEMENG 110A or CHEM 171 or an equivalent intro to physical chemistry.",
+    "parsedGroups": [
+      [
+        "CME 104"
+      ],
+      [
+        "CHEMENG 110A",
+        "CHEM 171"
+      ]
+    ]
+  },
+  {
+    "course": "CHEMENG 468",
+    "prereqText": "Prerequisite: Graduate level equilibrium statistical mechanics, or equivalent of CHEMENG 340.",
+    "parsedGroups": [
+      [
+        "CHEMENG 340"
+      ]
+    ]
+  },
+  {
+    "course": "CHINA 105",
+    "prereqText": "Prerequisite: CHINLANG 23 or equivalent.",
+    "parsedGroups": [
+      [
+        "CHINLANG 23"
+      ]
+    ]
+  },
+  {
+    "course": "CHINA 106",
+    "prereqText": "Prerequisite: CHINA 105/205 or equivalent.",
+    "parsedGroups": [
+      [
+        "CHINA 105"
+      ],
+      [
+        "CHINA 205"
+      ]
+    ]
+  },
+  {
+    "course": "CHINA 107",
+    "prereqText": "Prerequisite: CHINLANG 126/206 or equivalent.",
+    "parsedGroups": [
+      [
+        "CHINLANG 126"
+      ],
+      [
+        "CHINLANG 206"
+      ]
+    ]
+  },
+  {
+    "course": "CHINA 191",
+    "prereqText": "Prerequisite: CHINLANG 3 or equivalent, or consent of instructor.",
+    "parsedGroups": [
+      [
+        "CHINLANG 3"
+      ]
+    ]
+  },
+  {
+    "course": "CHINLANG 125",
+    "prereqText": "Prerequisite: Chinlang 103,Chinlang 103B or equivalent (proved by placement test result).",
+    "parsedGroups": [
+      [
+        "CHINLANG 103"
+      ],
+      [
+        "CHINLANG 103B"
+      ]
+    ]
+  },
+  {
+    "course": "CHINLANG 131",
+    "prereqText": "Prerequisite: CHINLANG 103 or equivalent.",
+    "parsedGroups": [
+      [
+        "CHINLANG 103"
+      ]
+    ]
+  },
+  {
+    "course": "CHINLANG 251",
+    "prereqText": "Prerequisite: 213/213B or equivalent and approval of instructor (Email instructor for permission).",
+    "parsedGroups": [
+      [
+        "CHINLANG 213"
+      ],
+      [
+        "CHINLANG 213B"
+      ]
+    ]
+  },
+  {
+    "course": "CHPR 250",
+    "prereqText": "Prerequisite: CHPR 201 or HUMBIO 126/CHPR 226 or equivalent or consent of instructor.",
+    "parsedGroups": [
+      [
+        "CHPR 201",
+        "HUMBIO 126"
+      ],
+      [
+        "CHPR 226"
+      ]
+    ]
+  },
+  {
+    "course": "CLASSICS 2L",
+    "prereqText": "Prerequisite: CLASSICS 1L or equivalent placement.",
+    "parsedGroups": [
+      [
+        "CLASSICS 1L"
+      ]
+    ]
+  },
+  {
+    "course": "CLASSICS 3G",
+    "prereqText": "Prerequisite: CLASSICS 2G or equivalent placement. CLASSICS 3G fulfills University language requirement.",
+    "parsedGroups": [
+      [
+        "CLASSICS 2G"
+      ]
+    ]
+  },
+  {
+    "course": "CLASSICS 3L",
+    "prereqText": "Prerequisite: CLASSICS 2L or equivalent placement. CLASSICS 3L fulfills the University language requirement.",
+    "parsedGroups": [
+      [
+        "CLASSICS 2L"
+      ]
+    ]
+  },
+  {
+    "course": "CME 102",
+    "prereqText": "Prerequisites: Math 21 (preferred), or equivalent (5 on the AP Calculus BC test or suitable score on certain international exams: https://studentservices.stanford.edu/my-academics/earn-my-degree/undergraduate-degree-progress/test-transfer-credit/external-test-2)",
+    "parsedGroups": [
+      [
+        "MATH 21"
+      ]
+    ]
+  },
+  {
+    "course": "CME 106",
+    "prereqText": "Prerequisite: CME100/ENGR154 or Math 51 or 52 or equivalent.",
+    "parsedGroups": [
+      [
+        "CME 100"
+      ],
+      [
+        "ENGR 154",
+        "MATH 51"
+      ],
+      [
+        "MATH 52"
+      ]
+    ]
+  },
+  {
+    "course": "CME 204",
+    "prereqText": "Prerequisite: CME 200/ME 300A, equivalent, or consent of instructor.",
+    "parsedGroups": [
+      [
+        "CME 200"
+      ],
+      [
+        "ME 300A"
+      ]
+    ]
+  },
+  {
+    "course": "CME 345",
+    "prereqText": "Prerequisites: CME 200 or equivalent, CME 263 or equivalent, and basic numerical methods for ODEs.",
+    "parsedGroups": [
+      [
+        "CME 200"
+      ],
+      [
+        "CME 263"
+      ]
+    ]
+  },
+  {
+    "course": "CS 11SI",
+    "prereqText": "Prerequisite: CS 106A or equivalent",
+    "parsedGroups": [
+      [
+        "CS 106A"
+      ]
+    ]
+  },
+  {
+    "course": "CS 41",
+    "prereqText": "Prerequisite: CS106B, CS106X, or equivalent.",
+    "parsedGroups": [
+      [
+        "CS 106B"
+      ],
+      [
+        "CS 106X"
+      ]
+    ]
+  },
+  {
+    "course": "CS 103",
+    "prereqText": "Prerequisite: CS106B or equivalent. CS106B may be taken concurrently with CS103.",
+    "parsedGroups": [
+      [
+        "CS 106B"
+      ]
+    ]
+  },
+  {
+    "course": "CS 106B",
+    "prereqText": "Prerequisite: 106A or equivalent.",
+    "parsedGroups": [
+      [
+        "CS 106A"
+      ]
+    ]
+  },
+  {
+    "course": "CS 106L",
+    "prereqText": "Prerequisite: CS106B or equivalent. CS106L may be taken concurrently with CS106B.",
+    "parsedGroups": [
+      [
+        "CS 106B"
+      ]
+    ]
+  },
+  {
+    "course": "CS 141",
+    "prereqText": "Prerequisite: CS106A (or equivalent Python background) and CS109 (or equivalent probability background). TA sessions will cover use of pandas and other libraries students will use for projects, as well as freely available sports datasets that could be used.",
+    "parsedGroups": [
+      [
+        "CS 106A"
+      ],
+      [
+        "CS 109"
+      ]
+    ]
+  },
+  {
+    "course": "CS 143",
+    "prereqText": "Prerequisites: 103 or 103B, 107 equivalent, or consent from instructor.",
+    "parsedGroups": [
+      [
+        "CS 103",
+        "CS 103B"
+      ],
+      [
+        "CS 107"
+      ]
+    ]
+  },
+  {
+    "course": "CS 146J",
+    "prereqText": "Prerequisites: CS 106B or equivalent programming experience. We expect that you will be comfortable picking up a new programming language quickly.",
+    "parsedGroups": [
+      [
+        "CS 106B"
+      ]
+    ]
+  },
+  {
+    "course": "CS 147",
+    "prereqText": "Prerequisite: 106B or X or equivalent programming experience. Recommended that CS Majors have also taken one of 142, 193P, or 193A.Please note: Less than 5 is only allowed for graduate students.",
+    "parsedGroups": [
+      [
+        "CS 106B"
+      ]
+    ]
+  },
+  {
+    "course": "CS 151",
+    "prereqText": "Prerequisite: CS 106B or equivalent.",
+    "parsedGroups": [
+      [
+        "CS 106B"
+      ]
+    ]
+  },
+  {
+    "course": "CS 190",
+    "prereqText": "Prerequisite: CS 140 or equivalent. Apply at: https://web.stanford.edu/class/cs190",
+    "parsedGroups": [
+      [
+        "CS 140"
+      ]
+    ]
+  },
+  {
+    "course": "CS 193P",
+    "prereqText": "Prerequisites: All coursework (homework and final project) involves writing code, so writing a lot of code should not be new to you (coding experience in almost any language is valuable, but object-oriented (e.g. CS108) and/or functional programming languages (e.g. CS43) are most highly recommended). CS106A and B (or X) and CS107 (or equivalent) are hard prerequisites. Any other courses that help to develop your maturity as a programmer are also recommended.",
+    "parsedGroups": [
+      [
+        "CS 108"
+      ],
+      [
+        "CS 106A"
+      ],
+      [
+        "CS 107"
+      ]
+    ]
+  },
+  {
+    "course": "CS 193X",
+    "prereqText": "Prerequisite: 106B or equivalent.",
+    "parsedGroups": [
+      [
+        "CS 106B"
+      ]
+    ]
+  },
+  {
+    "course": "CS 205L",
+    "prereqText": "Prerequisites: Math 51; Math104 or MATH113 or equivalent or comfort with the associated material.",
+    "parsedGroups": [
+      [
+        "MATH 51"
+      ],
+      [
+        "MATH 104",
+        "MATH 113"
+      ]
+    ]
+  },
+  {
+    "course": "CS 225A",
+    "prereqText": "Prerequisites: 223A or equivalent.",
+    "parsedGroups": [
+      [
+        "CS 223A"
+      ]
+    ]
+  },
+  {
+    "course": "CS 237B",
+    "prereqText": "Prerequisites: CS106A or equivalent, CME 100 or equivalent (for linear algebra), CME 106 or equivalent (for probability theory), and AA 171/274.",
+    "parsedGroups": [
+      [
+        "CS 106A"
+      ],
+      [
+        "CME 100"
+      ],
+      [
+        "CME 106"
+      ],
+      [
+        "AA 171"
+      ],
+      [
+        "AA 274"
+      ]
+    ]
+  },
+  {
+    "course": "CS 240",
+    "prereqText": "Prerequisite: 140 or equivalent.",
+    "parsedGroups": [
+      [
+        "CS 140"
+      ]
+    ]
+  },
+  {
+    "course": "CS 244",
+    "prereqText": "Prerequisite: 144 or equivalent.",
+    "parsedGroups": [
+      [
+        "CS 144"
+      ]
+    ]
+  },
+  {
+    "course": "CS 244C",
+    "prereqText": "Prerequisite: CS144 or equivalent.",
+    "parsedGroups": [
+      [
+        "CS 144"
+      ]
+    ]
+  },
+  {
+    "course": "CS 247A",
+    "prereqText": "Prerequisites: CS147 or equivalent background in design thinking. In the event of a waitlist, acceptance to class based on an application provided on the first day of class.",
+    "parsedGroups": [
+      [
+        "CS 147"
+      ]
+    ]
+  },
+  {
+    "course": "CS 247E",
+    "prereqText": "Prerequisites: CS147 or equivalent background in design thinking. In the event of a waitlist, acceptance to class based on an application provided on the first day of class.",
+    "parsedGroups": [
+      [
+        "CS 147"
+      ]
+    ]
+  },
+  {
+    "course": "CS 247S",
+    "prereqText": "Prerequisites: CS147 or equivalent background in design thinking. In the event of a waitlist, acceptance to class based on an application provided on the first day of class.",
+    "parsedGroups": [
+      [
+        "CS 147"
+      ]
+    ]
+  },
+  {
+    "course": "CS 254",
+    "prereqText": "Prerequisites: 154 or equivalent; mathematical maturity.",
+    "parsedGroups": [
+      [
+        "CS 154"
+      ]
+    ]
+  },
+  {
+    "course": "CS 329D",
+    "prereqText": "Prerequisites: CS229 or equivalent. Recommended: CS229T (or basic knowledge of learning theory).",
+    "parsedGroups": [
+      [
+        "CS 229"
+      ]
+    ]
+  },
+  {
+    "course": "CS 329S",
+    "prereqText": "Pre-requisites: At least one of the following; CS229, CS230, CS231N, CS224N or equivalent. Students should have a good understanding of machine learning algorithms and should be familiar with at least one framework such as TensorFlow, PyTorch, JAX.",
+    "parsedGroups": [
+      [
+        "CS 229"
+      ],
+      [
+        "CS 230"
+      ],
+      [
+        "CS 231N"
+      ],
+      [
+        "CS 224N"
+      ]
+    ]
+  },
+  {
+    "course": "CS 348B",
+    "prereqText": "Prerequisite: 248 or equivalent. Recommended: Fourier analysis or digital signal processing.",
+    "parsedGroups": [
+      [
+        "CS 248"
+      ]
+    ]
+  },
+  {
+    "course": "CS 348K",
+    "prereqText": "Prerequisites: CS 107 or equivalent. Highly recommended: Parallel Computing (CS149) or Computer Architecture (EE 282). Students will benefit from some background in deep learning (CS 230, CS 231N), computer vision (CS 231A), digital image processing (CS 232) or computer graphics (CS248).",
+    "parsedGroups": [
+      [
+        "CS 107"
+      ],
+      [
+        "CS 230"
+      ],
+      [
+        "CS 231N"
+      ],
+      [
+        "CS 231A"
+      ],
+      [
+        "CS 232"
+      ],
+      [
+        "CS 248"
+      ]
+    ]
+  },
+  {
+    "course": "CS 350S",
+    "prereqText": "Prerequisites: Students should have taken CS155 or equivalent.",
+    "parsedGroups": [
+      [
+        "CS 155"
+      ]
+    ]
+  },
+  {
+    "course": "CS 354",
+    "prereqText": "Prerequisites: CS 161 or equivalent. CS 254 recommended but not required.",
+    "parsedGroups": [
+      [
+        "CS 161"
+      ],
+      [
+        "CS 254"
+      ]
+    ]
+  },
+  {
+    "course": "CS 377U",
+    "prereqText": "Prerequisites: CS 147, 193A/193P (or equivalent mobile programming experience).",
+    "parsedGroups": [
+      [
+        "CS 147"
+      ],
+      [
+        "CS 193A"
+      ],
+      [
+        "CS 193P"
+      ]
+    ]
+  },
+  {
+    "course": "CS 422",
+    "prereqText": "Prerequisites: CS229, CS231N, CS234 (or equivalent).",
+    "parsedGroups": [
+      [
+        "CS 229"
+      ],
+      [
+        "CS 231N"
+      ],
+      [
+        "CS 234"
+      ]
+    ]
+  },
+  {
+    "course": "CTS 300A",
+    "prereqText": "PREREQUISITES: Surgery 300A or final-year student. PERIODS AVAILABLE: 1-12. full time for 4 weeks, 2 students per period. CLERKSHIP DIRECTOR: Michael Fischbein, M.D. CLERKSHIP COORDINATOR: Stephanie Harrington, 650-721-2552, CVRB. REPORTING INSTRUCTIONS: Student should contact coordinator prior to arrival; Time: TBA. CALL CODE: 4. OTHER FACULTY: Staff. LOCATION: SUMC.",
+    "parsedGroups": [
+      [
+        "SURGERY 300A"
+      ],
+      [
+        "CTS 12"
+      ],
+      [
+        "CTS 650"
+      ],
+      [
+        "CTS 721"
+      ]
+    ]
+  },
+  {
+    "course": "CTS 301B",
+    "prereqText": "PREREQUISITES: Surgery 300A or equivalent clinical preparation. PERIODS AVAILABLE: 1-12, full time for 4 weeks, 1 student per period. CLERKSHIP DIRECTOR: Tomas Burdon, M.D. CLERKSHIP COORDINATOR: Annie Sandecki, Annie.Sandecki@va.gov. REPORTING INSTRUCTIONS: Where: Veteran Affairs Palo Alto Health Care System, Department: Surgical Service (Building 100, 3rd floor, Room B3-126); Time: 8:00 am. CALL CODE: 0.",
+    "parsedGroups": [
+      [
+        "SURGERY 300A"
+      ],
+      [
+        "CTS 12"
+      ],
+      [
+        "BUILDING 100"
+      ],
+      [
+        "BUILDING 3RD"
+      ],
+      [
+        "CTS 126"
+      ]
+    ]
+  },
+  {
+    "course": "CTS 303A",
+    "prereqText": "PREREQUISITES: Surgery 300A. PERIODS AVAILABLE: 1-12, full time for 4 weeks, 1 student per period. CLERKSHIP DIRECTOR: Joseph B. Shrager, M.D. CLERKSHIP COORDINATOR: Donna Yoshida, 650-721-2086. REPORTING INSTRUCTIONS: Where: Students should contact the coordinator prior to the first day; Time: TBA. CALL CODE: 2 (every fifth night; rounds one morning per weekend). OTHER FACULTY: Staff. LOCATION: SUMC.",
+    "parsedGroups": [
+      [
+        "SURGERY 300A"
+      ],
+      [
+        "CTS 12"
+      ],
+      [
+        "CTS 650"
+      ],
+      [
+        "CTS 721"
+      ]
+    ]
+  },
+  {
+    "course": "CTS 398A",
+    "prereqText": "PREREQUISITES: CTS 300A, consent of the designated faculty preceptor, and approval by an Associate Dean for Student Affairs. PERIODS AVAILABLE: 1-12, full time for 4 weeks, 1 student per period. CLERKSHIP DIRECTOR: Michael Fischbein, M.D. CLERKSHIP COORDINATOR: Stephanie Harrington, 650-721-2552. REPORTING INSTRUCTIONS: Where: TBA; Time: TBA. CALL CODE: 4. OTHER FACULTY: Staff. LOCATION: SUMC, PAVAMC.",
+    "parsedGroups": [
+      [
+        "CTS 300A"
+      ],
+      [
+        "CTS 12"
+      ],
+      [
+        "CTS 650"
+      ],
+      [
+        "CTS 721"
+      ]
+    ]
+  },
+  {
+    "course": "DATASCI 112",
+    "prereqText": "Prerequisite: CS 106A or equivalent programming experience in Python. (Students with experience in another programming language should take CS 193Q to catch up on Python.)",
+    "parsedGroups": [
+      [
+        "CS 106A"
+      ],
+      [
+        "CS 193Q"
+      ]
+    ]
+  },
+  {
+    "course": "DATASCI 120",
+    "prereqText": "Prerequisite: STATS 191 or equivalent. (WIM)",
+    "parsedGroups": [
+      [
+        "STATS 191"
+      ]
+    ]
+  },
+  {
+    "course": "DERM 300A",
+    "prereqText": "PREREQUISITES: None. PERIODS AVAILABLE: 2-12, full time for 4 weeks, 2 students per period. CLERKSHIP DIRECTOR: Andrea Nadine Hinton, M.D. & Gina Kwon, M.D. CLERKSHIP COORDINATOR: Madison Siemers, msiemers@stanford.edu. REPORTING INSTRUCTIONS: Where: 450 Broadway, Pavilion C, Redwood City, CA 94063; 751 S. Bascom Avenue, San Jose, CA 95128; 770 Welch Road, Suite 300, Palo Alto, CA 94304-5486; Time: 8:00 am.",
+    "parsedGroups": [
+      [
+        "DERM 12"
+      ],
+      [
+        "DERM 450"
+      ],
+      [
+        "DERM 751"
+      ],
+      [
+        "DERM 770"
+      ],
+      [
+        "SUITE 300"
+      ]
+    ]
+  },
+  {
+    "course": "DERM 310B",
+    "prereqText": "PREREQUISITES: Dermatology 300A for Stanford medical students and an equivalent intro dermatology course for outside rotators. PERIODS AVAILABLE: 2-12, full time for 4 weeks. 2 students per period. CLERKSHIP DIRECTOR: Matthew Lewis, M.D. & Jennifer Chen, M.D. CLERKSHIP COORDINATOR: Madison Siemers, msiemers@stanford.edu. REPORTING INSTRUCTIONS: Where: Palo Alto VA, 3801 Miranda Avenue, Palo Alto, CA 94304, Bldg.",
+    "parsedGroups": [
+      [
+        "DERM 300A"
+      ],
+      [
+        "DERM 12"
+      ]
+    ]
+  },
+  {
+    "course": "DERM 311A",
+    "prereqText": "PREREQUISITES: DERM 300A. PERIODS AVAILABLE: 1-12, full time for 2 or 4 weeks. 1 student per period. CLERKSHIP DIRECTOR: Ilka Arun Netravali, M.D., Ph.D. & Joyce Teng, M.D., Ph.D. (Co-Directors). CLERKSHIP COORDINATOR: Alesha Norton, derm_visitorsprogram@stanford.edu, 650-796-3912. REPORTING INSTRUCTIONS: Where: 730 Welch Road,1st Floor, Palo Alto, CA 94304; Time: details regarding schedule will be provided before rotation.",
+    "parsedGroups": [
+      [
+        "DERM 300A"
+      ],
+      [
+        "DERM 12"
+      ],
+      [
+        "DERM 650"
+      ],
+      [
+        "DERM 796"
+      ],
+      [
+        "DERM 730"
+      ]
+    ]
+  },
+  {
+    "course": "ECON 39",
+    "prereqText": "Prerequisites: ECON 102A or any equivalent stats course. Enrollment in this course is by application only. Interested students should apply through the Undergraduate Forms page on the Economics Department Website:https://economics.stanford.edu/undergraduate/forms.",
+    "parsedGroups": [
+      [
+        "ECON 102A"
+      ]
+    ]
+  },
+  {
+    "course": "ECON 102A",
+    "prereqText": "Prerequisite: MATH 20 or equivalent. Students should enroll in the lecture section ONLY. Discussion sections will be assigned later. Department consent is required for the discussion section enrollment. This is a core requirement for the ECON BA program. Approved field credit for the ECON Minor program.",
+    "parsedGroups": [
+      [
+        "MATH 20"
+      ]
+    ]
+  },
+  {
+    "course": "ECON 102B",
+    "prereqText": "Prerequisites: Econ 102A or equivalent. Recommended: computer experience (course often uses STATA software to run regressions). This is a core requirement for the ECON BA and ECON BS programs. Approved field credit for the ECON Minor program.",
+    "parsedGroups": [
+      [
+        "ECON 102A"
+      ]
+    ]
+  },
+  {
+    "course": "ECON 242",
+    "prereqText": "Prerequisites: Econ 202, 203, 204, 210 or equivalent with consent of instructor. Recommended: Econ 241.270, 271, or equivalent with consent of instructor.",
+    "parsedGroups": [
+      [
+        "ECON 202"
+      ],
+      [
+        "ECON 203"
+      ],
+      [
+        "ECON 204"
+      ],
+      [
+        "ECON 210"
+      ]
+    ]
+  },
+  {
+    "course": "EE 264W",
+    "prereqText": "Prerequisites: EE 102A and EE 102B or equivalent, basic programming skills (Matlab and C++)",
+    "parsedGroups": [
+      [
+        "EE 102A"
+      ],
+      [
+        "EE 102B"
+      ]
+    ]
+  },
+  {
+    "course": "EE 267W",
+    "prereqText": "Prerequisites: Strong programming skills, ENGR 108 or equivalent. Helpful: basic computer graphics / OpenGL.",
+    "parsedGroups": [
+      [
+        "ENGR 108"
+      ]
+    ]
+  },
+  {
+    "course": "EMED 301A",
+    "prereqText": "PREREQUISITES: None. PERIODS AVAILABLE: 1-12, full time for 4 weeks, 10 students per period. CLERKSHIP DIRECTOR: Moises Gallegos, M.D., moisesg@stanford.edu and Matthew Kenneth Schoen, M.D., mschoen7@stanford.edu. CLERKSHIP COORDINATOR: Maria Alfonso, 650-497-6702, malfonso@stanford.edu. REPORTING INSTRUCTIONS: Where: The students are notified prior to the first day of the clerkship; Time: TBA. CALL CODE: 2-Other, see comment for explanation.",
+    "parsedGroups": [
+      [
+        "EMED 12"
+      ],
+      [
+        "EMED 10"
+      ],
+      [
+        "EMED 650"
+      ],
+      [
+        "EMED 497"
+      ]
+    ]
+  },
+  {
+    "course": "EMED 312A",
+    "prereqText": "PREREQUISITES: None. PERIODS AVAILABLE: P4- 12, full time for 2 or 4 weeks. 1 students per period. CLERKSHIP DIRECTORS: Brittany Boswell, M.D., bboswell@stanford.edu and Guillermo Alberto De Angulo, M.D., gadeangu@stanford.edu. CLERKSHIP COORDINATOR: Kristen Kayser, kkayser@stanford.edu, 650-497-3058. REPORTING INSTRUCTIONS: Where: Stanford Hospital; Time: TBA. CALL CODE: 0. OTHER FACULTY: Staff. LOCATION: SUMC.",
+    "parsedGroups": [
+      [
+        "EMED 12"
+      ],
+      [
+        "EMED 650"
+      ],
+      [
+        "EMED 497"
+      ]
+    ]
+  },
+  {
+    "course": "EMED 398A",
+    "prereqText": "PREREQUISITES: Core clerkships in Emergency Medicine, Internal Medicine, Surgery, and Pediatrics. PERIODS AVAILABLE: 4-12, full time for 4 weeks, 2 students per period. CLERKSHIP DIRECTOR: Moises Gallegos, M.D., moisesg@stanford.edu. CLERKSHIP COORDINATOR: Kristen Kayser, kkayser@stanford.edu and Maria Alfonso, malfonso@stanford.edu, department phone number: 650-723-6576. REPORTING INSTRUCTIONS: Where: TBA; Time: TBA.",
+    "parsedGroups": [
+      [
+        "EMED 12"
+      ],
+      [
+        "EMED 650"
+      ],
+      [
+        "EMED 723"
+      ]
+    ]
+  },
+  {
+    "course": "ENERGY 160",
+    "prereqText": "Prerequisites: algebra (CME 104 or equivalent), introductory statistics course (CME 106 or equivalent).",
+    "parsedGroups": [
+      [
+        "CME 104"
+      ],
+      [
+        "CME 106"
+      ]
+    ]
+  },
+  {
+    "course": "EPI 227",
+    "prereqText": "Prerequisites: EPI 225, EPI 226, and EPI 261 or equivalent (or permission of instructor).",
+    "parsedGroups": [
+      [
+        "EPI 225"
+      ],
+      [
+        "EPI 226"
+      ],
+      [
+        "EPI 261"
+      ]
+    ]
+  },
+  {
+    "course": "EPI 270",
+    "prereqText": "Prerequisites: EPI 258/259 (or equivalent statistics course, please contact instructor for approval). Students must have some experience in statistical programming in SAS or R.",
+    "parsedGroups": [
+      [
+        "EPI 258"
+      ],
+      [
+        "EPI 259"
+      ]
+    ]
+  },
+  {
+    "course": "EPS 230",
+    "prereqText": "Prerequisites: Physics 41 (or equivalent) and CME 100. Change of Department Name: Earth and Planetary Science (Formerly Geologic Sciences).",
+    "parsedGroups": [
+      [
+        "PHYSICS 41"
+      ],
+      [
+        "CME 100"
+      ]
+    ]
+  },
+  {
+    "course": "FAMMED 364E",
+    "prereqText": "PREREQUISITES: FAMMED 301A, MED 300A, PEDS 300A. Fourth year students only. PERIODS AVAILABLE: 1-12, full-time for 4 weeks. 3 students per period. CLERKSHIP DIRECTOR: Michelle Engle, M.D. CLERKSHIP COORDINATOR: Diep Nguyen, 408-283-7767. REPORTING INSTRUCTIONS: Where: Program Office, 455 O'Connor Drive, Ste 250, San Jose, CA 95128; Time: 8:30 am. CALL CODE: Required. OTHER FACULTY: Staff. LOCATION: O'Connor Hospital, Santa Clara County resident clinic, Stanford Medicine Partners Primary Care San Jose O'Connor clinic.",
+    "parsedGroups": [
+      [
+        "FAMMED 301A"
+      ],
+      [
+        "MED 300A"
+      ],
+      [
+        "PEDS 300A"
+      ],
+      [
+        "FAMMED 12"
+      ],
+      [
+        "FAMMED 408"
+      ],
+      [
+        "FAMMED 283"
+      ],
+      [
+        "FAMMED 455"
+      ],
+      [
+        "STE 250"
+      ],
+      [
+        "FAMMED 30"
+      ]
+    ]
+  },
+  {
+    "course": "FAMMED 398A",
+    "prereqText": "PREREQUISITES: None. PERIODS AVAILABLE: 1-12, full time for 4 weeks, 1 student per period, 2 students for period 3 ONLY. CLERKSHIP DIRECTOR: Tamara Montacute, M.D., tamaram@stanford.edu. CLERKSHIP COORDINATOR: Natalie Gonzalez, natg@stanford.edu, 650-723-9621. REPORTING INSTRUCTIONS: Where: TBA, designated by faculty preceptor; Time: TBA. CALL CODE: 0. OTHER FACULTY: Staff. LOCATION: SUMC, PAVAMC, SCVMC.",
+    "parsedGroups": [
+      [
+        "FAMMED 12"
+      ],
+      [
+        "PERIOD 3"
+      ],
+      [
+        "FAMMED 650"
+      ],
+      [
+        "FAMMED 723"
+      ]
+    ]
+  },
+  {
+    "course": "FRENLANG 120",
+    "prereqText": "Prerequisites: FRENLANG 22C or 23C or equivalent.",
+    "parsedGroups": [
+      [
+        "FRENLANG 22C"
+      ],
+      [
+        "FRENLANG 23C"
+      ]
+    ]
+  },
+  {
+    "course": "GEOPHYS 287",
+    "prereqText": "Prerequisites: GEOPHYS 130 or equivalent. Offered every other year.",
+    "parsedGroups": [
+      [
+        "GEOPHYS 130"
+      ]
+    ]
+  },
+  {
+    "course": "HUMBIO 135",
+    "prereqText": "Prerequisite: HUMBIO 4A or equivalent or permission of instructor. Explore the amazing capacity of your body to move and adapt within your everyday world. You will learn: how your body systems respond to the stress of acute exercise and adapt to chronic exercise training, how your cardiovascular system adapts to optimize oxygen delivery and utilization, how your muscles generate force and hypertrophy in response to training, and how your metabolic/biochemical pathways are regulated to support the increased energy demand of exercise.",
+    "parsedGroups": [
+      [
+        "HUMBIO 4A"
+      ]
+    ]
+  },
+  {
+    "course": "LAW 7825",
+    "prereqText": "Prerequisite: Negotiation Seminar or its substantial equivalent, as assessed by the instructor. This class is limited to 20 students, 16 from SLS selected by lottery with room for 4 non-law students by consent of instructor.",
+    "parsedGroups": [
+      [
+        "LAW 20"
+      ],
+      [
+        "LAW 16"
+      ]
+    ]
+  },
+  {
+    "course": "LINGUIST 130B",
+    "prereqText": "Prerequisites: SYMSYS1, LINGUIST1, LINGUIST35, or equivalent or permission of the instructor. LINGUIST 130A is not a prerequisite for this course.",
+    "parsedGroups": [
+      [
+        "SYMSYS 1"
+      ],
+      [
+        "LINGUIST 130A"
+      ]
+    ]
+  },
+  {
+    "course": "LINGUIST 160",
+    "prereqText": "Prerequisite: LINGUIST 1 (or equivalent)",
+    "parsedGroups": [
+      [
+        "LINGUIST 1"
+      ]
+    ]
+  },
+  {
+    "course": "LINGUIST 256",
+    "prereqText": "Prerequisites: LING 250 and 110 or the equivalent.",
+    "parsedGroups": [
+      [
+        "LING 250"
+      ],
+      [
+        "LINGUIST 110"
+      ]
+    ]
+  },
+  {
+    "course": "MATH 52",
+    "prereqText": "Prerequisite: Math 21 and Math 51 or equivalents. Math 52 is considered equivalent to Math 62CM, and credit will not be granted for both courses.",
+    "parsedGroups": [
+      [
+        "MATH 21"
+      ],
+      [
+        "MATH 51"
+      ]
+    ]
+  },
+  {
+    "course": "MATH 53",
+    "prereqText": "Prerequisite: Math 21 and Math 51, or equivalents. Math 53 is considered equivalent to Math 63CM, and credit will not be granted for both courses.",
+    "parsedGroups": [
+      [
+        "MATH 21"
+      ],
+      [
+        "MATH 51"
+      ]
+    ]
+  },
+  {
+    "course": "MATH 62CM",
+    "prereqText": "Prerequisites: Math 61CM. Math 62CM is considered equivalent to Math 52, and credit will not be granted for both courses.",
+    "parsedGroups": [
+      [
+        "MATH 61CM"
+      ]
+    ]
+  },
+  {
+    "course": "MATH 63CM",
+    "prereqText": "Prerequisite: Math 61CM or Math 61DM. Math 63CM is considered equivalent to Math 53, and credit will not be granted for both courses.",
+    "parsedGroups": [
+      [
+        "MATH 61CM",
+        "MATH 61DM"
+      ]
+    ]
+  },
+  {
+    "course": "MATH 147",
+    "prereqText": "Prerequisites: Math 144 or equivalent.",
+    "parsedGroups": [
+      [
+        "MATH 144"
+      ]
+    ]
+  },
+  {
+    "course": "MATH 151",
+    "prereqText": "Prerequisite: Math 61CM, or Math 52 and either Math 56 or Math 115 (or equivalent).",
+    "parsedGroups": [
+      [
+        "MATH 61CM",
+        "MATH 52"
+      ],
+      [
+        "MATH 56",
+        "MATH 115"
+      ]
+    ]
+  },
+  {
+    "course": "MATH 173",
+    "prereqText": "Prerequisite: Math 171 or equivalent.",
+    "parsedGroups": [
+      [
+        "MATH 171"
+      ]
+    ]
+  },
+  {
+    "course": "MATH 236",
+    "prereqText": "Prerequisite: Math 136 or equivalent and basic familiarity with parabolic partial differential equations.",
+    "parsedGroups": [
+      [
+        "MATH 136"
+      ]
+    ]
+  },
+  {
+    "course": "MATH 238",
+    "prereqText": "Prerequisite: Math 136 or equivalent.",
+    "parsedGroups": [
+      [
+        "MATH 136"
+      ]
+    ]
+  },
+  {
+    "course": "MATSCI 162",
+    "prereqText": "Prerequisites: MATSCI 143 or equivalent course in materials characterization.Corequisites: MATSCI131 (Contact the instructor if you would like to enroll without completion of the stated prerequisites. A permission code will be provided with instructor approval)",
+    "parsedGroups": [
+      [
+        "MATSCI 143"
+      ],
+      [
+        "MATSCI 131"
+      ]
+    ]
+  },
+  {
+    "course": "MATSCI 165",
+    "prereqText": "Prerequisites: Undergraduate physics and MATSCI 145 or equivalent coursework in thermodynamics. Corequisites: MATSCI131 (Contact the instructor if you would like to enroll without completion of the stated prerequisites. A permission code will be provided with instructor approval)",
+    "parsedGroups": [
+      [
+        "MATSCI 145"
+      ],
+      [
+        "MATSCI 131"
+      ]
+    ]
+  },
+  {
+    "course": "MATSCI 190",
+    "prereqText": "Prerequisite: Thermodynamics and ENGR 50 or equivalent. Undergraduates register for 190 for 4 units; graduates register for 210 for 3 units.",
+    "parsedGroups": [
+      [
+        "ENGR 50"
+      ]
+    ]
+  },
+  {
+    "course": "MATSCI 199",
+    "prereqText": "Prerequisite: MATSCI 195/205 or equivalent. Undergraduates register for 199 for 4 units; graduates register for 209 for 3 units.",
+    "parsedGroups": [
+      [
+        "MATSCI 195"
+      ],
+      [
+        "MATSCI 205"
+      ]
+    ]
+  },
+  {
+    "course": "ME 242B",
+    "prereqText": "Prerequisites: AA 242A or equivalent (recommended but not required); basic knowledge of linear algebra and ODEs; no prior knowledge of structural dynamics is assumed.",
+    "parsedGroups": [
+      [
+        "AA 242A"
+      ]
+    ]
+  },
+  {
+    "course": "ME 318",
+    "prereqText": "Prerequisite: ME103 or equivalent and consent of instructor. ME 203 or consent of instructor. By application only, see notes below.",
+    "parsedGroups": [
+      [
+        "ME 103"
+      ],
+      [
+        "ME 203"
+      ]
+    ]
+  },
+  {
+    "course": "ME 364",
+    "prereqText": "Prerequisite: 362A or equivalent.",
+    "parsedGroups": [
+      [
+        "ME 362A"
+      ]
+    ]
+  },
+  {
+    "course": "MED 302A",
+    "prereqText": "PREREQUISITES: MED 300A. PERIODS AVAILABLE: 1-12, full time for 4 weeks, 2 students per period. CLERKSHIP DIRECTOR: Jenny R. Aronson, M.D. CLERKSHIP COORDINATOR: Maria Pilar Pfeiffer, pilarpf@stanford.edu, 408-849-7332. REPORTING INSTRUCTIONS: Where: On the first day of the rotation, page the Stanford general infectious diseases fellow through the Stanford page operator at 650-723-6661; Time: 8:00 AM. CALL CODE: 1.",
+    "parsedGroups": [
+      [
+        "MED 300A"
+      ],
+      [
+        "MED 12"
+      ],
+      [
+        "MED 408"
+      ],
+      [
+        "MED 849"
+      ],
+      [
+        "MED 650"
+      ],
+      [
+        "MED 723"
+      ]
+    ]
+  },
+  {
+    "course": "MED 302B",
+    "prereqText": "PREREQUISITES: MED 300A. PERIODS AVAILABLE: 1-12, full-time for 4 weeks, 2 students per period. CLERKSHIP DIRECTOR: Cybele Renault, M.D. CLERKSHIP COORDINATOR: Jonathan R. Wong, Jonathan.Wong2@va.gov. REPORTING INSTRUCTIONS: Where: On the first day of the rotation, page the Palo Alto VA infectious diseases fellow through the Stanford page operator at 650-723-6661; Time: 8:30 AM. CALL CODE: 1. OTHER FACULTY: A.",
+    "parsedGroups": [
+      [
+        "MED 300A"
+      ],
+      [
+        "MED 12"
+      ],
+      [
+        "WONG 2"
+      ],
+      [
+        "MED 650"
+      ],
+      [
+        "MED 723"
+      ],
+      [
+        "MED 30"
+      ]
+    ]
+  },
+  {
+    "course": "MED 303A",
+    "prereqText": "PREREQUISITES: Medicine 300A. PERIODS AVAILABLE: P1-12, full-time for 4 weeks, 2 students per period. CLERKSHIP DIRECTOR: Stanley Rockson, M.D., 650-725-7571, rockson@stanford.edu. CLERKSHIP COORDINATOR: Nancy D'Amico, ndamico@stanford.edu. REPORTING INSTRUCTIONS: Where: Dr. Rockson, CVRC CV-267; Time: 8:30 am. CALL CODE: 0. OTHER FACULTY: Staff. LOCATION: SUMC.",
+    "parsedGroups": [
+      [
+        "MEDICINE 300A"
+      ],
+      [
+        "MED 12"
+      ],
+      [
+        "MED 650"
+      ],
+      [
+        "MED 725"
+      ],
+      [
+        "MED 267"
+      ],
+      [
+        "MED 30"
+      ]
+    ]
+  },
+  {
+    "course": "MED 303C",
+    "prereqText": "PREREQUISITES: MED 300A. PERIODS AVAILABLE: 1-12, full time for 4 weeks, 1 student per period, available by arrangement only. CLERKSHIP DIRECTOR: Susan Zhao, MD, FACC, Associate Chief, Division of Cardiology, SCVMC, Susan.zhao@hhs.sccgov.org, 669-287-8770. CLERKSHIP COORDINATOR: Amy Luu, HHS- visitingmedstudents@hhs.sccgov.org. REPORTING INSTRUCTIONS: Where: 751 South Bascom Avenue, San Jose, CA 95128.",
+    "parsedGroups": [
+      [
+        "MED 300A"
+      ],
+      [
+        "MED 12"
+      ],
+      [
+        "MED 669"
+      ],
+      [
+        "MED 287"
+      ],
+      [
+        "MED 751"
+      ]
+    ]
+  },
+  {
+    "course": "MED 304A",
+    "prereqText": "PREREQUISITES: MED 300A. PERIODS AVAILABLE: 1-12, full time for 4 weeks, 1 student per period (a second student can be added with approval from clerkship coordinator). CLERKSHIP DIRECTOR: Eldrin Lewis, M.D. CLERKSHIP COORDINATOR: Tawny Bagnol, ttbagnol@stanford.edu, 650-736-1319. REPORTING INSTRUCTIONS: Where: 500 Pasteur Drive, J7 Team Room 707; Time: 7:00 am. CALL CODE: 1. OTHER FACULTY: R. Bose, P. Cheng, L.",
+    "parsedGroups": [
+      [
+        "MED 300A"
+      ],
+      [
+        "MED 12"
+      ],
+      [
+        "MED 650"
+      ],
+      [
+        "MED 736"
+      ],
+      [
+        "MED 500"
+      ],
+      [
+        "ROOM 707"
+      ]
+    ]
+  },
+  {
+    "course": "MED 307A",
+    "prereqText": "PREREQUISITES: MED 300A/Medicine Core Clerkship. PERIODS AVAILABLE: 1-12, for 2 or 4 weeks. 1 student per period. CLERKSHIP DIRECTOR: Melody Smith, melodysm@stanford.edu, 650-723-9519. CLERKSHIP COORDINATOR: TBD. REPORTING INSTRUCTIONS: Students will be advised regarding the location in the hospital to meet the inpatient team on the first day of rounds. Students should arrive at the hospital by 7 AM on the first day of the clerkship.",
+    "parsedGroups": [
+      [
+        "MED 300A"
+      ],
+      [
+        "MED 12"
+      ],
+      [
+        "MED 650"
+      ],
+      [
+        "MED 723"
+      ]
+    ]
+  },
+  {
+    "course": "MED 308A",
+    "prereqText": "PREREQUISITES: Completion of a full Medicine clerkship. PERIODS AVAILABLE: 1-12, full-time for 4 weeks, 1 student per period. Additional students only allowed if reviewed and approved by clerkship director. CLERKSHIP DIRECTOR: Lakshmi Jayaram, M.D., ljayaram@stanford.edu. CLERKSHIP COORDINATOR: Linda Arneson, larneson@stanford.edu, 650- 497-5762. REPORTING INSTRUCTIONS: Where: 300 Pasteur Drive, East Pavilion, 3rd Floor, see Linda Arneson (call one week prior to confirm as the office is badge- access only); Time: 8:30 am OR contact Dr.",
+    "parsedGroups": [
+      [
+        "MED 12"
+      ],
+      [
+        "MED 650"
+      ],
+      [
+        "MED 497"
+      ],
+      [
+        "MED 300"
+      ],
+      [
+        "MED 30"
+      ]
+    ]
+  },
+  {
+    "course": "MED 311D",
+    "prereqText": "PREREQUISITES: MED 300A. PERIODS AVAILABLE: 2- 12, full-time for 4 weeks, 2 students per period. CLERKSHIP DIRECTOR: Roopam X. Sirohi, M.D., Roopam.X.Sirohi@kp.org. CLERKSHIP COORDINATOR: Susan Krause, 408-851-3836, KPMC, Santa Clara. REPORTING INSTRUCTIONS: Where: KPMC, Graduate Medical Education Office, Call 408-851-3830 for site location; Time: 7:00 am. CALL CODE: 5 (Not overnight). OTHER FACULTY: Staff.",
+    "parsedGroups": [
+      [
+        "MED 300A"
+      ],
+      [
+        "MED 12"
+      ],
+      [
+        "MED 408"
+      ],
+      [
+        "MED 851"
+      ],
+      [
+        "CALL 408"
+      ]
+    ]
+  },
+  {
+    "course": "MED 312C",
+    "prereqText": "PREREQUISITES: MED 300A. PERIODS AVAILABLE: 1-12, full time for 4 weeks, 2 students per period. CLERKSHIP DIRECTOR: Shirley Chan, M.D., shirley.chan@hhs.sccgov.org & Jennifer Rodriguez, M.D., M.S., jennifer.rodriguez@hhs.sccgov.org. CLERKSHIP COORDINATOR: Amy Luu, 408-885-6300, Amy.luu@hhs.sccgov.org. REPORTING INSTRUCTIONS: SCVMC, 1A 012, Department of Medicine [Visitors call (408-885-2146) and bring proof of PPD and malpractice insurance]; Time: 8:30 am.",
+    "parsedGroups": [
+      [
+        "MED 300A"
+      ],
+      [
+        "MED 12"
+      ],
+      [
+        "MED 408"
+      ],
+      [
+        "MED 885"
+      ],
+      [
+        "MED 012"
+      ],
+      [
+        "MED 30"
+      ]
+    ]
+  },
+  {
+    "course": "MED 313A",
+    "prereqText": "PREREQUISITES: None. PERIODS AVAILABLE: 1-12, full-time for 4 weeks, 10 students per period. CLERKSHIP DIRECTOR: Jacqueline Tai-Edmonds, M.D. and Nancy Cuan, M.D. CLERKSHIP COORDINATOR: Alice Leung, aleung25@stanford.edu, 650-497-8676. REPORTING INSTRUCTIONS: Where: Varies depending on site assignment. The students are notified prior to the first day of the clerkship; Time: TBA. CALL CODE: 2 (No call, but schedule may occasionally include an evening or weekend clinic).",
+    "parsedGroups": [
+      [
+        "MED 12"
+      ],
+      [
+        "MED 10"
+      ],
+      [
+        "ALEUNG 25"
+      ],
+      [
+        "MED 650"
+      ],
+      [
+        "MED 497"
+      ]
+    ]
+  },
+  {
+    "course": "MED 321A",
+    "prereqText": "PREREQUISITES: MED 300A. PERIODS AVAILABLE: 1-12, full-time for 4 weeks. 1 student per period. CLERKSHIP DIRECTOR: Ali Raza Khaki, M.D. CLERKSHIP COORDINATOR: Jeanne Simonian, 650-721-1969, jsimonian@stanford.edu. REPORTING INSTRUCTIONS: Stanford Hospital, F Ground (Oncology Fellow); Time: 8:00 AM. CALL CODE: 2 (patients are admitted daily and the sub-intern will admit patients on a rotation basis with the team without overnight call, but may stay late some evenings).",
+    "parsedGroups": [
+      [
+        "MED 300A"
+      ],
+      [
+        "MED 12"
+      ],
+      [
+        "MED 650"
+      ],
+      [
+        "MED 721"
+      ]
+    ]
+  },
+  {
+    "course": "MED 322A",
+    "prereqText": "PREREQUISITES: MED 300A. PERIODS AVAILABLE: 1-12, full-time for 4 weeks. 2 students per period; 2-week rotation for 1 IVS student for P10-12. CLERKSHIP DIRECTOR: Ali Raza Khaki, M.D. CLERKSHIP COORDINATOR: Jeanne Simonian, 650-721-1969, jsimonian@stanford.edu. REPORTING INSTRUCTIONS: Where: Cancer Center, Visitor Information Desk; Time: 9:00 am. CALL CODE: 0. OTHER FACULTY: Staff. LOCATION: SUMC.",
+    "parsedGroups": [
+      [
+        "MED 300A"
+      ],
+      [
+        "MED 12"
+      ],
+      [
+        "MED 650"
+      ],
+      [
+        "MED 721"
+      ]
+    ]
+  },
+  {
+    "course": "MED 323A",
+    "prereqText": "PREREQUISITES: Any core clerkship. PERIODS AVAILABLE:1-12, full-time for 4 weeks, 1 student per period. CLERKSHIP DIRECTOR: Fauzia Riaz, M.D. CLERKSHIP COORDINATOR: Jeanne Simonian, 650-721-1969, jsimonian@stanford.edu. REPORTING INSTRUCTIONS: Where: Stanford Cancer Center CC-2241; Time: 8:30 am. CALL CODE: 0. OTHER FACULTY: Staff. LOCATION: SUMC.",
+    "parsedGroups": [
+      [
+        "MED 12"
+      ],
+      [
+        "MED 650"
+      ],
+      [
+        "MED 721"
+      ],
+      [
+        "MED 30"
+      ]
+    ]
+  },
+  {
+    "course": "MED 325A",
+    "prereqText": "PREREQUISITES: MED 300A. PERIODS AVAILABLE: 1-12, full-time for 2 weeks, 1 student per period. CLERKSHIP DIRECTOR: Subhas Banerjee, M.D., 650-736-0431. CLERKSHIP COORDINATOR: Abbey Hamilton, 650-723-4519, abbeyh@stanford.edu. REPORTING INSTRUCTIONS: Where: Endoscopy Unit, 300 Pasteur Dr, Basement Room H0262. (Please ask for GI attending or fellow); Time: 8:30 am. CALL CODE: 0. OTHER FACULTY: A. Aijaz, S. Banerjee, G.",
+    "parsedGroups": [
+      [
+        "MED 300A"
+      ],
+      [
+        "MED 12"
+      ],
+      [
+        "MED 650"
+      ],
+      [
+        "MED 736"
+      ],
+      [
+        "MED 723"
+      ],
+      [
+        "MED 300"
+      ],
+      [
+        "MED 30"
+      ]
+    ]
+  },
+  {
+    "course": "MED 326A",
+    "prereqText": "PREREQUISITES: None. PERIODS AVAILABLE: 1-12, full-time for 4 weeks, 2 students per period. CLERKSHIP DIRECTOR: Mindie Nguyen, M.D., MAS, 650-722-4478. CLERKSHIP COORDINATOR: Jeff Mathews, 650-498-6084. REPORTING INSTRUCTIONS: Where: 780 Welch Road, Room CJ280K; Time: 8:30 am. CALL CODE: 0. OTHER FACULTY: A. Ahmed, T. Daugherty, A. Goel, R. Kumari, P. Kwo. LOCATION: SUMC, PAVAMC.",
+    "parsedGroups": [
+      [
+        "MED 12"
+      ],
+      [
+        "MED 650"
+      ],
+      [
+        "MED 722"
+      ],
+      [
+        "MED 498"
+      ],
+      [
+        "MED 780"
+      ],
+      [
+        "CJ 280K"
+      ],
+      [
+        "MED 30"
+      ]
+    ]
+  },
+  {
+    "course": "MED 334C",
+    "prereqText": "PREREQUISITES: MED 300A. PERIODS AVAILABLE: 1-12, full-time for 4 weeks, 2 students per period. CLERKSHIP DIRECTOR: Anjali Bhatt Saxena, M.D. CLERKSHIP COORDINATOR: Amy Luu, HHS-visitingmedstudents@hhs.sccgov.org. REPORTING INSTRUCTIONS: Where: SCVMC, Renal Dialysis Unit, 3rd Floor [Visitors call 408-885-5110 and bring proof of PPD and malpractice insurance as directed]; Time: 8:30 am. CALL CODE: 0. OTHER FACULTY: A.",
+    "parsedGroups": [
+      [
+        "MED 300A"
+      ],
+      [
+        "MED 12"
+      ],
+      [
+        "CALL 408"
+      ],
+      [
+        "MED 885"
+      ],
+      [
+        "MED 30"
+      ]
+    ]
+  },
+  {
+    "course": "MED 339B",
+    "prereqText": "PREREQUISITES: MED 300A. PERIODS AVAILABLE: 1-12, full-time for 4 weeks, 3 students per period. CLERKSHIP DIRECTOR: Arlina Ahluwalia, M.D., 650-493-5000 x66759. CLERKSHIP COORDINATOR: Jonathan R. Wong, Jonathan.Wong2@va.gov. REPORTING INSTRUCTIONS: Where: First Monday of rotation, Bldg 101; Time: 08:30 a.m. CALL CODE: 4. OTHER FACULTY: Staff. LOCATION: PAVAMC.",
+    "parsedGroups": [
+      [
+        "MED 300A"
+      ],
+      [
+        "MED 12"
+      ],
+      [
+        "MED 650"
+      ],
+      [
+        "MED 493"
+      ],
+      [
+        "WONG 2"
+      ],
+      [
+        "BLDG 101"
+      ],
+      [
+        "MED 30"
+      ]
+    ]
+  },
+  {
+    "course": "MED 343B",
+    "prereqText": "PREREQUISITES: This clerkship requires written approval by Clerkship Director before you can enroll. Please contact Dr. VJ Periyakoil at periyakoil@stanford.edu to check for availability of spots in the clerkship. PERIODS AVAILABLE: 1-12, full-time for 4 weeks, 1 student per period. CLERKSHIP DIRECTOR: VJ Periyakoil, M.D. (periyakoil@stanford.edu). CLERKSHIP COORDINATOR: VJ Periyakoil, M.D. (650-497-0332, periyakoil@stanford.edu).",
+    "parsedGroups": [
+      [
+        "MED 12"
+      ],
+      [
+        "MED 650"
+      ],
+      [
+        "MED 497"
+      ]
+    ]
+  },
+  {
+    "course": "MED 344A",
+    "prereqText": "PREREQUISITES: None. PERIODS AVAILABLE: 1-12, full-time for 4 weeks, 3 students per period. CLERKSHIP DIRECTOR: Lisa Shieh, M.D., Ph.D, FHM, 650-724-2917, lshieh@stanford.edu. CLERKSHIP COORDINATOR: Lisa Shieh, M.D., Ph.D, FHM, 650-724-2917, lshieh@stanford.edu. REPORTING INSTRUCTIONS: Where: 700 Welch Road, Suite 310B, Palo Alto, CA 94304; Time: TBA. CALL CODE: 0. OTHER FACULTY: K. Hooper, L. Shieh. LOCATION: SUMC.",
+    "parsedGroups": [
+      [
+        "MED 12"
+      ],
+      [
+        "MED 650"
+      ],
+      [
+        "MED 724"
+      ],
+      [
+        "MED 700"
+      ],
+      [
+        "SUITE 310B"
+      ]
+    ]
+  },
+  {
+    "course": "MED 397A",
+    "prereqText": "PREREQUISITES: Completion of required core clerkships. PERIODS AVAILABLE: P11A (5/5/25-5/9/25) or P11B (5/19/25-5/23/25) for 2024-25, P11A (5/4/26-5/8/26) or P11B (5/18/26-5/22/26) for 2025-26, full-time for 1 week. 30 students maximum per period. CLERKSHIP DIRECTOR: Jeff Chi, M.D. and John Kugler, M.D. CLERKSHIP COORDINATOR: Mary Devega mdevega@stanford.edu. REPORTING INSTRUCTIONS: Where: Course coordinator will send out reporting instructions with syllabus before the start of the clerkship; Time: TBA.",
+    "parsedGroups": [
+      [
+        "MED 25"
+      ],
+      [
+        "MED 19"
+      ],
+      [
+        "MED 23"
+      ],
+      [
+        "MED 26"
+      ],
+      [
+        "MED 18"
+      ],
+      [
+        "MED 22"
+      ],
+      [
+        "MED 30"
+      ]
+    ]
+  },
+  {
+    "course": "MGTECON 661",
+    "prereqText": "Prerequisite: MGTECON 607, STATS 300B, or equivalent graduate-level coursework.",
+    "parsedGroups": [
+      [
+        "MGTECON 607"
+      ],
+      [
+        "STATS 300B"
+      ]
+    ]
+  },
+  {
+    "course": "MS&E 121",
+    "prereqText": "Prerequisite: 120 or equivalent.",
+    "parsedGroups": [
+      [
+        "MS&E 120"
+      ]
+    ]
+  },
+  {
+    "course": "MS&E 319",
+    "prereqText": "Prerequisite: 212, CS 261, or equivalent.",
+    "parsedGroups": [
+      [
+        "MS&E 212"
+      ],
+      [
+        "CS 261"
+      ]
+    ]
+  },
+  {
+    "course": "MS&E 335",
+    "prereqText": "Prerequisite: 221 or equivalent.",
+    "parsedGroups": [
+      [
+        "MS&E 221"
+      ]
+    ]
+  },
+  {
+    "course": "MUSIC 41",
+    "prereqText": "Prerequisites: Music 22 or equivalent.",
+    "parsedGroups": [
+      [
+        "MUSIC 22"
+      ]
+    ]
+  },
+  {
+    "course": "MUSIC 65B",
+    "prereqText": "Prerequisite: MUSIC 65A/AZ or equivalent vocal training.",
+    "parsedGroups": [
+      [
+        "MUSIC 65A"
+      ]
+    ]
+  },
+  {
+    "course": "MUSIC 65BZ",
+    "prereqText": "Prerequisite: MUSIC 65A/AZ or equivalent vocal training.",
+    "parsedGroups": [
+      [
+        "MUSIC 65A"
+      ]
+    ]
+  },
+  {
+    "course": "MUSIC 72A",
+    "prereqText": "Prerequisites: 12C or equivalent, audition. This class is closed by design. Please register on the waitlist and meet with Dr. Zerlang in room 111, or contact him at timzer@stanford.edu or (650) 723-1549 to receive a permission number for enrollment. Zero unit enrollment option available with instructor permission. See website:(http://music.stanford.edu) for policy and procedure.",
+    "parsedGroups": [
+      [
+        "MUSIC 12C"
+      ],
+      [
+        "ROOM 111",
+        "MUSIC 650"
+      ],
+      [
+        "MUSIC 723"
+      ]
+    ]
+  },
+  {
+    "course": "MUSIC 72AZ",
+    "prereqText": "Prerequisites: 12C or equivalent, audition. This class is closed by design. Please register on the waitlist and show up on the first day of class to receive a permission number for enrollment. Zero unit enrollment option available with instructor permission. See website: (http://music.stanford.edu) for policy and procedure.",
+    "parsedGroups": [
+      [
+        "MUSIC 12C"
+      ]
+    ]
+  },
+  {
+    "course": "MUSIC 73",
+    "prereqText": "Prerequisite: MUSIC 65B or 65BZ, or equivalent vocal training.",
+    "parsedGroups": [
+      [
+        "MUSIC 65B"
+      ],
+      [
+        "MUSIC 65BZ"
+      ]
+    ]
+  },
+  {
+    "course": "MUSIC 73Z",
+    "prereqText": "Prerequisite: MUSIC 65B or 65BZ, or equivalent vocal training.",
+    "parsedGroups": [
+      [
+        "MUSIC 65B"
+      ],
+      [
+        "MUSIC 65BZ"
+      ]
+    ]
+  },
+  {
+    "course": "MUSIC 106B",
+    "prereqText": "Prerequisite: Music 106 or equivalent experience, with instructor permission.",
+    "parsedGroups": [
+      [
+        "MUSIC 106"
+      ]
+    ]
+  },
+  {
+    "course": "NSUR 304A",
+    "prereqText": "PREREQUISITES: None. PERIODS AVAILABLE: 1-12, full-time for 4 weeks, 5 students per period. CLERKSHIP DIRECTOR: John Ratliff, M.D. CLERKSHIP COORDINATOR: Shanna Selsor, 650-725-0701, selsor@stanford.edu. REPORTING INSTRUCTIONS: Where: Meet neurosurgery residents at the L4 Conference Room at 500P; Time: 5:45 am. CALL CODE: 2 - voluntary call for emergency cases at night. OTHER FACULTY: V. Buch, S. Chang, A.",
+    "parsedGroups": [
+      [
+        "NSUR 12"
+      ],
+      [
+        "NSUR 650"
+      ],
+      [
+        "NSUR 725"
+      ],
+      [
+        "NSUR 500P"
+      ],
+      [
+        "NSUR 45"
+      ]
+    ]
+  },
+  {
+    "course": "NSUR 318A",
+    "prereqText": "PREREQUISITES: SURG 300A. PERIODS AVAILABLE: 1-5 & 10-12, full-time for 4 weeks, 5 students per period. CLERKSHIP DIRECTOR: John Ratliff, M.D. CLERKSHIP COORDINATOR: Shanna Selsor, 650-725-0701, selsor@stanford.edu. REPORTING INSTRUCTIONS: Where: Meet neurosurgery residents at the L4 Conference Room at 500P; Time: 5:45 am. CALL CODE: 2 - voluntary call for emergency cases at night. OTHER FACULTY: V. Buch, S.",
+    "parsedGroups": [
+      [
+        "SURG 300A"
+      ],
+      [
+        "NSUR 10"
+      ],
+      [
+        "NSUR 12"
+      ],
+      [
+        "NSUR 650"
+      ],
+      [
+        "NSUR 725"
+      ],
+      [
+        "NSUR 500P"
+      ],
+      [
+        "NSUR 45"
+      ]
+    ]
+  },
+  {
+    "course": "NSUR 398A",
+    "prereqText": "PREREQUISITES: None. PERIODS AVAILABLE: 1-12, 4 students per period. CLERKSHIP DIRECTOR: John Ratliff, M.D. CLERKSHIP COORDINATOR: Shanna Selsor, 650-725- 0701, selsor@stanford.edu. REPORTING INSTRUCTIONS: Where: Meet neurosurgery residents at the L4 Conference Room at 500P; Time: 5:45 AM. CALL CODE: 1. OTHER FACULTY: V. Buch, S. Chang, A. Desai, R. Dodd, J. Fernandez-Miranda, O. Harris, M. Hayden-Gephart, J. Henderson, M.",
+    "parsedGroups": [
+      [
+        "NSUR 12"
+      ],
+      [
+        "NSUR 650"
+      ],
+      [
+        "NSUR 725"
+      ],
+      [
+        "NSUR 500P"
+      ],
+      [
+        "NSUR 45"
+      ]
+    ]
+  },
+  {
+    "course": "OCEANS 173H",
+    "prereqText": "Prerequisite: introductory biology; suggested: a policy and/or introductory ecology course. Students who want to enroll only in the seminar and discussion course (2 units) should register for OCEANS/BIO 173HA. (Graduate students register for BIO/OCEANS 273H.) For information on how to spend spring quarter in residence: https://hopkinsmarinestation.stanford.edu/undergraduate-studies/spring-courses-23-24 (Individual course registration also permitted.) Depending on enrollment numbers, a weekly shuttle to Hopkins or mileage reimbursements for qualifying carpools will be provided; terms and conditions apply.",
+    "parsedGroups": [
+      [
+        "BIO 173HA"
+      ]
+    ]
+  },
+  {
+    "course": "OIT 676",
+    "prereqText": "Prerequisites: MATH 113, 115, or equivalent.",
+    "parsedGroups": [
+      [
+        "MATH 113"
+      ],
+      [
+        "MATH 115"
+      ]
+    ]
+  },
+  {
+    "course": "OPHT 300E",
+    "prereqText": "PREREQUISITES: One core clerkship. PERIODS AVAILABLE: 2B-12B, full-time for 2 weeks, 1 student per period. CLERKSHIP DIRECTOR: Leonard Goldschmidt, M.D., Ph.D. CLERKSHIP COORDINATOR: Leonard Goldschmidt, M.D., Ph.D., 925-373-4700 x35640, 4951 Arroyo Road (11), Livermore, CA 94550. REPORTING INSTRUCTIONS: Where: VAPAHCS, Livermore Division, 4951 Arroyo Road (11), Livermore; Time: 8:30 a.m. CALL CODE: 0. OTHER FACULTY: Staff.",
+    "parsedGroups": [
+      [
+        "OPHT 12B"
+      ],
+      [
+        "OPHT 925"
+      ],
+      [
+        "OPHT 373"
+      ],
+      [
+        "OPHT 11"
+      ],
+      [
+        "OPHT 30"
+      ]
+    ]
+  },
+  {
+    "course": "ORTHO 303C",
+    "prereqText": "PREREQUISITES: MED 300A. Will accept third and fourth year students. PERIODS AVAILABLE: 1-12, full-time for 4 or 8 weeks, 1 student per period. CLERKSHIP DIRECTOR: Priya Varma, M.D. CLERKSHIP COORDINATOR: Jovanah Bonilla, jovanah.bonilla@hhs.sccgov.org. REPORTING INSTRUCTIONS: Where: SCVMC, Room 1A012 (Sobrato Pavilion) Visitors call (408) 885-2100. Proof of PPD, Rubella and malpractice insurance required; Time: 8:00 am.",
+    "parsedGroups": [
+      [
+        "MED 300A"
+      ],
+      [
+        "ORTHO 12"
+      ],
+      [
+        "ORTHO 408"
+      ],
+      [
+        "ORTHO 885"
+      ]
+    ]
+  },
+  {
+    "course": "ORTHO 304A",
+    "prereqText": "PREREQUISITES: None. PERIODS AVAILABLE: 1-6 and 9-12, full- time for 4 weeks, 4 students per period. CLERKSHIP DIRECTOR: Theodore Scott, M.D. and Vivian Shih, M.D. CLERKSHIP COORDINATOR: Elizabeth Medina, elizabethmedina@stanford.edu, 650-721-7627, Stanford Medicine Outpatient Center. REPORTING INSTRUCTIONS: Where: Per email from clerkship director which you will receive no later than 2 weeks prior to start date; Time: 7:50 am.",
+    "parsedGroups": [
+      [
+        "ORTHO 12"
+      ],
+      [
+        "ORTHO 650"
+      ],
+      [
+        "ORTHO 721"
+      ],
+      [
+        "THAN 2"
+      ],
+      [
+        "ORTHO 50"
+      ]
+    ]
+  },
+  {
+    "course": "ORTHO 306A",
+    "prereqText": "PREREQUISITES: SURG 300A. PERIODS AVAILABLE: 1-12, full time for 4 weeks, 8 students per period. CLERKSHIP DIRECTOR: Meghan Imrie, M.D. & Brady Evans, M.D. CLERKSHIP COORDINATOR: Sue Gokey Gonzalez, 650-721-7616, sgokey@stanford.edu, Stanford Medicine Outpatient Center, 450 Broadway Street - MC 6342, Redwood City, CA 94063. REPORTING INSTRUCTIONS: Where: Stanford Hospital, Location and time to be provided; Time: TBA.",
+    "parsedGroups": [
+      [
+        "SURG 300A"
+      ],
+      [
+        "ORTHO 12"
+      ],
+      [
+        "ORTHO 650"
+      ],
+      [
+        "ORTHO 721"
+      ],
+      [
+        "ORTHO 450"
+      ]
+    ]
+  },
+  {
+    "course": "ORTHO 310A",
+    "prereqText": "PREREQUISITES: Surgery 300A or equivalent, Honors desired. PERIODS AVAILABLE: 1-12, full time for 2 weeks, 1 student per period. CLERKSHIP DIRECTOR: Amy Ladd, M.D. CLERKSHIP COORDINATOR: Donna San Juan, 650-721-7626, 450 Broadway, Redwood City, CA 94063. REPORTING INSTRUCTIONS: Where: 450 Broadway, Hand and Upper Extremity Clinic, Building A, Redwood City, CA 94063; Time: 8:00 am. CALL CODE: 3 (to rotate with residents every 2-4 nights, call from home).",
+    "parsedGroups": [
+      [
+        "SURGERY 300A"
+      ],
+      [
+        "ORTHO 12"
+      ],
+      [
+        "ORTHO 650"
+      ],
+      [
+        "ORTHO 721"
+      ],
+      [
+        "ORTHO 450"
+      ],
+      [
+        "EVERY 2"
+      ]
+    ]
+  },
+  {
+    "course": "ORTHO 318A",
+    "prereqText": "PREREQUISITES: Successful completion of ORTHO 306A or an equivalent introductory orthopaedic clerkship. PERIODS AVAILABLE: 1-12, full time for 4 weeks, 8 students per period. CLERKSHIP DIRECTOR: Meghan Imrie, M.D. and Jeremy Chan, M.D. CLERKSHIP COORDINATOR: Sue Gokey Gonzalez, 650-721-7616, sgokey@stanford.edu, Stanford Medicine Outpatient Center, 450 Broadway Street - MC 6342, Redwood City, CA 94063.",
+    "parsedGroups": [
+      [
+        "ORTHO 306A"
+      ],
+      [
+        "ORTHO 12"
+      ],
+      [
+        "ORTHO 650"
+      ],
+      [
+        "ORTHO 721"
+      ],
+      [
+        "ORTHO 450"
+      ]
+    ]
+  },
+  {
+    "course": "ORTHO 398A",
+    "prereqText": "PREREQUISITES: None. PERIODS AVAILABLE: 1-12, full time for 4 weeks, 4 students per period. CLERKSHIP DIRECTOR: Raffi Avedian, M.D. CLERKSHIP COORDINATOR: Sue Gokey Gonzalez, 650-721- 7616, Stanford Medicine Outpatient Center, 450 Broadway Street - MC 6342, Redwood City, CA 94063. REPORTING INSTRUCTIONS: Where: TBD (designated faculty preceptor); Time: TBD. CALL CODE: 2 (varies according to preceptor). OTHER FACULTY: Staff.",
+    "parsedGroups": [
+      [
+        "ORTHO 12"
+      ],
+      [
+        "ORTHO 650"
+      ],
+      [
+        "ORTHO 721"
+      ],
+      [
+        "ORTHO 450"
+      ]
+    ]
+  },
+  {
+    "course": "OSPBER 21B",
+    "prereqText": "Prerequisite: GERLANG 3 or equivalent or Placement Test.",
+    "parsedGroups": [
+      [
+        "GERLANG 3"
+      ]
+    ]
+  },
+  {
+    "course": "OSPKYOTO 2K",
+    "prereqText": "Prerequisite: JAPANLNG 1 if taken 2012-13 of later (JAPANLNG 7 if taken 2011-12 or earlier)",
+    "parsedGroups": [
+      [
+        "JAPANLNG 1"
+      ],
+      [
+        "OSPKYOTO 13"
+      ],
+      [
+        "JAPANLNG 7"
+      ],
+      [
+        "OSPKYOTO 12"
+      ]
+    ]
+  },
+  {
+    "course": "OSPKYOTO 3K",
+    "prereqText": "Prerequisite: JAPANLNG 2 or OSPKYOTO 2K if taken 2012-13 or later (JAPANLNG 8 if taken 2011-13 or earlier)",
+    "parsedGroups": [
+      [
+        "JAPANLNG 2",
+        "OSPKYOTO 2K"
+      ],
+      [
+        "OSPKYOTO 13",
+        "JAPANLNG 8"
+      ],
+      [
+        "OSPKYOTO 13"
+      ]
+    ]
+  },
+  {
+    "course": "OSPKYOTO 21K",
+    "prereqText": "Prerequisite: JAPANLNG 3 if taken 2012-13 or later (JAPANLNG 7 if taken 2011-12 or earlier)",
+    "parsedGroups": [
+      [
+        "JAPANLNG 3"
+      ],
+      [
+        "OSPKYOTO 13",
+        "JAPANLNG 7"
+      ],
+      [
+        "OSPKYOTO 12"
+      ]
+    ]
+  },
+  {
+    "course": "OSPMADRD 13M",
+    "prereqText": "Prerequisite: 11 or 21B within two quarters (six months) of arriving in Madrid or 12 or 22B, or equivalent placement.",
+    "parsedGroups": [
+      [
+        "OSPMADRD 11",
+        "OSPMADRD 21B"
+      ],
+      [
+        "OSPMADRD 12",
+        "OSPMADRD 22B"
+      ]
+    ]
+  },
+  {
+    "course": "OSPMADRD 60",
+    "prereqText": "Prerequisite: completion of SPANLANG 11 or 21B within two quarters (six months) of arriving in Madrid or completion of 12 or 22B, or equivalent placement. Limited enrollment",
+    "parsedGroups": [
+      [
+        "SPANLANG 11"
+      ],
+      [
+        "SPANLANG 21B"
+      ],
+      [
+        "OSPMADRD 12",
+        "OSPMADRD 22B"
+      ]
+    ]
+  },
+  {
+    "course": "OSPMADRD 92",
+    "prereqText": "Prerequisite: Completion of SPANLANG 11 or 21B within two quarters (six months) of arriving in Madrid or completion of 12 or 22B, or equivalent placement. This course will have limited enrollment.",
+    "parsedGroups": [
+      [
+        "SPANLANG 11"
+      ],
+      [
+        "SPANLANG 21B"
+      ],
+      [
+        "OSPMADRD 12",
+        "OSPMADRD 22B"
+      ]
+    ]
+  },
+  {
+    "course": "OSPMADRD 190",
+    "prereqText": "Prerequisite: completion of SPANLANG 13 or 23B or equivalent placement.",
+    "parsedGroups": [
+      [
+        "SPANLANG 13"
+      ],
+      [
+        "SPANLANG 23B"
+      ]
+    ]
+  },
+  {
+    "course": "OSPMADRD 191",
+    "prereqText": "Prerequisite: completion of SPANLANG 13 or 23B or equivalent placement.",
+    "parsedGroups": [
+      [
+        "SPANLANG 13"
+      ],
+      [
+        "SPANLANG 23B"
+      ]
+    ]
+  },
+  {
+    "course": "OSPMADRD 192",
+    "prereqText": "Prerequisite: completion of SPANLANG 13 or 23B or equivalent placement.",
+    "parsedGroups": [
+      [
+        "SPANLANG 13"
+      ],
+      [
+        "SPANLANG 23B"
+      ]
+    ]
+  },
+  {
+    "course": "OSPMADRD 193",
+    "prereqText": "Prerequisite: completion of SPANLANG 13 or 23B or equivalent placement.",
+    "parsedGroups": [
+      [
+        "SPANLANG 13"
+      ],
+      [
+        "SPANLANG 23B"
+      ]
+    ]
+  },
+  {
+    "course": "OSPMADRD 194",
+    "prereqText": "Prerequisite: completion of SPANLANG 13 or 23B or equivalent placement.",
+    "parsedGroups": [
+      [
+        "SPANLANG 13"
+      ],
+      [
+        "SPANLANG 23B"
+      ]
+    ]
+  },
+  {
+    "course": "OSPMADRD 195",
+    "prereqText": "Prerequisite: completion of SPANLANG 13 or 23B or equivalent placement.",
+    "parsedGroups": [
+      [
+        "SPANLANG 13"
+      ],
+      [
+        "SPANLANG 23B"
+      ]
+    ]
+  },
+  {
+    "course": "OSPPARIS 53",
+    "prereqText": "Prerequisite: PHYSICS 21 or 21S. This course meets the STEM track requirement for the Paris Program during Winter Quarter 2019-2020.",
+    "parsedGroups": [
+      [
+        "PHYSICS 21"
+      ],
+      [
+        "PHYSICS 21S"
+      ]
+    ]
+  },
+  {
+    "course": "OTOHNS 307A",
+    "prereqText": "PREREQUISITES: All scrub course/training needs to be completed prior to starting clerkship. PERIODS AVAILABLE: 5-12 (for Stanford students); 7-12 (for visiting students), full-time for 2 weeks only, 2 students per period (availability depends on the number of sub-interns during the period). CLERKSHIP DIRECTOR: Iram Ahmad, M.D., MME. CLERKSHIP COORDINATOR: Xiaoyu Feng, 650-497-3856, xyfeng@stanford.edu, 801 Welch Road, 2nd Floor.",
+    "parsedGroups": [
+      [
+        "OTOHNS 12"
+      ],
+      [
+        "OTOHNS 650"
+      ],
+      [
+        "OTOHNS 497"
+      ],
+      [
+        "OTOHNS 801"
+      ]
+    ]
+  },
+  {
+    "course": "OTOHNS 336A",
+    "prereqText": "PREREQUISITES: SURG 300A, 2-week Otolaryngology elective or OTOHNS 307A. Visiting students must have completed an Otolaryngology rotation prior to Stanford subinternship. PERIODS AVAILABLE: 1-4, 7-12, full-time for 4 weeks, 4 students per period. CLERKSHIP DIRECTOR: Iram Ahmad, M.D., MME. CLERKSHIP COORDINATOR: Xiaoyu Feng, 650-497-3856, xyfeng@stanford.edu, 801 Welch Road, 2nd Floor. REPORTING INSTRUCTIONS: Where: 801 Welch Road, 2nd Floor; Time: 8:00 am.CALL CODE: 1.",
+    "parsedGroups": [
+      [
+        "SURG 300A"
+      ],
+      [
+        "SURG 2"
+      ],
+      [
+        "OTOHNS 307A"
+      ],
+      [
+        "OTOHNS 12"
+      ],
+      [
+        "OTOHNS 650"
+      ],
+      [
+        "OTOHNS 497"
+      ],
+      [
+        "OTOHNS 801"
+      ]
+    ]
+  },
+  {
+    "course": "OTOHNS 398A",
+    "prereqText": "PREREQUISITES: None. PERIODS AVAILABLE: 1-12 (for Stanford students); 7-12 (for visiting students), 4 students per period. CLERKSHIP DIRECTOR: Iram Ahmad, M.D., MME. CLERKSHIP COORDINATOR: Xiaoyu Feng, 650-497-3856, xyfeng@stanford.edu, 801 Welch Road, 2nd Floor. REPORTING INSTRUCTIONS: Where: 801 Welch Road, 2nd Floor; Time: 8:00 am. OTHER FACULTY: Staff. LOCATION: SUMC, PAVAMC, SCVMC.",
+    "parsedGroups": [
+      [
+        "OTOHNS 12"
+      ],
+      [
+        "OTOHNS 650"
+      ],
+      [
+        "OTOHNS 497"
+      ],
+      [
+        "OTOHNS 801"
+      ]
+    ]
+  },
+  {
+    "course": "PATH 302A",
+    "prereqText": "PREREQUISITES: None. PERIODS AVAILABLE: 2-12, full-time for 4 weeks, 4 students per period (location and rotation dependent). CLERKSHIP DIRECTOR: Oscar Silva, M.D., osilva@stanford.edu, 650-723-7211. CLERKSHIP COORDINATOR: Gabby Barela, 650-721-5755, gbarela@stanford.edu, Markell Stine, 650-497-6371, markell@stanford.edu. REPORTING INSTRUCTIONS: Where: will be arranged by Chief Resident; Time: 8:00 am.",
+    "parsedGroups": [
+      [
+        "PATH 12"
+      ],
+      [
+        "PATH 650"
+      ],
+      [
+        "PATH 723"
+      ],
+      [
+        "PATH 721"
+      ],
+      [
+        "PATH 497"
+      ]
+    ]
+  },
+  {
+    "course": "PATH 398A",
+    "prereqText": "PREREQUISITES: None. PERIODS AVAILABLE: 2-12. CLERKSHIP DIRECTOR: Oscar Silva, M.D. CLERKSHIP COORDINATOR: Gabby Barela, 650-721-5755, gbarela@stanford.edu. REPORTING INSTRUCTIONS: Where: TBA (designated faculty preceptor); Time: TBA. CALL CODE: 2 (varies according to preceptor). OTHER FACULTY: Staff. LOCATION: SHC.",
+    "parsedGroups": [
+      [
+        "PATH 12"
+      ],
+      [
+        "PATH 650"
+      ],
+      [
+        "PATH 721"
+      ]
+    ]
+  },
+  {
+    "course": "PEDS 301A",
+    "prereqText": "PREREQUISITES: Pediatrics 300A or permission of director. PERIODS AVAILABLE: 2-12, full time for 2 weeks or 4 weeks, 1 student per period. CLERKSHIP DIRECTOR: Suha Bachir, M.D., sbachir@stanford.edu. CLERKSHIP COORDINATOR: Samuel De Klerk, samueldk@stanford.edu, 650-724-6094. REPORTING INSTRUCTIONS: Where: A071 or 730 Welch Road, Mary L. Johnson Clinic, Medicine Specialties. Call Samuel De Klerk (650-724-6094) 1 week prior to arrival to review reporting; Time: 8:00AM.",
+    "parsedGroups": [
+      [
+        "PEDIATRICS 300A"
+      ],
+      [
+        "PEDS 12"
+      ],
+      [
+        "PEDS 650"
+      ],
+      [
+        "PEDS 724"
+      ],
+      [
+        "PEDS 730"
+      ]
+    ]
+  },
+  {
+    "course": "PEDS 302A",
+    "prereqText": "PREREQUISITES: Pediatrics 300A or permission of director. PERIODS AVAILABLE: 3-12, full-time for 2 weeks or 4 weeks, 1 student per period. CLERKSHIP DIRECTOR: Cristina Saez, M.D. CLERKSHIP COORDINATOR: Wendy Cardamone, 650-725-0887, wendyc@stanford.edu. REPORTING INSTRUCTIONS: Where: Call Pediatric Rheumatology office for information at 650-723-8295 or email Tzielan Lee at tzlee@stanford.edu; Time: TBA.",
+    "parsedGroups": [
+      [
+        "PEDIATRICS 300A"
+      ],
+      [
+        "PEDS 12"
+      ],
+      [
+        "PEDS 650"
+      ],
+      [
+        "PEDS 725"
+      ],
+      [
+        "PEDS 723"
+      ]
+    ]
+  },
+  {
+    "course": "PEDS 303A",
+    "prereqText": "PREREQUISITES: Pediatrics 300A. Visiting students must have completed a General Pediatrics clerkship equivalent to Pediatrics 300A, and a General Medicine clerkship equivalent to Medicine 300A. For visiting studentes, please see the School of Medicine Visiting Student webpage for information on how to apply: http://med.stanford.edu/clerkships.html. PERIODS AVAILABLE: 1-12, full-time for 4 weeks, 1 student per period; additional students must be approved by the Clerkship Director.",
+    "parsedGroups": [
+      [
+        "PEDIATRICS 300A"
+      ],
+      [
+        "MEDICINE 300A"
+      ],
+      [
+        "PEDS 12"
+      ]
+    ]
+  },
+  {
+    "course": "PEDS 304A",
+    "prereqText": "PREREQUISITES: Pediatrics 300A. PERIODS AVAILABLE: 1-12 full-time for 2 or 4 weeks, closed periods 4A and 6B. 1 student per period except with permission of the course director. CLERKSHIP DIRECTOR: Caroline Buckway M.D., cbuckway@stanford.edu, 650-723-5791. CLERKSHIP COORDINATOR: Kim Vo, 650-736-2005, ktvo@stanford.edu. REPORTING INSTRUCTIONS: Where: Confirm with clerkship coordinator (Kim Vo), 730 Welch Road, First Floor; Time: 9:00 am.",
+    "parsedGroups": [
+      [
+        "PEDIATRICS 300A"
+      ],
+      [
+        "PEDS 12"
+      ],
+      [
+        "PERIODS 4A"
+      ],
+      [
+        "PEDS 650"
+      ],
+      [
+        "PEDS 723"
+      ],
+      [
+        "PEDS 736"
+      ],
+      [
+        "PEDS 730"
+      ]
+    ]
+  },
+  {
+    "course": "PEDS 305A",
+    "prereqText": "PREREQUISITES: Pediatrics 300A. PERIODS AVAILABLE: 1-12, full-time for 4 weeks, 1 student per period. CLERKSHIP DIRECTOR: Clara Lo, M.D. CLERKSHIP COORDINATOR: Gretchen Shawver, 650-723-5535, gshawver@stanford.edu. REPORTING INSTRUCTIONS: Where: The student will receive email notification of when and where to meet. CALL CODE: 0. OTHER FACULTY: G. Batsuli, M. Chien, M. Gilbert, B. Glader, A. Goyal, M. Jeng, C. Lo, R.",
+    "parsedGroups": [
+      [
+        "PEDIATRICS 300A"
+      ],
+      [
+        "PEDS 12"
+      ],
+      [
+        "PEDS 650"
+      ],
+      [
+        "PEDS 723"
+      ]
+    ]
+  },
+  {
+    "course": "PEDS 306A",
+    "prereqText": "PREREQUISITES: Pediatrics 300A. PERIODS AVAILABLE: 1-12, full-time for 2 weeks or 4 weeks, 1 student per period. CLERKSHIP DIRECTOR: Xavier Gaeta, M.D. CLERKSHIP COORDINATOR: Kim Sands, 650-723-7903, G306. REPORTING INSTRUCTIONS: Where: Center for Academic Medicine-Pediatric Nephrology, 453 Quarry Road; Time: 9:00 am. CALL CODE: 0. OTHER FACULTY: S. Alexander, A. Chandhuri, O.M. Couloures, S. Giang, P. Grimm, S.",
+    "parsedGroups": [
+      [
+        "PEDIATRICS 300A"
+      ],
+      [
+        "PEDS 12"
+      ],
+      [
+        "PEDS 650"
+      ],
+      [
+        "PEDS 723"
+      ],
+      [
+        "PEDS 453"
+      ]
+    ]
+  },
+  {
+    "course": "PEDS 312A",
+    "prereqText": "PREREQUISITES: Pediatrics 300A and Medicine 300A. PERIODS AVAILABLE: 1-12, full-time for 4 weeks, 1 student per period. CLERKSHIP DIRECTOR: Danielle Macris Nahal, M.D., dnahal42@stanford.edu. CLERKSHIP COORDINATOR: Kim Vo, ktvo@stanford.edu, 650-736- 2005. REPORTING INSTRUCTIONS: Where: Center for Academic Medicine, Peds ID Division, 4th Floor, 453 Quarry Road, Palo Alto, CA 94304. Contact Dr. Nahal at dnahal42@stanford.edu and Kim Vo at ktvo@stanford.edu prior to start date.",
+    "parsedGroups": [
+      [
+        "PEDIATRICS 300A"
+      ],
+      [
+        "MEDICINE 300A"
+      ],
+      [
+        "PEDS 12"
+      ],
+      [
+        "DNAHAL 42"
+      ],
+      [
+        "PEDS 650"
+      ],
+      [
+        "PEDS 736"
+      ],
+      [
+        "PEDS 453"
+      ]
+    ]
+  },
+  {
+    "course": "PEDS 315A",
+    "prereqText": "PREREQUISITES: Pediatrics 300A. Visiting students are required to obtain pre-approval from the department. Please email requests to Dr. Julia Raney at jhraney@stanford.edu. PERIODS AVAILABLE: 6-8 and 12, full time for 2 weeks or 4 weeks, 1 student per period. Please note that this clerkship is closed for academic year 2025-26. CLERKSHIP DIRECTOR: Julia Haven Raney, M.D. CLERKSHIP COORDINATOR: Ana Valdez-Fraser (408-427-1318).",
+    "parsedGroups": [
+      [
+        "PEDIATRICS 300A"
+      ],
+      [
+        "PEDS 12"
+      ],
+      [
+        "PEDS 26"
+      ],
+      [
+        "PEDS 408"
+      ],
+      [
+        "PEDS 427"
+      ]
+    ]
+  },
+  {
+    "course": "PEDS 335A",
+    "prereqText": "PREREQUISITES: Pediatrics 300A. Pediatrics 305A highly recommended. PERIODS AVAILABLE: 1-12, full time for 4 weeks, 1 student per period. CLERKSHIP DIRECTOR: Catherine Aftandilian, M.D., aftandil@stanford.edu. CLERKSHIP COORDINATOR: Gretchen Shawver, 650-724-7164, gshawver@stanford.edu. REPORTING INSTRUCTIONS: Where: 5th floor LPCH, Heme/Onc inpatient ward. Contact Gretchen Shawver/Dr. Catherine Aftandilian two weeks prior to start date to confirm and get further instructions; Time: 8:30 am.",
+    "parsedGroups": [
+      [
+        "PEDIATRICS 300A"
+      ],
+      [
+        "PEDS 12"
+      ],
+      [
+        "PEDS 650"
+      ],
+      [
+        "PEDS 724"
+      ],
+      [
+        "PEDS 30"
+      ]
+    ]
+  },
+  {
+    "course": "PEDS 340D",
+    "prereqText": "PREREQUISITES: Peds 300A. PERIODS AVAILABLE: 1-12, full-time for 2 weeks, 1 student per period. CLERKSHIP DIRECTOR: Prabhjot Sandhu, M.D., 408-945-2076, Kaiser Milpitas Office. CLERKSHIP COORDINATOR: Prabhjot Sandhu, M.D., 408-945-2076. REPORTING INSTRUCTIONS: Where: Determined with Dr. Sandhu. Please contact Dr. Sandhu at 408-945-2076 or via e-mail at Prabhjot.K.Sandhu@kp.org as soon as you are committed to coming to Kaiser for your pediatrics rotation; Time: TBA.",
+    "parsedGroups": [
+      [
+        "PEDS 300A"
+      ],
+      [
+        "PEDS 12"
+      ],
+      [
+        "PEDS 408"
+      ],
+      [
+        "PEDS 945"
+      ]
+    ]
+  },
+  {
+    "course": "PHYSICS 230",
+    "prereqText": "Prerequisite: PHYSICS 131 or equivalent.",
+    "parsedGroups": [
+      [
+        "PHYSICS 131"
+      ]
+    ]
+  },
+  {
+    "course": "PHYSICS 253",
+    "prereqText": "Pre-requisites: Physics 152/252 or equivalent. QFT or graduate- level particle physics is encouraged as well.",
+    "parsedGroups": [
+      [
+        "PHYSICS 152"
+      ],
+      [
+        "PHYSICS 252"
+      ]
+    ]
+  },
+  {
+    "course": "PORTLANG 2A",
+    "prereqText": "Prerequisite: Placement Test or PORTLANG 1A or equivalent.",
+    "parsedGroups": [
+      [
+        "PORTLANG 1A"
+      ]
+    ]
+  },
+  {
+    "course": "PORTLANG 11A",
+    "prereqText": "Prerequisite: Placement Test, PORTLANG 2A, PORTLANG 3 or equivalent.",
+    "parsedGroups": [
+      [
+        "PORTLANG 2A"
+      ],
+      [
+        "PORTLANG 3"
+      ]
+    ]
+  },
+  {
+    "course": "PORTLANG 12A",
+    "prereqText": "Prerequisite: Placement Test, PORTLANG 11A or equivalent.",
+    "parsedGroups": [
+      [
+        "PORTLANG 11A"
+      ]
+    ]
+  },
+  {
+    "course": "PORTLANG 101",
+    "prereqText": "Prerequisite: Placement Test, PORTLANG 12A, or equivalent.",
+    "parsedGroups": [
+      [
+        "PORTLANG 12A"
+      ]
+    ]
+  },
+  {
+    "course": "PORTLANG 102",
+    "prereqText": "Prerequisite: Placement Test, PORTLANG 12A, or equivalent.",
+    "parsedGroups": [
+      [
+        "PORTLANG 12A"
+      ]
+    ]
+  },
+  {
+    "course": "PORTLANG 103",
+    "prereqText": "Prerequisite: Placement Test, PORTLANG 12A, or equivalent.",
+    "parsedGroups": [
+      [
+        "PORTLANG 12A"
+      ]
+    ]
+  },
+  {
+    "course": "PSYC 300A",
+    "prereqText": "PREREQUISITES: None. PERIODS AVAILABLE: 1-12, full-time for 4 weeks, 10 students per period. CLERKSHIP DIRECTOR: Charles DeBattista, M.D., debacorp@stanford.edu, 650-723-8324 and Nicole Brooks, M.D. CLERKSHIP COORDINATOR: Quynh Dang, qdang@stanford.edu , 650-725-2769. REPORTING INSTRUCTIONS: Where: students will be notified prior to the first day; Time: 8:00 am. CALL CODE: 2, call once per week for the first three weeks.",
+    "parsedGroups": [
+      [
+        "PSYC 12"
+      ],
+      [
+        "PSYC 10"
+      ],
+      [
+        "PSYC 650"
+      ],
+      [
+        "PSYC 723"
+      ],
+      [
+        "PSYC 725"
+      ]
+    ]
+  },
+  {
+    "course": "PSYC 321A",
+    "prereqText": "PREREQUISITES: None. PERIODS AVAILABLE: 1-12, full time for 2 or 4 weeks, 2 student per period. CLERKSHIP DIRECTOR: Sheila Lahijani, M.D. CLERKSHIP COORDINATOR: Quynh Dang, 650-725-2769, qdang@stanford.edu. REPORTING INSTRUCTIONS: Coordinate via email, phone or page with assigned psycho-oncology attending. CALL CODE: 0. OTHER FACULTY: NA. LOCATION: SHC.",
+    "parsedGroups": [
+      [
+        "PSYC 12"
+      ],
+      [
+        "PSYC 650"
+      ],
+      [
+        "PSYC 725"
+      ]
+    ]
+  },
+  {
+    "course": "PSYC 326A",
+    "prereqText": "PREREQUISITES: Psychiatry 300A. PERIODS AVAILABLE: 1-12, full time for 4 weeks, 1 student per period. CLERKSHIP DIRECTOR: Paula Tran, M.D. CLERKSHIP COORDINATOR: Quynh Dang, 650-725-2769, 401 Quarry Rd, Rm. 2204. REPORTING INSTRUCTIONS: Where: Pediatric Psychiatry office, Room 3544, on the third floor of Packard West; Time: 9:00 am. CALL CODE: 0. OTHER FACULTY: M. Brown, W. Daniels, M. Goldsmith, J. Larsen, R.",
+    "parsedGroups": [
+      [
+        "PSYCHIATRY 300A"
+      ],
+      [
+        "PSYC 12"
+      ],
+      [
+        "PSYC 650"
+      ],
+      [
+        "PSYC 725"
+      ],
+      [
+        "PSYC 401"
+      ]
+    ]
+  },
+  {
+    "course": "PSYC 328B",
+    "prereqText": "PREREQUISITES: None. PERIODS AVAILABLE: 1-12, full-time for 4 weeks, 1 student per period. CLERKSHIP DIRECTOR: Edwin Kim, M.D. and Emaya Anbalagan, M.D. CLERKSHIP COORDINATOR: Quynh Dang, 650-725-2769, 401 Quarry Rd, Rm. 2204. REPORTING INSTRUCTIONS: Where: Palo Alto VA, 3801 Miranda Ave, Building 520, Quynh will provide reporting information; Time: 8:00 a.m. CALL CODE: 0. OTHER FACULTY: Staff. LOCATION: PAVAMC.",
+    "parsedGroups": [
+      [
+        "PSYC 12"
+      ],
+      [
+        "PSYC 650"
+      ],
+      [
+        "PSYC 725"
+      ],
+      [
+        "PSYC 401"
+      ],
+      [
+        "BUILDING 520"
+      ]
+    ]
+  },
+  {
+    "course": "PSYC 353A",
+    "prereqText": "PREREQUISITES: Psychiatry 300A. PERIODS AVAILABLE: 1-12, full time for 4 weeks, 1 student per period. CLERKSHIP DIRECTOR: Matthew Gunther, MD, MA. CLERKSHIP COORDINATOR: Quynh Dang, 650-725-2769, 401 Quarry Rd, Rm. 2204. REPORTING INSTRUCTIONS: Where: Stanford Hospital - page one of the residents on service. Quynh will provide the resident information; Time: 8:00 am. CALL CODE: 0. OTHER FACULTY: D. Fishman, B.",
+    "parsedGroups": [
+      [
+        "PSYCHIATRY 300A"
+      ],
+      [
+        "PSYC 12"
+      ],
+      [
+        "PSYC 650"
+      ],
+      [
+        "PSYC 725"
+      ],
+      [
+        "PSYC 401"
+      ]
+    ]
+  },
+  {
+    "course": "PSYC 355A",
+    "prereqText": "PREREQUISITES: Psychiatry 300A. PERIODS AVAILABLE: 1-12, full-time for 4 weeks, 1 student per period. CLERKSHIP DIRECTOR: Daniel Kim, M.D. CLERKSHIP COORDINATOR: Quynh Dang, 650-725-2769, 401 Quarry Rd, Rm. 2204. REPORTING INSTRUCTIONS: Where: Stanford Hospital - page one of the residents on service. Quynh will provide the resident information; Time: 8:00 am. CALL CODE: 0. OTHER FACULTY: E. Aboujaoude, J. Birnbaum, G.",
+    "parsedGroups": [
+      [
+        "PSYCHIATRY 300A"
+      ],
+      [
+        "PSYC 12"
+      ],
+      [
+        "PSYC 650"
+      ],
+      [
+        "PSYC 725"
+      ],
+      [
+        "PSYC 401"
+      ]
+    ]
+  },
+  {
+    "course": "PSYC 358A",
+    "prereqText": "PREREQUISITES: Psychiatry 300A. PERIODS AVAILABLE: 1-12, full time for 4 weeks, 1 student per period. CLERKSHIP DIRECTOR: Justin Birnbaum, M.D., 650-736-0106. CLERKSHIP COORDINATOR: Quynh Dang, 650-725-2769, 401 Quarry Rd, Rm. 2204. REPORTING INSTRUCTIONS: Where: TBA; Time: TBA. CALL CODE: 2. OTHER FACULTY: J. Ballon, R. Hu, D. Noordsy, P. Wang. LOCATION: SUMC.",
+    "parsedGroups": [
+      [
+        "PSYCHIATRY 300A"
+      ],
+      [
+        "PSYC 12"
+      ],
+      [
+        "PSYC 650"
+      ],
+      [
+        "PSYC 736"
+      ],
+      [
+        "PSYC 725"
+      ],
+      [
+        "PSYC 401"
+      ]
+    ]
+  },
+  {
+    "course": "PSYC 362B",
+    "prereqText": "PREREQUISITES: Psychiatry 300A. PERIODS AVAILABLE: 1-12, full time for 4 weeks, 1 student per period. CLERKSHIP DIRECTOR: Matt Jacobs, D.O. CLERKSHIP COORDINATOR: Quynh Dang, 650-725-2769, 401 Quarry Rd, Rm. 2204. REPORTING INSTRUCTIONS: Where: VA Palo Alto, 3801 Miranda Ave, Building 520; time: 8:00 am. Reporting details provided by Quynh Dang. CALL CODE: 2 (one evening shift from 4:30 pm to 9 pm per week).",
+    "parsedGroups": [
+      [
+        "PSYCHIATRY 300A"
+      ],
+      [
+        "PSYC 12"
+      ],
+      [
+        "PSYC 650"
+      ],
+      [
+        "PSYC 725"
+      ],
+      [
+        "PSYC 401"
+      ],
+      [
+        "BUILDING 520"
+      ],
+      [
+        "FROM 4"
+      ],
+      [
+        "PSYC 30"
+      ]
+    ]
+  },
+  {
+    "course": "PSYC 398A",
+    "prereqText": "PREREQUISITES: Psychiatry 300A and Medicine 300A, consent of the designated faculty preceptor; and approval by Advisor. PERIODS AVAILABLE: 1-12, full time for 4 weeks, 4 students per period. CLERKSHIP DIRECTOR: Charles DeBattista, M.D., 650-723-8324. CLERKSHIP COORDINATOR: Quynh Dang, 650-725-2769, 401 Quarry Rd, Rm. 2204. REPORTING INSTRUCTIONS: Where: TBA (designated faculty preceptor); Time: TBA. CALL CODE: 2.",
+    "parsedGroups": [
+      [
+        "PSYCHIATRY 300A"
+      ],
+      [
+        "MEDICINE 300A"
+      ],
+      [
+        "PSYC 12"
+      ],
+      [
+        "PSYC 650"
+      ],
+      [
+        "PSYC 723"
+      ],
+      [
+        "PSYC 725"
+      ],
+      [
+        "PSYC 401"
+      ]
+    ]
+  },
+  {
+    "course": "PUBLPOL 325",
+    "prereqText": "Prerequisite: calculus-based course in microeconomics (at least Economics 50 or equivalent).",
+    "parsedGroups": [
+      [
+        "ECONOMICS 50"
+      ]
+    ]
+  },
+  {
+    "course": "RAD 301A",
+    "prereqText": "PREREQUISITES: Medicine 300A, Pediatrics 300A, or Surgery 300A strongly advised. PERIODS AVAILABLE: 4, 5, 8, 9, full-time for 4 weeks, 15 students per period. CLERKSHIP DIRECTOR: Erin Grady, M.D. and Bryan Lanzman, M.D. CLERKSHIP COORDINATOR: Sergio Sousa, 650-724-7518, smsousa@stanford.edu. REPORTING INSTRUCTIONS: Where: Instructions on Canvas; Time: Check schedule in Canvas. CALL CODE: 0. OTHER FACULTY: Radiology faculty, fellows, and residents.",
+    "parsedGroups": [
+      [
+        "MEDICINE 300A"
+      ],
+      [
+        "PEDIATRICS 300A",
+        "SURGERY 300A"
+      ],
+      [
+        "RAD 15"
+      ],
+      [
+        "RAD 650"
+      ],
+      [
+        "RAD 724"
+      ]
+    ]
+  },
+  {
+    "course": "RAD 304A",
+    "prereqText": "PREREQUISITES: Radiology 301A or a similar general radiology clerkship or consent of instructor. PERIODS AVAILABLE: 2-12, full-time for 2 or 4 weeks, 2 students per period. CLERKSHIP DIRECTOR: Jayne Seekins, D.O. CLERKSHIP COORDINATOR: Sergio Sousa, 650-724-7518, smsousa@stanford.edu. REPORTING INSTRUCTIONS: Where: LPCH (Radiology Dept. Secretary); Time: 8:30 am. CALL CODE: 0. OTHER FACULTY: M. Atluri, R. Barth, F.",
+    "parsedGroups": [
+      [
+        "RADIOLOGY 301A"
+      ],
+      [
+        "RAD 12"
+      ],
+      [
+        "RAD 650"
+      ],
+      [
+        "RAD 724"
+      ],
+      [
+        "RAD 30"
+      ]
+    ]
+  },
+  {
+    "course": "RAD 305A",
+    "prereqText": "PREREQUISITES: Surgery 300A, Medicine 300A and Radiology 301A are recommended but not required. PERIODS AVAILABLE: 1-12, full-time for 2 weeks or 4 weeks, 3 students per period for P1 and 4 students per period from P1-P12. CLERKSHIP DIRECTOR: Andrew Kesselman, M.D. CLERKSHIP COORDINATOR: Sergio Sousa, 650-724-7518, smsousa@stanford.edu; Elizabeth Rangel, lizrang@stanford.edu. REPORTING INSTRUCTIONS: Where: TBA (email 2 weeks prior); Time: TBA; CALL CODE: 2 (voluntary).",
+    "parsedGroups": [
+      [
+        "SURGERY 300A"
+      ],
+      [
+        "MEDICINE 300A"
+      ],
+      [
+        "RADIOLOGY 301A"
+      ],
+      [
+        "RAD 12"
+      ],
+      [
+        "RAD 650"
+      ],
+      [
+        "RAD 724"
+      ],
+      [
+        "EMAIL 2"
+      ]
+    ]
+  },
+  {
+    "course": "RAD 398A",
+    "prereqText": "PREREQUISITES: None for Diagnostic Radiology; Medicine 300A for Nuclear Medicine. Consent of the designated faculty preceptor and approval by Advisor. PERIODS AVAILABLE: 1-12. CLERKSHIP DIRECTOR: Erin Grady, M.D. CLERKSHIP COORDINATOR: Sergio Sousa, 650-724-7518, smsousa@stanford.edu. REPORTING INSTRUCTIONS: Where: TBA (designated faculty preceptor); Time: TBA. CALL CODE: 2 (varies with preceptor). OTHER FACULTY: Staff.",
+    "parsedGroups": [
+      [
+        "MEDICINE 300A"
+      ],
+      [
+        "RAD 12"
+      ],
+      [
+        "RAD 650"
+      ],
+      [
+        "RAD 724"
+      ]
+    ]
+  },
+  {
+    "course": "RUSSLANG 55",
+    "prereqText": "Prerequisite: RUSSLANG 2A, 3, 21, 22, or 23 or equivalent placement.",
+    "parsedGroups": [
+      [
+        "RUSSLANG 2A"
+      ],
+      [
+        "RUSSLANG 3"
+      ],
+      [
+        "RUSSLANG 21"
+      ],
+      [
+        "RUSSLANG 22"
+      ],
+      [
+        "RUSSLANG 22",
+        "RUSSLANG 23"
+      ]
+    ]
+  },
+  {
+    "course": "SPANLANG 100",
+    "prereqText": "Prerequisite: SPANLANG 13 or equivalent.",
+    "parsedGroups": [
+      [
+        "SPANLANG 13"
+      ]
+    ]
+  },
+  {
+    "course": "SPANLANG 108SL",
+    "prereqText": "Prerequisite: completion of SPANLANG 13, 23B, or placement test equivalent to SPANLANG 100 or higher. SPANLANG 108SL is a requirement for HUMRTS 108.",
+    "parsedGroups": [
+      [
+        "SPANLANG 13"
+      ],
+      [
+        "SPANLANG 23B",
+        "SPANLANG 100"
+      ],
+      [
+        "HUMRTS 108"
+      ]
+    ]
+  },
+  {
+    "course": "STATS 191",
+    "prereqText": "Prerequisites: Introductory statistics course, such as STATS 60, STATS 110, STATS 141, or 5 on the AP Statistics exam, or STATS 118. See https://statistics.stanford.edu/course-equiv for equivalent courses in other departments that satisfy these prerequisites.",
+    "parsedGroups": [
+      [
+        "STATS 60"
+      ],
+      [
+        "STATS 110"
+      ],
+      [
+        "STATS 141",
+        "STATS 118"
+      ]
+    ]
+  },
+  {
+    "course": "STATS 200",
+    "prereqText": "Prerequisite: STATS 118 or equivalent. See https://statistics.stanford.edu/course-equiv for equivalent courses in other departments that satisfy these prerequisites.",
+    "parsedGroups": [
+      [
+        "STATS 118"
+      ]
+    ]
+  },
+  {
+    "course": "STATS 205",
+    "prereqText": "Prerequisites: STATS 191/203 and STATS 200. See https://statistics.stanford.edu/course-equiv for equivalent courses in other departments that satisfy these prerequisites.",
+    "parsedGroups": [
+      [
+        "STATS 191"
+      ],
+      [
+        "STATS 203"
+      ],
+      [
+        "STATS 200"
+      ]
+    ]
+  },
+  {
+    "course": "STATS 263",
+    "prereqText": "Prerequisites: STATS 116/118, STATS 191/203. See https://statistics.stanford.edu/course-equiv for equivalent courses in other departments that satisfy these prerequisites.",
+    "parsedGroups": [
+      [
+        "STATS 116"
+      ],
+      [
+        "STATS 118"
+      ],
+      [
+        "STATS 191"
+      ],
+      [
+        "STATS 203"
+      ]
+    ]
+  },
+  {
+    "course": "STATS 361",
+    "prereqText": "Prerequisite: STATS 300A and STATS 300B, or equivalent graduate-level coursework on the theory of statistics.",
+    "parsedGroups": [
+      [
+        "STATS 300A"
+      ],
+      [
+        "STATS 300B"
+      ]
+    ]
+  },
+  {
+    "course": "SURG 102",
+    "prereqText": "Prerequisites: Surgery 101 or equivalent.",
+    "parsedGroups": [
+      [
+        "SURGERY 101"
+      ]
+    ]
+  },
+  {
+    "course": "SURG 301A",
+    "prereqText": "PREREQUISITES: Dental or medical school student in 3rd or 4th year; any year of medical Residency. PERIODS AVAILABLE: 1-12, full-time for 2 weeks only, 2 students per period. CLERKSHIP DIRECTOR: Gary Roberts, DDS, groberts@stanford.edu, 650-723-5824. CLERKSHIP COORDINATOR: Sabrina Alinejad salineja@stanford.edu. REPORTING INSTRUCTIONS: Where: Please refer to the welcome email you receive from the clerkship coordinator.",
+    "parsedGroups": [
+      [
+        "SURG 12"
+      ],
+      [
+        "SURG 650"
+      ],
+      [
+        "SURG 723"
+      ]
+    ]
+  },
+  {
+    "course": "SURG 310E",
+    "prereqText": "PREREQUISITES: Surgery 300A. PERIODS AVAILABLE: 1-12, full-time for 2 weeks or 4 weeks, 1-2 students per period. CLERKSHIP DIRECTOR: Greg Buncke, M.D. CLERKSHIP COORDINATOR: Colleen Fuller, 415-565-6136. REPORTING INSTRUCTIONS: Where: Contact coordinator for reporting instructions; Time: TBA. CALL CODE: 0. OTHER FACULTY: R. Buntic, W. Lin, B. Safa, A. Watt. LOCATION: Buncke Clinic.",
+    "parsedGroups": [
+      [
+        "SURGERY 300A"
+      ],
+      [
+        "SURG 12"
+      ],
+      [
+        "SURG 415"
+      ],
+      [
+        "SURG 565"
+      ]
+    ]
+  },
+  {
+    "course": "SURG 314A",
+    "prereqText": "PREREQUISITES: None. PERIODS AVAILABLE: 7-12, full- time for 4 weeks, 2 students per period. CLERKSHIP DIRECTOR: Michael Sgroi, M.D., msgroi@stanford.edu, 650-468-6163. CLERKSHIP COORDINATOR: Robert Strachan, surgeryclerkship@stanford.edu. REPORTING INSTRUCTIONS: Where: Students will be sent information by e-mail; Time: TBA. CALL CODE: 1. OTHER FACULTY: Staff. LOCATION: SHC, PAVAMC, SCVMC.",
+    "parsedGroups": [
+      [
+        "SURG 12"
+      ],
+      [
+        "SURG 650"
+      ],
+      [
+        "SURG 468"
+      ]
+    ]
+  },
+  {
+    "course": "SURG 317A",
+    "prereqText": "PREREQUISITES: Surg 300A (or by permission). PERIODS AVAILABLE: 1-12, full time for 2 weeks or 4 weeks, 1 student per period. CLERKSHIP DIRECTOR: Julie Fuchs, M.D., 650-384-9463. CLERKSHIP COORDINATOR: Samrawit Gebregziabher at samrawit@stanford.edu. REPORTING INSTRUCTIONS: Where: Please email Samrawit Gebregziabher at samrawit@stanford.edu 2 weeks before start date for reporting instructions. Students will be notified by email in advance of clerkship start; Time: TBA.",
+    "parsedGroups": [
+      [
+        "SURG 300A"
+      ],
+      [
+        "SURG 12"
+      ],
+      [
+        "SURG 650"
+      ],
+      [
+        "SURG 384"
+      ],
+      [
+        "EDU 2"
+      ]
+    ]
+  },
+  {
+    "course": "UROL 308C",
+    "prereqText": "PREREQUISITES: None. PERIODS AVAILABLE: 1-12, full-time for 2 weeks or 4 weeks, 1 student per period. CLERKSHIP DIRECTOR: William Thieu, M.D., william.thieu@hhs.sccgov.org. CLERKSHIP COORDINATOR: Taranjit Bains, bainstj@stanford.edu. REPORTING INSTRUCTIONS: Where: SCVMC, Division of Urology, Valley Specialty Center, 751 Bascom Avenue, 4th Floor, San Jose, CA 95128. Call Jewel Rey at 408-885-7822 three weeks prior; Time: TBA.",
+    "parsedGroups": [
+      [
+        "UROL 12"
+      ],
+      [
+        "UROL 751"
+      ],
+      [
+        "UROL 408"
+      ],
+      [
+        "UROL 885"
+      ]
+    ]
+  },
+  {
+    "course": "UROL 338C",
+    "prereqText": "PREREQUISITES: UROL 308A, UROL 308B, UROL 308C or SURG 300A. PERIODS AVAILABLE: 1-12, full-time for 4 weeks, 1 student per period. CLERKSHIP DIRECTOR: William Thieu, M.D. CLERKSHIP COORDINATOR: Taranjit Bains, bainstj@stanford.edu. REPORTING INSTRUCTIONS: Where: SCVMC, Division of Urology, Valley Specialty Center, 751 Bascom Ave, 4/F, San Jose, CA 95128. Call Jewel Rey at 408-885-7822 three weeks prior; Time: TBA (Please contact the Chief Resident).",
+    "parsedGroups": [
+      [
+        "UROL 308A"
+      ],
+      [
+        "UROL 308B"
+      ],
+      [
+        "UROL 308C",
+        "SURG 300A"
+      ],
+      [
+        "UROL 12"
+      ],
+      [
+        "UROL 751"
+      ],
+      [
+        "UROL 408"
+      ],
+      [
+        "UROL 885"
+      ]
+    ]
+  }
+]
