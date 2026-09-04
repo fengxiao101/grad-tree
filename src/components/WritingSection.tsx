@@ -4,6 +4,7 @@ import { CourseCard, TAG_COLORS, WritingTag, SectionTag } from '../types';
 import { GEN_ED_CONFIG, GenEdConfig } from '../data/requirements';
 import { ClassCard } from './ClassCard';
 import { usePlannerStore } from '../store/usePlannerStore';
+import { ConfirmRemoveCourseModal } from './ConfirmRemoveCourseModal';
 import type { TransferCredit } from '../store/usePlannerStore';
 import { ALL_TEST_GROUPS } from '../data/testCredits';
 import { EmptyDropZone } from './EmptyDropZone';
@@ -210,7 +211,6 @@ function SectionBox({
 export function WritingSection({ cards, onAddClick, onEditCard, onDoubleClickCard, completedQuarters, wimCourses, onAddCourse }: Props) {
   const [collapsed, setCollapsed] = useState(false);
   const [pendingDelete, setPendingDelete] = useState<CourseCard | null>(null);
-  const removeCard = usePlannerStore(s => s.removeCard);
   const testCreditChecks = usePlannerStore(s => s.testCreditChecks);
   const manualLangFulfilled = usePlannerStore(s => s.manualLangFulfilled);
   const setManualLangFulfilled = usePlannerStore(s => s.setManualLangFulfilled);
@@ -318,37 +318,7 @@ export function WritingSection({ cards, onAddClick, onEditCard, onDoubleClickCar
       </>)}
 
       {pendingDelete && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/40"
-          onClick={() => setPendingDelete(null)}
-        >
-          <div
-            className="bg-white rounded-xl shadow-xl p-5 max-w-sm w-full mx-4"
-            onClick={e => e.stopPropagation()}
-          >
-            <p className="font-semibold text-gray-900 text-sm mb-1">Remove course from plan?</p>
-            <p className="text-xs text-gray-500 mb-4">
-              <span className="font-medium text-gray-700">
-                {[pendingDelete.department, pendingDelete.courseNumber].filter(Boolean).join(' ') || pendingDelete.courseName || 'This course'}
-              </span>
-              {' '}will be removed from your entire plan, including the year-by-year schedule.
-            </p>
-            <div className="flex justify-end gap-2">
-              <button
-                onClick={() => setPendingDelete(null)}
-                className="px-3 py-1.5 text-sm rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors"
-              >
-                Cancel
-              </button>
-              <button
-                onClick={() => { removeCard(pendingDelete.id); setPendingDelete(null); }}
-                className="px-3 py-1.5 text-sm rounded-lg bg-red-600 text-white hover:bg-red-700 transition-colors"
-              >
-                Remove
-              </button>
-            </div>
-          </div>
-        </div>
+        <ConfirmRemoveCourseModal card={pendingDelete} onCancel={() => setPendingDelete(null)} />
       )}
     </section>
   );
