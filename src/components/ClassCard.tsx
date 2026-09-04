@@ -2,7 +2,7 @@ import { useRef, useMemo, useEffect } from 'react';
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { Trash2, AlertTriangle, X } from 'lucide-react';
-import { CourseCard, PRIORITY_META, AFFILIATION_META, SectionTag, Affiliation } from '../types';
+import { CourseCard, PRIORITY_META, AFFILIATION_META, SectionTag, Affiliation, type CatalogTerm } from '../types';
 import { TagBadge } from './TagBadge';
 import { PriorityIcon } from './PriorityIcon';
 import { usePlannerStore } from '../store/usePlannerStore';
@@ -11,7 +11,6 @@ import { computeCardWarnings } from '../utils/courseWarnings';
 import { lookupCourse } from '../data/catalog';
 import { computeTestCovered, computeTransferCovered } from '../data/testCreditUtils';
 
-type Quarter = 'Aut' | 'Win' | 'Spr' | 'Sum';
 interface Props {
   card: CourseCard;
   onEdit: (card: CourseCard) => void;
@@ -55,10 +54,10 @@ export function ClassCard({ card, onEdit, onDoubleClick, onMove, contextTag, noD
   const catalogTerms = useMemo(() => {
     if (!card.department || !card.courseNumber) return null;
     const entry = lookupCourse(card.department, card.courseNumber);
-    return entry?.terms?.length ? entry.terms as Quarter[] : null;
+    return entry?.terms?.length ? entry.terms as CatalogTerm[] : null;
   }, [card.department, card.courseNumber]);
 
-  const QUARTER_LABEL: Record<Quarter, string> = { Aut: 'Autumn', Win: 'Winter', Spr: 'Spring', Sum: 'Summer' };
+  const QUARTER_LABEL: Record<CatalogTerm, string> = { Aut: 'Autumn', Win: 'Winter', Spr: 'Spring', Sum: 'Summer' };
   const seasonWarningText = useMemo(() => {
     if (!catalogTerms?.length) return 'Not offered this quarter';
     const names = catalogTerms.map(q => QUARTER_LABEL[q]);

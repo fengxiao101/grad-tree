@@ -1,11 +1,10 @@
 import { CourseHoverDetail } from './CourseHoverDetail';
-import { SectionTag, TAG_DISPLAY, TAG_COLORS } from '../types';
+import { SectionTag, TAG_DISPLAY, TAG_COLORS, type CatalogTerm } from '../types';
 import type { CatalogCourse } from '../data/catalog/full';
 
 export type MajorTier = 'required' | 'option' | null;
-type Quarter = 'Aut' | 'Win' | 'Spr' | 'Sum';
 
-const QUARTER_BADGE_COLORS: Record<Quarter, string> = {
+const QUARTER_BADGE_COLORS: Record<CatalogTerm, string> = {
   Aut: 'bg-amber-50 text-amber-700',
   Win: 'bg-blue-50 text-blue-700',
   Spr: 'bg-green-50 text-green-700',
@@ -86,7 +85,7 @@ export function CourseRow({ course, tier, onSelect, expanded, onPointerMove, onP
             <span className="text-[9px] sm:text-[11px] text-gray-400 whitespace-nowrap">{course.units} units</span>
           )}
           <div className="flex gap-0.5">
-            {(['Aut', 'Win', 'Spr', 'Sum'] as Quarter[]).map(q =>
+            {(['Aut', 'Win', 'Spr', 'Sum'] as CatalogTerm[]).map(q =>
               course.terms.includes(q) ? (
                 <span key={q} className={`text-[8px] sm:text-[10px] font-medium px-1 sm:px-1.5 py-0.5 rounded ${QUARTER_BADGE_COLORS[q]}`}>{q}</span>
               ) : null

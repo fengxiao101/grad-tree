@@ -1,9 +1,7 @@
-import { ALL_QUARTERS } from '../types';
+import { ALL_QUARTERS, SEASON_TO_TERM } from '../types';
 import { lookupCourse } from '../data/catalog';
 import { testCreditCoversCode } from '../data/testCreditUtils';
 import type { CourseCard } from '../types';
-
-const SEASON_MAP: Record<string, string> = { AUT: 'Aut', WIN: 'Win', SPR: 'Spr', SUM: 'Sum' };
 
 export function getQuarterIndex(quarterId: string): number {
   return ALL_QUARTERS.findIndex(q => q.id === quarterId);
@@ -11,7 +9,7 @@ export function getQuarterIndex(quarterId: string): number {
 
 export function getQuarterSeason(quarterId: string): string | null {
   const q = ALL_QUARTERS.find(q => q.id === quarterId);
-  return q ? SEASON_MAP[q.season] : null;
+  return q ? SEASON_TO_TERM[q.season] : null;
 }
 
 /** Words that look like a department code but never are. */

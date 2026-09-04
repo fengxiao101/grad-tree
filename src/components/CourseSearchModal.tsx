@@ -1,7 +1,7 @@
 import { useMemo, useState, useRef, useEffect } from 'react';
 import { X, ExternalLink, Search, BookOpen, ChevronRight, ChevronDown } from 'lucide-react';
 import { CourseRow, type MajorTier } from './CourseRow';
-import { SectionTag, WayTag, TAG_DISPLAY, TAG_COLORS, ALL_TAGS, WAY_TAGS } from '../types';
+import { SectionTag, WayTag, TAG_DISPLAY, TAG_COLORS, ALL_TAGS, WAY_TAGS, type CatalogTerm } from '../types';
 import { coursesForTag, lookupCourse, ALL_COURSES, type CatalogCourse } from '../data/catalog/full';
 import { normalizeCatalogQuery } from '../data/catalog/aliases';
 import { WAYS_CONFIG } from '../data/requirements';
@@ -11,14 +11,13 @@ import { useProgramConfig, useProgramConfigs } from '../hooks/useProgramConfigs'
 
 interface Props {
   defaultTag?: SectionTag;     // pre-select a tag filter (e.g. from which box was clicked)
-  defaultQuarter?: Quarter;    // pre-select a quarter filter
+  defaultQuarter?: CatalogTerm;    // pre-select a quarter filter
   onSelect: (course: CatalogCourse) => void;
   onClose: () => void;
   onManualAdd?: () => void;
   activeProgramId?: string;    // which program's section to expand by default
 }
 
-type Quarter = 'Aut' | 'Win' | 'Spr' | 'Sum';
 
 function getMajorCourseTiers(config: MajorConfig) {
   const required = new Set<string>();
@@ -93,7 +92,7 @@ function scoreMatch(course: CatalogCourse, q: string, qCompact: string, tokens: 
   return 99;
 }
 
-const QUARTER_COLORS: Record<Quarter, string> = {
+const QUARTER_COLORS: Record<CatalogTerm, string> = {
   Aut: 'bg-amber-100 border-amber-300 text-amber-800',
   Win: 'bg-blue-100 border-blue-300 text-blue-800',
   Spr: 'bg-green-100 border-green-300 text-green-800',
@@ -128,7 +127,7 @@ function courseMatchesUnitFilter(course: CatalogCourse, filters: UnitFilter[]): 
 
 export function CourseSearchModal({ defaultTag, defaultQuarter, onSelect, onClose, onManualAdd, activeProgramId }: Props) {
   const [query, setQuery] = useState('');
-  const [quarters, setQuarters] = useState<Quarter[]>(defaultQuarter ? [defaultQuarter] : []);
+  const [quarters, setQuarters] = useState<CatalogTerm[]>(defaultQuarter ? [defaultQuarter] : []);
   const [selectedTags, setSelectedTags] = useState<SectionTag[]>(defaultTag ? [defaultTag] : []);
   const [selectedUnits, setSelectedUnits] = useState<UnitFilter[]>([]);
   const [expandedPrograms, setExpandedPrograms] = useState<Set<string>>(
@@ -196,7 +195,7 @@ export function CourseSearchModal({ defaultTag, defaultQuarter, onSelect, onClos
   const toggleTag = (tag: SectionTag) =>
     setSelectedTags(prev => prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag]);
 
-  const toggleQuarter = (q: Quarter) =>
+  const toggleQuarter = (q: CatalogTerm) =>
     setQuarters(prev => prev.includes(q) ? prev.filter(x => x !== q) : [...prev, q]);
 
   const toggleUnit = (u: UnitFilter) =>
@@ -457,7 +456,7 @@ export function CourseSearchModal({ defaultTag, defaultQuarter, onSelect, onClos
           {/* Quarter filter row */}
           <div className="flex items-center gap-1 flex-wrap">
             <span className="text-[11px] text-gray-400">Quarter:</span>
-            {(['Aut', 'Win', 'Spr', 'Sum'] as Quarter[]).map(q => (
+            {(['Aut', 'Win', 'Spr', 'Sum'] as CatalogTerm[]).map(q => (
               <button
                 key={q}
                 onClick={() => toggleQuarter(q)}

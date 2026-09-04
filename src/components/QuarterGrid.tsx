@@ -1,11 +1,11 @@
 import { ChevronDown, ChevronRight } from 'lucide-react';
-import { ALL_QUARTERS, CourseCard } from '../types';
+import { ALL_QUARTERS, CourseCard, type Quarter } from '../types';
 import { usePlannerStore } from '../store/usePlannerStore';
 import { QuarterBox } from './QuarterBox';
 
 interface Props {
   cards: CourseCard[];
-  onAddClick: (quarterId: string, season: string) => void;
+  onAddClick: (quarterId: string, season: Quarter['season']) => void;
   onEditCard: (card: CourseCard) => void;
   onDoubleClickCard?: (card: CourseCard) => void;
   onMoveCard?: (card: CourseCard) => void;

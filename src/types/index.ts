@@ -37,6 +37,14 @@ export interface Quarter {
   year: 1 | 2 | 3 | 4 | 5;
 }
 
+/** How the course catalog spells a term, as used in CatalogCourse.terms. */
+export type CatalogTerm = 'Aut' | 'Win' | 'Spr' | 'Sum';
+
+/** Planner season code to the catalog's spelling of the same term. */
+export const SEASON_TO_TERM: Record<Quarter['season'], CatalogTerm> = {
+  AUT: 'Aut', WIN: 'Win', SPR: 'Spr', SUM: 'Sum',
+};
+
 export const ALL_QUARTERS: Quarter[] = [
   { id: 'Y1-AUT', label: 'Autumn',  season: 'AUT', year: 1 },
   { id: 'Y1-WIN', label: 'Winter',  season: 'WIN', year: 1 },

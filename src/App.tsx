@@ -20,6 +20,8 @@ import {
   WayTag,
   WritingTag,
   WAY_TAGS,
+  SEASON_TO_TERM,
+  type CatalogTerm,
   type Affiliation,
   type Priority,
   type RequirementAssignment,
@@ -71,8 +73,6 @@ function ModalLoading() {
 
 const CONTAINER_IDS = new Set(['unsorted', ...ALL_QUARTERS.map(q => q.id)]);
 
-type CatalogQuarter = 'Aut' | 'Win' | 'Spr' | 'Sum';
-
 function extractPlanData(s: PlannerStore) {
   const liveSnapshot = captureLiveSnapshot(s);
   const scenarios = s.scenarios.map(sc =>
@@ -112,16 +112,12 @@ function firebaseErrMsg(err: unknown): string {
   return 'Cloud save failed: see browser console for details.';
 }
 
-const SEASON_TO_CATALOG: Record<string, CatalogQuarter> = {
-  AUT: 'Aut', WIN: 'Win', SPR: 'Spr', SUM: 'Sum',
-};
-
-type CourseSearchParams = { defaultTag?: SectionTag; filterQuarter?: CatalogQuarter; targetQuarterId?: string; anyApprovedSlotId?: string; defaultAffiliation?: Affiliation; requirementProgramId?: string };
+type CourseSearchParams = { defaultTag?: SectionTag; filterQuarter?: CatalogTerm; targetQuarterId?: string; anyApprovedSlotId?: string; defaultAffiliation?: Affiliation; requirementProgramId?: string };
 
 type ModalState =
   | { type: 'add'; quarterId: string; defaultTags?: SectionTag[]; prefillCourse?: CatalogCourse; committedWay?: WayTag; defaultAffiliation?: Affiliation; anyApprovedSlotId?: string; requirementProgramId?: string; fromSearchParams?: CourseSearchParams }
   | { type: 'edit'; card: CourseCard }
-  | { type: 'course-search'; defaultTag?: SectionTag; filterQuarter?: CatalogQuarter; targetQuarterId?: string; anyApprovedSlotId?: string; defaultAffiliation?: Affiliation; requirementProgramId?: string }
+  | { type: 'course-search'; defaultTag?: SectionTag; filterQuarter?: CatalogTerm; targetQuarterId?: string; anyApprovedSlotId?: string; defaultAffiliation?: Affiliation; requirementProgramId?: string }
   | null;
 
 function QuarterSectionHeader({ collapsed, onToggle }: { collapsed: boolean; onToggle: () => void }) {
@@ -380,7 +376,7 @@ export default function App() {
   const openAdd = (quarterId: string, defaultTags?: SectionTag[], prefillCourse?: CatalogCourse, committedWay?: WayTag, defaultAffiliation?: Affiliation, anyApprovedSlotId?: string, requirementProgramId?: string, fromSearchParams?: CourseSearchParams) =>
     setModal({ type: 'add', quarterId, defaultTags, prefillCourse, committedWay, defaultAffiliation, anyApprovedSlotId, requirementProgramId, fromSearchParams });
   const openEdit = (card: CourseCard) => setModal({ type: 'edit', card });
-  const openCourseSearch = (defaultTag?: SectionTag, filterQuarter?: CatalogQuarter, targetQuarterId?: string, anyApprovedSlotId?: string, defaultAffiliation?: Affiliation, requirementProgramId?: string) =>
+  const openCourseSearch = (defaultTag?: SectionTag, filterQuarter?: CatalogTerm, targetQuarterId?: string, anyApprovedSlotId?: string, defaultAffiliation?: Affiliation, requirementProgramId?: string) =>
     setModal({ type: 'course-search', defaultTag, filterQuarter, targetQuarterId, anyApprovedSlotId, defaultAffiliation, requirementProgramId });
 
   const courseInConfig = useCallback((dept: string, num: string, config: typeof majorConfig) => {
@@ -1095,7 +1091,7 @@ export default function App() {
             />
             <QuarterGrid
               cards={enrolledCards}
-              onAddClick={(qId, season) => openCourseSearch(undefined, SEASON_TO_CATALOG[season], qId)}
+              onAddClick={(qId, season) => openCourseSearch(undefined, SEASON_TO_TERM[season], qId)}
               onEditCard={openEdit}
               onDoubleClickCard={handleDoubleClickCard}
               onMoveCard={setMoveTarget}

@@ -4,7 +4,7 @@ import { X, Printer, LayoutGrid, LayoutList, Share2, Mail, MessageSquare, Check,
 import { useShallow } from 'zustand/react/shallow';
 
 const SITE_URL = import.meta.env.VITE_SITE_URL ?? 'https://gradtree.app';
-import { ALL_QUARTERS, CourseCard, TAG_COLORS, TAG_DISPLAY, WAY_TAGS, WayTag, AFFILIATION_META, type Affiliation } from '../types';
+import { ALL_QUARTERS, CourseCard, SEASON_TO_TERM, TAG_COLORS, TAG_DISPLAY, WAY_TAGS, WayTag, AFFILIATION_META, type Affiliation } from '../types';
 import { usePlannerStore, type PlanSnapshot, orderedCardsFor, toCourseKey } from '../store/usePlannerStore';
 import { WAYS_CONFIG, GEN_ED_CONFIG } from '../data/requirements';
 import { ALL_TEST_GROUPS } from '../data/testCredits';
@@ -93,7 +93,6 @@ interface DocOptions {
 }
 
 const SEASONS = ['AUT', 'WIN', 'SPR'] as const;
-const SEASON_LABEL: Record<string, string> = { AUT: 'Aut', WIN: 'Win', SPR: 'Spr', SUM: 'Sum' };
 
 function PrintMetaRequirementsPanel({
   requirements,
@@ -370,7 +369,7 @@ export function PlanDocumentContent({
             <tr className="border-b-2 border-gray-200">
               <th className="text-left py-2 pr-3 text-xs font-bold text-gray-400 w-16">Year</th>
               {seasons.map(s => (
-                <th key={s} className="text-left py-2 px-2 text-xs font-bold text-gray-400">{SEASON_LABEL[s]}</th>
+                <th key={s} className="text-left py-2 px-2 text-xs font-bold text-gray-400">{SEASON_TO_TERM[s]}</th>
               ))}
             </tr>
           </thead>
