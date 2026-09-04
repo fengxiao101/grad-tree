@@ -63,10 +63,10 @@ Read this file FIRST before extracting or encoding any program. Every mistake he
 
 - **pre-major sections don't count toward minor units** - set `phase: 'pre-major'` on prerequisite sections (e.g., math series for Physics minor) so their slots are skipped in `totalAssignedUnits`; also add `allowDoubleCount: true` so those courses can still be counted for the major
 - **Minor elective sections: consolidate slots** - instead of 3-4 separate `any-approved` slots for electives, use ONE slot with `count: N` (e.g., `count: 3`); the UI shows 0/3 with a single "Search & add" button and chips for each added course; much cleaner than N separate rows
-- **Extra tagged courses now count toward program units** - if a card is tagged as 'minor' (or 'major') it now counts toward `totalAssignedUnits` even if it doesn't match any slot; students can add overflow electives beyond explicit slots and they contribute to the unit total
+- **Extra tagged courses count toward program units** - a card tagged as 'minor' (or 'major') counts toward `totalAssignedUnits` even if it doesn't match any slot; students can add overflow electives beyond explicit slots and they contribute to the unit total
 - **`pick-from-list, count: N` replaces two duplicate pick-one slots** - if two slots list the same N options (e.g., Physics minor "Advanced Course 1" and "Advanced Course 2"), replace with a single `pick-from-list, count: 2` slot; the UI shows 0/2 and lets the student pick any 2 different options
-- **Minors with tracks need `trackSelector: true` section** - same rule as before; if `tracks[]` exists, `sections[]` must include `{ trackSelector: true }` or nothing renders (Sociology, SymSys both needed this)
-- **Hover popup on pinned chips** - courses added via "Search & add" into an `any-approved` slot show as green chips; hovering a chip now shows the course detail popup with a "Delete" button (same as CourseChip)
+- **Minors with tracks need a `trackSelector: true` section** - if `tracks[]` exists, `sections[]` must include `{ trackSelector: true }` or nothing renders (Sociology, SymSys both needed this)
+- **Hover popup on pinned chips** - courses added via "Search & add" into an `any-approved` slot show as green chips; hovering a chip shows the course detail popup with a "Delete" button, the same as CourseChip
 - **"3 of 5 areas" structure** - use a single section with `minCourses: 3` and 5 optional `pick-from-list, count: 1` slots (one per area); the section shows complete when ≥3 area slots are filled; Music minor uses this pattern
 
 ## General patterns caught repeatedly
