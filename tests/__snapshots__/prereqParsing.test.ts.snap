@@ -1,0 +1,156 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`extractCourseCodes > extracts the same codes from representative prerequisite prose 1`] = `
+{
+  "andList": [
+    "CS 103",
+    "CS 109",
+  ],
+  "compactCode": [
+    "AA 100",
+    "E 15",
+  ],
+  "continuation": [
+    "MATH 19",
+    "MATH 20",
+    "MATH 21",
+  ],
+  "coreq": [
+    "CS 103",
+  ],
+  "crossListed": [
+    "EE 101A",
+    "EE 101B",
+  ],
+  "empty": [],
+  "none": [],
+  "oneOf": [
+    "CS 106A",
+    "CS 106B",
+    "CS 106X",
+  ],
+  "orList": [
+    "MATH 51",
+    "MATH 52",
+  ],
+  "recommended": [
+    "CS 107",
+  ],
+  "simple": [
+    "CS 106B",
+  ],
+  "slashAlternates": [
+    "CME 102",
+    "ME 300A",
+  ],
+  "stopWords": [],
+  "withUnits": [
+    "CHEM 31A",
+    "CHEM 31B",
+  ],
+}
+`;
+
+exports[`extractPrereqGroups > produces the same AND-of-ORs grouping for representative prose 1`] = `
+{
+  "andList": [
+    [
+      "CS 103",
+    ],
+    [
+      "CS 109",
+    ],
+  ],
+  "compactCode": [
+    [
+      "AA 100",
+    ],
+  ],
+  "continuation": [
+    [
+      "MATH 19",
+    ],
+  ],
+  "coreq": [],
+  "crossListed": [
+    [
+      "EE 101A",
+      "EE 101B",
+    ],
+  ],
+  "empty": [],
+  "none": [],
+  "oneOf": [
+    [
+      "CS 106A",
+    ],
+    [
+      "CS 106B",
+    ],
+    [
+      "CS 106X",
+    ],
+  ],
+  "orList": [
+    [
+      "MATH 51",
+    ],
+  ],
+  "recommended": [],
+  "simple": [
+    [
+      "CS 106B",
+    ],
+  ],
+  "slashAlternates": [
+    [
+      "CME 102",
+    ],
+    [
+      "ME 300A",
+    ],
+  ],
+  "stopWords": [],
+  "withUnits": [
+    [
+      "CHEM 31A",
+    ],
+    [
+      "CHEM 31B",
+    ],
+  ],
+}
+`;
+
+exports[`extractPrereqGroups > resolves bare numbers against defaultDept 1`] = `
+[
+  [
+    "CS 106B",
+  ],
+]
+`;
+
+exports[`quarter helpers > maps every quarter id to a stable index and season 1`] = `
+{
+  "Y1-AUT": "0:Aut",
+  "Y1-SPR": "2:Spr",
+  "Y1-SUM": "3:Sum",
+  "Y1-WIN": "1:Win",
+  "Y2-AUT": "4:Aut",
+  "Y2-SPR": "6:Spr",
+  "Y2-SUM": "7:Sum",
+  "Y2-WIN": "5:Win",
+  "Y3-AUT": "8:Aut",
+  "Y3-SPR": "10:Spr",
+  "Y3-SUM": "11:Sum",
+  "Y3-WIN": "9:Win",
+  "Y4-AUT": "12:Aut",
+  "Y4-SPR": "14:Spr",
+  "Y4-SUM": "15:Sum",
+  "Y4-WIN": "13:Win",
+  "Y5-AUT": "16:Aut",
+  "Y5-SPR": "18:Spr",
+  "Y5-SUM": "19:Sum",
+  "Y5-WIN": "17:Win",
+}
+`;
