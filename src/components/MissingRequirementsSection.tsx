@@ -164,13 +164,10 @@ export function MissingRequirementsSection({
 }: Props) {
   const [collapsed, setCollapsed] = useState(false);
   const selectedMajorId = usePlannerStore(state => state.selectedMajorId);
-  const userMajors = usePlannerStore(state => state.userMajors);
   const manualSlotFills = usePlannerStore(state => state.manualSlotFills);
   const selectedMinorIds = usePlannerStore(state => state.selectedMinorIds);
-  const userMinors = usePlannerStore(state => state.userMinors);
   const manualMinorSlotFills = usePlannerStore(state => state.manualMinorSlotFills);
   const selectedCotermId = usePlannerStore(state => state.selectedCotermId);
-  const userCotermConfigs = usePlannerStore(state => state.userCotermConfigs);
   const additionalMajors = usePlannerStore(state => state.additionalMajors);
   const manualAdditionalMajorSlotFills = usePlannerStore(state => state.manualAdditionalMajorSlotFills);
   const selectedTracks = usePlannerStore(state => state.selectedTracks);
@@ -178,11 +175,11 @@ export function MissingRequirementsSection({
   const transferCredits = usePlannerStore(state => state.transferCredits);
   const manualLangFulfilled = usePlannerStore(state => state.manualLangFulfilled);
 
-  const majorConfig = useProgramConfig(selectedMajorId, userMajors);
-  const minorConfigs = useProgramConfigs(selectedMinorIds, userMinors);
-  const cotermConfig = useProgramConfig(selectedCotermId, userCotermConfigs);
+  const majorConfig = useProgramConfig(selectedMajorId);
+  const minorConfigs = useProgramConfigs(selectedMinorIds);
+  const cotermConfig = useProgramConfig(selectedCotermId);
   const additionalMajorConfigIds = useMemo(() => additionalMajors.map(am => am.id), [additionalMajors]);
-  const additionalMajorConfigs = useProgramConfigs(additionalMajorConfigIds, userMajors);
+  const additionalMajorConfigs = useProgramConfigs(additionalMajorConfigIds);
   const testSatisfiers = useMemo(
     () => [...getTestCreditSatisfiers(testCreditChecks), ...getTransferSatisfiers(transferCredits)],
     [testCreditChecks, transferCredits],

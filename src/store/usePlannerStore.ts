@@ -32,17 +32,14 @@ export interface PlanSnapshot {
   testCreditChecks: Record<string, TestCreditCheck>;
   transferCredits: TransferCredit[];
   selectedMajorId: string | null;
-  userMajors: MajorConfig[];
   manualSlotFills: Record<string, { checked: boolean; note: string }>;
   // Minor support
   selectedMinorIds: string[];
-  userMinors: MajorConfig[];
   manualMinorSlotFills: Record<string, Record<string, { checked: boolean; note: string }>>;
   // Coterm support
   isCoterm: boolean;
   showYear5: boolean;
   selectedCotermId: string | null;
-  userCotermConfigs: MajorConfig[];
   // Additional major support (double / secondary)
   additionalMajors: Array<{ id: string; kind: 'double' | 'secondary' }>;
   manualAdditionalMajorSlotFills: Record<string, Record<string, { checked: boolean; note: string }>>;
@@ -79,15 +76,12 @@ const EMPTY_SNAPSHOT: PlanSnapshot = {
   testCreditChecks: {},
   transferCredits: [],
   selectedMajorId: null,
-  userMajors: [],
   manualSlotFills: {},
   selectedMinorIds: [],
-  userMinors: [],
   manualMinorSlotFills: {},
   isCoterm: false,
   showYear5: false,
   selectedCotermId: null,
-  userCotermConfigs: [],
   additionalMajors: [],
   manualAdditionalMajorSlotFills: {},
   selectedTracks: {},
@@ -120,15 +114,12 @@ export function captureLiveSnapshot(s: {
   testCreditChecks: Record<string, TestCreditCheck>;
   transferCredits: TransferCredit[];
   selectedMajorId: string | null;
-  userMajors: MajorConfig[];
   manualSlotFills: Record<string, { checked: boolean; note: string }>;
   selectedMinorIds: string[];
-  userMinors: MajorConfig[];
   manualMinorSlotFills: Record<string, Record<string, { checked: boolean; note: string }>>;
   isCoterm: boolean;
   showYear5: boolean;
   selectedCotermId: string | null;
-  userCotermConfigs: MajorConfig[];
   additionalMajors: Array<{ id: string; kind: 'double' | 'secondary' }>;
   manualAdditionalMajorSlotFills: Record<string, Record<string, { checked: boolean; note: string }>>;
   selectedTracks: Record<string, string>;
@@ -144,15 +135,12 @@ export function captureLiveSnapshot(s: {
     testCreditChecks: s.testCreditChecks,
     transferCredits: s.transferCredits,
     selectedMajorId: s.selectedMajorId,
-    userMajors: s.userMajors,
     manualSlotFills: s.manualSlotFills,
     selectedMinorIds: s.selectedMinorIds,
-    userMinors: s.userMinors,
     manualMinorSlotFills: s.manualMinorSlotFills,
     isCoterm: s.isCoterm,
     showYear5: s.showYear5,
     selectedCotermId: s.selectedCotermId,
-    userCotermConfigs: s.userCotermConfigs,
     additionalMajors: s.additionalMajors,
     manualAdditionalMajorSlotFills: s.manualAdditionalMajorSlotFills,
     selectedTracks: s.selectedTracks,
@@ -182,15 +170,12 @@ function fromSnapshot(d: Partial<PlanSnapshot>) {
       };
     }),
     selectedMajorId: d.selectedMajorId ?? null,
-    userMajors: d.userMajors ?? [],
     manualSlotFills: d.manualSlotFills ?? {},
     selectedMinorIds: d.selectedMinorIds ?? [],
-    userMinors: d.userMinors ?? [],
     manualMinorSlotFills: d.manualMinorSlotFills ?? {},
     isCoterm: d.isCoterm ?? false,
     showYear5: d.showYear5 ?? false,
     selectedCotermId: d.selectedCotermId ?? null,
-    userCotermConfigs: d.userCotermConfigs ?? [],
     additionalMajors: d.additionalMajors ?? [],
     manualAdditionalMajorSlotFills: d.manualAdditionalMajorSlotFills ?? {},
     selectedTracks: d.selectedTracks ?? {},
@@ -212,17 +197,14 @@ export interface PlannerStore {
   testCreditChecks: Record<string, TestCreditCheck>;
   transferCredits: TransferCredit[];
   selectedMajorId: string | null;
-  userMajors: MajorConfig[];
   manualSlotFills: Record<string, { checked: boolean; note: string }>;
   // Minor support
   selectedMinorIds: string[];
-  userMinors: MajorConfig[];
   manualMinorSlotFills: Record<string, Record<string, { checked: boolean; note: string }>>;
   // Coterm support
   isCoterm: boolean;
   showYear5: boolean;
   selectedCotermId: string | null;
-  userCotermConfigs: MajorConfig[];
   // Additional major support (double / secondary)
   additionalMajors: Array<{ id: string; kind: 'double' | 'secondary' }>;
   manualAdditionalMajorSlotFills: Record<string, Record<string, { checked: boolean; note: string }>>;
@@ -259,14 +241,10 @@ export interface PlannerStore {
   updateTransferCredit: (id: string, updates: Partial<Omit<TransferCredit, 'id'>>) => void;
   removeTransferCredit: (id: string) => void;
   setMajor: (majorId: string | null) => void;
-  addUserMajor: (config: MajorConfig) => void;
-  removeUserMajor: (majorId: string) => void;
   setManualSlotFill: (slotId: string, fill: { checked?: boolean; note?: string }) => void;
   // Minor actions
   addMinor: (minorId: string) => void;
   removeMinor: (minorId: string) => void;
-  addUserMinor: (config: MajorConfig) => void;
-  removeUserMinor: (minorId: string) => void;
   setManualMinorSlotFill: (minorId: string, slotId: string, fill: { checked?: boolean; note?: string }) => void;
   // Additional major actions
   addAdditionalMajor: (id: string, kind: 'double' | 'secondary') => void;
@@ -277,8 +255,6 @@ export interface PlannerStore {
   toggleCoterm: () => void;
   toggleShowYear5: () => void;
   setCoterm: (cotermId: string | null) => void;
-  addUserCotermConfig: (config: MajorConfig) => void;
-  removeUserCotermConfig: (cotermId: string) => void;
   setTrack: (programId: string, trackId: string | null) => void;
   ignoreCardPrereq: (cardId: string) => void;
   setManualLangFulfilled: (val: boolean) => void;
@@ -311,15 +287,12 @@ export function normalizePersisted(p: Record<string, any> | null) {
       testCreditChecks: p?.testCreditChecks ?? {},
       transferCredits: p?.transferCredits ?? [],
       selectedMajorId: p?.selectedMajorId ?? null,
-      userMajors: p?.userMajors ?? [],
       manualSlotFills: p?.manualSlotFills ?? {},
       selectedMinorIds: p?.selectedMinorIds ?? [],
-      userMinors: p?.userMinors ?? [],
       manualMinorSlotFills: p?.manualMinorSlotFills ?? {},
       isCoterm: p?.isCoterm ?? false,
       showYear5: p?.showYear5 ?? false,
       selectedCotermId: p?.selectedCotermId ?? null,
-      userCotermConfigs: p?.userCotermConfigs ?? [],
       additionalMajors: p?.additionalMajors ?? [],
       manualAdditionalMajorSlotFills: p?.manualAdditionalMajorSlotFills ?? {},
       selectedTracks: p?.selectedTracks ?? {},
@@ -382,15 +355,12 @@ export const usePlannerStore = create<PlannerStore>()(
       testCreditChecks: {},
       transferCredits: [],
       selectedMajorId: null,
-      userMajors: [],
       manualSlotFills: {},
       selectedMinorIds: [],
-      userMinors: [],
       manualMinorSlotFills: {},
       isCoterm: false,
       showYear5: false,
       selectedCotermId: null,
-      userCotermConfigs: [],
       additionalMajors: [],
       manualAdditionalMajorSlotFills: {},
       selectedTracks: {},
@@ -513,26 +483,10 @@ export const usePlannerStore = create<PlannerStore>()(
         set(s => ({ completedQuarters: toggleSetItem(s.completedQuarters, quarterId) }));
       },
 
-      addUserMajor: (config) => {
-        const { userMajors } = get();
-        const id = config.id.startsWith('user-') ? config.id : `user-${config.id}`;
-        const safeConfig = { ...config, id };
-        if (userMajors.some(m => m.id === id)) return;
-        set({ userMajors: [...userMajors, safeConfig] });
-      },
-
       setManualSlotFill: (slotId, fill) => {
         const { manualSlotFills } = get();
         const current = manualSlotFills[slotId] ?? { checked: false, note: '' };
         set({ manualSlotFills: { ...manualSlotFills, [slotId]: { ...current, ...fill } } });
-      },
-
-      removeUserMajor: (majorId) => {
-        const { userMajors, selectedMajorId } = get();
-        set({
-          userMajors: userMajors.filter(m => m.id !== majorId),
-          selectedMajorId: selectedMajorId === majorId ? null : selectedMajorId,
-        });
       },
 
       // ── Minor actions ──
@@ -548,25 +502,6 @@ export const usePlannerStore = create<PlannerStore>()(
         const next = { ...manualMinorSlotFills };
         delete next[minorId];
         set({ selectedMinorIds: selectedMinorIds.filter(id => id !== minorId), manualMinorSlotFills: next });
-      },
-
-      addUserMinor: (config) => {
-        const { userMinors } = get();
-        const id = config.id.startsWith('user-') ? config.id : `user-minor-${config.id}`;
-        const safeConfig = { ...config, id, category: 'minor' as const };
-        if (userMinors.some(m => m.id === id)) return;
-        set({ userMinors: [...userMinors, safeConfig] });
-      },
-
-      removeUserMinor: (minorId) => {
-        const { userMinors, selectedMinorIds, manualMinorSlotFills } = get();
-        const next = { ...manualMinorSlotFills };
-        delete next[minorId];
-        set({
-          userMinors: userMinors.filter(m => m.id !== minorId),
-          selectedMinorIds: selectedMinorIds.filter(id => id !== minorId),
-          manualMinorSlotFills: next,
-        });
       },
 
       setManualMinorSlotFill: (minorId, slotId, fill) => {
@@ -638,22 +573,6 @@ export const usePlannerStore = create<PlannerStore>()(
           selectedCotermId: cotermId,
           isCoterm: cotermId !== null,
           showYear5: cotermId !== null ? true : showYear5,
-        });
-      },
-
-      addUserCotermConfig: (config) => {
-        const { userCotermConfigs } = get();
-        const id = config.id.startsWith('user-') ? config.id : `user-coterm-${config.id}`;
-        const safeConfig = { ...config, id, category: 'coterm' as const };
-        if (userCotermConfigs.some(m => m.id === id)) return;
-        set({ userCotermConfigs: [...userCotermConfigs, safeConfig] });
-      },
-
-      removeUserCotermConfig: (cotermId: string) => {
-        const { userCotermConfigs, selectedCotermId, showYear5 } = get();
-        set({
-          userCotermConfigs: userCotermConfigs.filter(m => m.id !== cotermId),
-          ...(selectedCotermId === cotermId ? { selectedCotermId: null, isCoterm: false, showYear5 } : {}),
         });
       },
 
@@ -850,7 +769,6 @@ export const usePlannerStore = create<PlannerStore>()(
           testCreditChecks: state.testCreditChecks,
           transferCredits: state.transferCredits,
           selectedMajorId: state.selectedMajorId,
-          userMajors: state.userMajors,
           manualSlotFills: state.manualSlotFills,
           scenarios,
           activeScenarioId: state.activeScenarioId,

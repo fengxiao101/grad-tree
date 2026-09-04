@@ -203,17 +203,15 @@ export function CourseSearchModal({ defaultTag, defaultQuarter, onSelect, onClos
     setSelectedUnits(prev => prev.includes(u) ? prev.filter(x => x !== u) : [...prev, u]);
 
   const selectedMajorId  = usePlannerStore(s => s.selectedMajorId);
-  const userMajors       = usePlannerStore(s => s.userMajors);
   const selectedMinorIds = usePlannerStore(s => s.selectedMinorIds);
-  const userMinors       = usePlannerStore(s => s.userMinors);
   const selectedCotermId = usePlannerStore(s => s.selectedCotermId);
   const additionalMajors = usePlannerStore(s => s.additionalMajors);
 
-  const majorConfig  = useProgramConfig(selectedMajorId, userMajors);
-  const minorConfigs = useProgramConfigs(selectedMinorIds, userMinors);
-  const cotermConfig = useProgramConfig(selectedCotermId, userMajors);
+  const majorConfig  = useProgramConfig(selectedMajorId);
+  const minorConfigs = useProgramConfigs(selectedMinorIds);
+  const cotermConfig = useProgramConfig(selectedCotermId);
   const additionalMajorIds = useMemo(() => additionalMajors.map(am => am.id), [additionalMajors]);
-  const additionalMajorConfigs = useProgramConfigs(additionalMajorIds, userMajors);
+  const additionalMajorConfigs = useProgramConfigs(additionalMajorIds);
 
   // Base pool: union of courses for all selected tags. WIM is major-specific,
   // so it uses only the selected major's explicit approved list.

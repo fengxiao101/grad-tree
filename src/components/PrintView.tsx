@@ -153,16 +153,13 @@ export function PlanDocumentContent({
     hideSummer: s.hideSummer,
     completedQuarters: s.completedQuarters,
     selectedMajorId: s.selectedMajorId,
-    userMajors: s.userMajors,
     testCreditChecks: s.testCreditChecks,
     transferCredits: s.transferCredits,
     manualSlotFills: s.manualSlotFills,
     selectedMinorIds: s.selectedMinorIds,
-    userMinors: s.userMinors,
     manualMinorSlotFills: s.manualMinorSlotFills,
     isCoterm: s.isCoterm,
     selectedCotermId: s.selectedCotermId,
-    userCotermConfigs: s.userCotermConfigs,
     selectedTracks: s.selectedTracks,
     additionalMajors: s.additionalMajors,
     manualAdditionalMajorSlotFills: s.manualAdditionalMajorSlotFills,
@@ -176,16 +173,13 @@ export function PlanDocumentContent({
     [snapshot, store.completedQuarters],
   );
   const selectedMajorId = snapshot?.selectedMajorId ?? store.selectedMajorId;
-  const userMajors = snapshot?.userMajors ?? store.userMajors;
   const testCreditChecks = snapshot?.testCreditChecks ?? store.testCreditChecks;
   const transferCredits = snapshot?.transferCredits ?? store.transferCredits;
   const manualSlotFills = snapshot?.manualSlotFills ?? store.manualSlotFills;
   const selectedMinorIds = snapshot?.selectedMinorIds ?? store.selectedMinorIds;
-  const userMinors = snapshot?.userMinors ?? store.userMinors;
   const manualMinorSlotFills = snapshot?.manualMinorSlotFills ?? store.manualMinorSlotFills;
   const isCoterm = snapshot?.isCoterm ?? store.isCoterm;
   const selectedCotermId = snapshot?.selectedCotermId ?? store.selectedCotermId;
-  const userCotermConfigs = snapshot?.userCotermConfigs ?? store.userCotermConfigs;
   const selectedTracks = snapshot?.selectedTracks ?? store.selectedTracks;
   const additionalMajors = snapshot?.additionalMajors ?? store.additionalMajors;
   const manualAdditionalMajorSlotFills = snapshot?.manualAdditionalMajorSlotFills ?? store.manualAdditionalMajorSlotFills;
@@ -195,7 +189,7 @@ export function PlanDocumentContent({
   const seasons = hideSummer ? SEASONS : ([...SEASONS, 'SUM'] as const);
   const years = [1, 2, 3, 4];
 
-  const config = useProgramConfig(selectedMajorId, userMajors);
+  const config = useProgramConfig(selectedMajorId);
 
   const majorSections = useMemo(() => {
     if (!config) return [];
@@ -245,10 +239,10 @@ export function PlanDocumentContent({
     [effectiveMajorConfig, assignments],
   );
 
-  const selectedMinors = useProgramConfigs(selectedMinorIds, userMinors);
-  const cotermConfig = useProgramConfig(selectedCotermId, userCotermConfigs);
+  const selectedMinors = useProgramConfigs(selectedMinorIds);
+  const cotermConfig = useProgramConfig(selectedCotermId);
   const additionalMajorIds = useMemo(() => additionalMajors.map(am => am.id), [additionalMajors]);
-  const additionalMajorConfigs = useProgramConfigs(additionalMajorIds, userMajors);
+  const additionalMajorConfigs = useProgramConfigs(additionalMajorIds);
 
   const additionalMajorData = useMemo(() => {
     const result: { am: { id: string; kind: 'double' | 'secondary' }; name: string; isDouble: boolean; amAssignments: Map<string, Satisfier[]>; fills: Record<string, { checked: boolean; note: string }>; sections: ReturnType<typeof getEffectiveProgramSections>; needed: number; filled: number }[] = [];

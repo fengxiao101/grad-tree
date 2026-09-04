@@ -1854,22 +1854,16 @@ function SearchableSelect({
 // ── Program selector row (major / coterm) ─────────────────────────────────────
 
 function ProgramSelectorRow({
-  value, builtInOptions, userOptions, onChange, onRemoveUser, placeholder, focusRingClass, accentClass,
+  value, builtInOptions, onChange, placeholder, focusRingClass, accentClass,
 }: {
   value: string;
   builtInOptions: ProgramOption[];
-  userOptions: MajorConfig[];
   onChange: (id: string | null) => void;
-  onRemoveUser?: (id: string) => void;
   placeholder: string;
   focusRingClass?: string;
   accentClass?: string;
 }) {
-  const isUser = value ? userOptions.some(m => m.id === value) : false;
-  const options = [
-    ...configsToOptions(builtInOptions, 'Built-in'),
-    ...configsToOptions(userOptions, 'Uploaded'),
-  ];
+  const options = configsToOptions(builtInOptions, 'Built-in');
 
   return (
     <div className="flex items-center gap-2">
@@ -1877,12 +1871,6 @@ function ProgramSelectorRow({
         value={value} options={options} onChange={onChange}
         placeholder={placeholder} focusRingClass={focusRingClass ?? accentClass}
       />
-      {isUser && value && onRemoveUser && (
-        <button onClick={() => onRemoveUser(value)} title="Remove uploaded program"
-          className="p-1.5 text-gray-400 hover:text-red-600 rounded-lg hover:bg-red-50 transition-colors shrink-0">
-          <Trash2 size={13} />
-        </button>
-      )}
     </div>
   );
 }
@@ -1890,19 +1878,14 @@ function ProgramSelectorRow({
 // ── Minor adder row ───────────────────────────────────────────────────────────
 
 function MinorAdderRow({
-  selectedMinorIds, builtInMinors, userMinors, onAdd,
+  selectedMinorIds, builtInMinors, onAdd,
 }: {
   selectedMinorIds: string[];
   builtInMinors: ProgramOption[];
-  userMinors: MajorConfig[];
   onAdd: (id: string) => void;
 }) {
   const availableBuiltIn = builtInMinors.filter(m => !selectedMinorIds.includes(m.id));
-  const availableUser    = userMinors.filter(m => !selectedMinorIds.includes(m.id));
-  const options = [
-    ...configsToOptions(availableBuiltIn, 'Built-in'),
-    ...configsToOptions(availableUser,    'Uploaded'),
-  ];
+  const options = configsToOptions(availableBuiltIn, 'Built-in');
 
   return (
     <SearchableSelect
@@ -1923,10 +1906,8 @@ interface SingleProgramPaneProps {
   onToggle: () => void;
   selectedId: string | null;
   builtInOptions: ProgramOption[];
-  userOptions: MajorConfig[];
   config: MajorConfig | null;
   onSelect: (id: string | null) => void;
-  onRemoveUser: (id: string) => void;
   accentClass: string;
   headerColor: 'cardinal' | 'sky';
   accentHex?: string;
@@ -1943,8 +1924,8 @@ interface SingleProgramPaneProps {
 
 function SingleProgramPane({
   label, icon, collapsed, onToggle,
-  selectedId, builtInOptions, userOptions, config,
-  onSelect, onRemoveUser,
+  selectedId, builtInOptions, config,
+  onSelect,
   accentClass, headerColor, accentHex,
   cards, testSatisfiers, manualSlotFills, setManualSlotFill,
   onAddCourse, onOpenSearch, excludeCardIds, shareableCardIds, allowedAffiliations,
@@ -1957,9 +1938,7 @@ function SingleProgramPane({
           <ProgramSelectorRow
             value={selectedId ?? ''}
             builtInOptions={builtInOptions}
-            userOptions={userOptions}
             onChange={onSelect}
-            onRemoveUser={onRemoveUser}
             placeholder={`Select a ${label.toLowerCase()}: ${builtInOptions.length} ${label.toLowerCase()}s supported`}
             accentClass={accentClass}
           />
@@ -2004,23 +1983,17 @@ export function MajorSection({ cards, onAddCourse, onOpenSearch }: Props) {
   const activeScenarioColor   = scenarios.find(sc => sc.id === activeScenarioId)?.color;
   const selectedMajorId       = usePlannerStore(s => s.selectedMajorId);
   const setMajor              = usePlannerStore(s => s.setMajor);
-  const userMajors            = usePlannerStore(s => s.userMajors);
-  const removeUserMajor       = usePlannerStore(s => s.removeUserMajor);
   const manualSlotFills       = usePlannerStore(s => s.manualSlotFills);
   const setManualSlotFill     = usePlannerStore(s => s.setManualSlotFill);
 
   const selectedMinorIds      = usePlannerStore(s => s.selectedMinorIds);
-  const userMinors            = usePlannerStore(s => s.userMinors);
   const addMinor              = usePlannerStore(s => s.addMinor);
   const removeMinor           = usePlannerStore(s => s.removeMinor);
-  const removeUserMinor       = usePlannerStore(s => s.removeUserMinor);
   const manualMinorSlotFills  = usePlannerStore(s => s.manualMinorSlotFills);
   const setManualMinorSlotFill = usePlannerStore(s => s.setManualMinorSlotFill);
 
   const selectedCotermId      = usePlannerStore(s => s.selectedCotermId);
   const setCoterm             = usePlannerStore(s => s.setCoterm);
-  const userCotermConfigs     = usePlannerStore(s => s.userCotermConfigs);
-  const removeUserCotermConfig = usePlannerStore(s => s.removeUserCotermConfig);
 
   const additionalMajors      = usePlannerStore(s => s.additionalMajors);
   const manualAdditionalMajorSlotFills = usePlannerStore(s => s.manualAdditionalMajorSlotFills);
@@ -2055,11 +2028,11 @@ export function MajorSection({ cards, onAddCourse, onOpenSearch }: Props) {
     return onRequirementReveal(revealProgramArea);
   }, [additionalMajors]);
 
-  const majorConfig = useProgramConfig(selectedMajorId, userMajors);
-  const selectedMinors = useProgramConfigs(selectedMinorIds, userMinors);
-  const cotermConfig = useProgramConfig(selectedCotermId, userCotermConfigs);
+  const majorConfig = useProgramConfig(selectedMajorId);
+  const selectedMinors = useProgramConfigs(selectedMinorIds);
+  const cotermConfig = useProgramConfig(selectedCotermId);
   const additionalMajorIds = useMemo(() => additionalMajors.map(am => am.id), [additionalMajors]);
-  const additionalMajorConfigs = useProgramConfigs(additionalMajorIds, userMajors);
+  const additionalMajorConfigs = useProgramConfigs(additionalMajorIds);
 
   const testSatisfiers = useMemo(
     () => [...getTestCreditSatisfiers(testCreditChecks), ...getTransferSatisfiers(transferCredits)],
@@ -2237,10 +2210,8 @@ export function MajorSection({ cards, onAddCourse, onOpenSearch }: Props) {
             onToggle={() => setMajorCollapsed(v => !v)}
             selectedId={selectedMajorId}
             builtInOptions={BUILT_IN_MAJOR_OPTIONS}
-            userOptions={userMajors}
             config={majorConfig}
             onSelect={id => setMajor(id)}
-            onRemoveUser={removeUserMajor}
             accentClass="focus:ring-cardinal-300"
             headerColor="cardinal"
             accentHex={activeScenarioColor}
@@ -2313,9 +2284,6 @@ export function MajorSection({ cards, onAddCourse, onOpenSearch }: Props) {
                             builtInOptions={BUILT_IN_MAJOR_OPTIONS.filter(o =>
                               o.id !== selectedMajorId && !additionalMajors.some(other => other.id !== am.id && other.id === o.id)
                             )}
-                            userOptions={userMajors.filter(m =>
-                              m.id !== selectedMajorId && !additionalMajors.some(other => other.id !== am.id && other.id === m.id)
-                            )}
                             onChange={newId => {
                               if (!newId) {
                                 removeAdditionalMajor(am.id);
@@ -2324,7 +2292,6 @@ export function MajorSection({ cards, onAddCourse, onOpenSearch }: Props) {
                                 addAdditionalMajor(newId, am.kind);
                               }
                             }}
-                            onRemoveUser={id => removeAdditionalMajor(id)}
                             placeholder="Select a major"
                             accentClass="focus:ring-violet-300"
                           />
@@ -2361,10 +2328,6 @@ export function MajorSection({ cards, onAddCourse, onOpenSearch }: Props) {
                       BUILT_IN_MAJOR_OPTIONS.filter(o => o.id !== selectedMajorId && !additionalMajors.some(am => am.id === o.id)),
                       'Built-in',
                     ),
-                    ...configsToOptions(
-                      userMajors.filter(m => m.id !== selectedMajorId && !additionalMajors.some(am => am.id === m.id)),
-                      'Uploaded',
-                    ),
                   ]}
                   onChange={id => { if (id) addAdditionalMajor(id, 'double'); }}
                   placeholder={`Add a double or secondary major: ${BUILT_IN_MAJOR_OPTIONS.length} majors supported`}
@@ -2391,7 +2354,6 @@ export function MajorSection({ cards, onAddCourse, onOpenSearch }: Props) {
                     <MinorAdderRow
                       selectedMinorIds={selectedMinorIds}
                       builtInMinors={BUILT_IN_MINOR_OPTIONS}
-                      userMinors={userMinors}
                       onAdd={addMinor}
                     />
                   </div>
@@ -2402,18 +2364,10 @@ export function MajorSection({ cards, onAddCourse, onOpenSearch }: Props) {
                         <ProgramSelectorRow
                           value={minor.id}
                           builtInOptions={BUILT_IN_MINOR_OPTIONS}
-                          userOptions={userMinors}
                           onChange={newId => {
-                            if (!newId) {
-                              if (userMinors.some(m => m.id === minor.id)) removeUserMinor(minor.id);
-                              else removeMinor(minor.id);
-                            } else if (newId !== minor.id) {
-                              if (userMinors.some(m => m.id === minor.id)) removeUserMinor(minor.id);
-                              else removeMinor(minor.id);
-                              addMinor(newId);
-                            }
+                            removeMinor(minor.id);
+                            if (newId && newId !== minor.id) addMinor(newId);
                           }}
-                          onRemoveUser={id => { removeUserMinor(id); removeMinor(id); }}
                           placeholder={`Select a minor: ${BUILT_IN_MINOR_OPTIONS.length} minors supported`}
                           accentClass="focus:ring-teal-300"
                         />
@@ -2434,7 +2388,6 @@ export function MajorSection({ cards, onAddCourse, onOpenSearch }: Props) {
                     <MinorAdderRow
                       selectedMinorIds={selectedMinorIds}
                       builtInMinors={BUILT_IN_MINOR_OPTIONS}
-                      userMinors={userMinors}
                       onAdd={addMinor}
                     />
                   </div>
@@ -2451,10 +2404,8 @@ export function MajorSection({ cards, onAddCourse, onOpenSearch }: Props) {
             onToggle={() => setCotermCollapsed(v => !v)}
             selectedId={selectedCotermId}
             builtInOptions={BUILT_IN_COTERM_OPTIONS}
-            userOptions={userCotermConfigs}
             config={cotermConfig}
             onSelect={setCoterm}
-            onRemoveUser={removeUserCotermConfig}
             accentClass="focus:ring-sky-300"
             headerColor="sky"
             cards={cards}

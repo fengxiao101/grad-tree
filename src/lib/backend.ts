@@ -121,14 +121,11 @@ function compactScenarioData(value: unknown): Record<string, unknown> {
   if (testCreditChecks) compact.testCreditChecks = testCreditChecks;
   if (Array.isArray(source.transferCredits) && source.transferCredits.length) compact.transferCredits = source.transferCredits;
   if (typeof source.selectedMajorId === 'string') compact.selectedMajorId = source.selectedMajorId;
-  if (Array.isArray(source.userMajors) && source.userMajors.length) compact.userMajors = source.userMajors;
   if (manualSlotFills) compact.manualSlotFills = manualSlotFills;
   if (Array.isArray(source.selectedMinorIds) && source.selectedMinorIds.length) compact.selectedMinorIds = source.selectedMinorIds;
-  if (Array.isArray(source.userMinors) && source.userMinors.length) compact.userMinors = source.userMinors;
   if (manualMinorSlotFills) compact.manualMinorSlotFills = manualMinorSlotFills;
   if (source.isCoterm === true) compact.isCoterm = true;
   if (typeof source.selectedCotermId === 'string') compact.selectedCotermId = source.selectedCotermId;
-  if (Array.isArray(source.userCotermConfigs) && source.userCotermConfigs.length) compact.userCotermConfigs = source.userCotermConfigs;
   if (selectedTracks) compact.selectedTracks = selectedTracks;
   if (source.manualLangFulfilled === true) compact.manualLangFulfilled = true;
   if (source.congratsShown === true) compact.congratsShown = true;

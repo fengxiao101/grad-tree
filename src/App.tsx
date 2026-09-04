@@ -178,11 +178,8 @@ export default function App() {
   const undo = usePlannerStore(s => s.undo);
   const redo = usePlannerStore(s => s.redo);
   const selectedMajorId = usePlannerStore(s => s.selectedMajorId);
-  const userMajors = usePlannerStore(s => s.userMajors);
   const selectedMinorIds = usePlannerStore(s => s.selectedMinorIds);
-  const userMinors = usePlannerStore(s => s.userMinors);
   const selectedCotermId = usePlannerStore(s => s.selectedCotermId);
-  const userCotermConfigs = usePlannerStore(s => s.userCotermConfigs);
   const updateCard = usePlannerStore(s => s.updateCard);
   const renameScenario = usePlannerStore(s => s.renameScenario);
   const deleteScenario = usePlannerStore(s => s.deleteScenario);
@@ -222,11 +219,11 @@ export default function App() {
 
   const additionalMajors = usePlannerStore(s => s.additionalMajors);
 
-  const majorConfig = useProgramConfig(selectedMajorId, userMajors);
-  const minorConfigs = useProgramConfigs(selectedMinorIds, userMinors);
-  const cotermConfig = useProgramConfig(selectedCotermId, userCotermConfigs);
+  const majorConfig = useProgramConfig(selectedMajorId);
+  const minorConfigs = useProgramConfigs(selectedMinorIds);
+  const cotermConfig = useProgramConfig(selectedCotermId);
   const additionalMajorIds = useMemo(() => additionalMajors.map(am => am.id), [additionalMajors]);
-  const additionalMajorConfigs = useProgramConfigs(additionalMajorIds, userMajors);
+  const additionalMajorConfigs = useProgramConfigs(additionalMajorIds);
 
   // Feeds the READY TO TAKE panel, which is commented out in the JSX below.
   // eslint-disable-next-line @typescript-eslint/no-unused-vars

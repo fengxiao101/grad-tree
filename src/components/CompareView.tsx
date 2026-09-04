@@ -28,8 +28,8 @@ export function CompareView({ onClose }: Props) {
   const {
     scenarios, activeScenarioId,
     cards, cardOrder, collapsedYears, completedQuarters,
-    hideSummer, testCreditChecks, transferCredits, selectedMajorId, userMajors, manualSlotFills,
-    selectedMinorIds, userMinors, manualMinorSlotFills, isCoterm, showYear5, selectedCotermId, userCotermConfigs,
+    hideSummer, testCreditChecks, transferCredits, selectedMajorId, manualSlotFills,
+    selectedMinorIds, manualMinorSlotFills, isCoterm, showYear5, selectedCotermId,
     additionalMajors, manualAdditionalMajorSlotFills, selectedTracks, manualLangFulfilled,
   } = usePlannerStore(useShallow(s => ({
     scenarios: s.scenarios,
@@ -42,15 +42,12 @@ export function CompareView({ onClose }: Props) {
     testCreditChecks: s.testCreditChecks,
     transferCredits: s.transferCredits,
     selectedMajorId: s.selectedMajorId,
-    userMajors: s.userMajors,
     manualSlotFills: s.manualSlotFills,
     selectedMinorIds: s.selectedMinorIds,
-    userMinors: s.userMinors,
     manualMinorSlotFills: s.manualMinorSlotFills,
     isCoterm: s.isCoterm,
     showYear5: s.showYear5,
     selectedCotermId: s.selectedCotermId,
-    userCotermConfigs: s.userCotermConfigs,
     additionalMajors: s.additionalMajors,
     manualAdditionalMajorSlotFills: s.manualAdditionalMajorSlotFills,
     selectedTracks: s.selectedTracks,
@@ -61,10 +58,10 @@ export function CompareView({ onClose }: Props) {
     cards, cardOrder,
     collapsedYears: Array.from(collapsedYears),
     completedQuarters: Array.from(completedQuarters),
-    hideSummer, testCreditChecks, transferCredits, selectedMajorId, userMajors, manualSlotFills,
-    selectedMinorIds, userMinors, manualMinorSlotFills, isCoterm, showYear5, selectedCotermId, userCotermConfigs,
+    hideSummer, testCreditChecks, transferCredits, selectedMajorId, manualSlotFills,
+    selectedMinorIds, manualMinorSlotFills, isCoterm, showYear5, selectedCotermId,
     additionalMajors, manualAdditionalMajorSlotFills, selectedTracks, manualLangFulfilled,
-  }), [cards, cardOrder, collapsedYears, completedQuarters, hideSummer, testCreditChecks, transferCredits, selectedMajorId, userMajors, manualSlotFills, selectedMinorIds, userMinors, manualMinorSlotFills, isCoterm, showYear5, selectedCotermId, userCotermConfigs, additionalMajors, manualAdditionalMajorSlotFills, selectedTracks, manualLangFulfilled]);
+  }), [cards, cardOrder, collapsedYears, completedQuarters, hideSummer, testCreditChecks, transferCredits, selectedMajorId, manualSlotFills, selectedMinorIds, manualMinorSlotFills, isCoterm, showYear5, selectedCotermId, additionalMajors, manualAdditionalMajorSlotFills, selectedTracks, manualLangFulfilled]);
 
   const [leftId, setLeftId] = useState(activeScenarioId);
   const [rightId, setRightId] = useState(

@@ -62,9 +62,6 @@ export function loadBuiltInProgram(id: string): Promise<MajorConfig | null> {
   return promise;
 }
 
-export async function loadProgram(
-  id: string,
-  userPrograms: MajorConfig[],
-): Promise<MajorConfig | null> {
-  return userPrograms.find(program => program.id === id) ?? loadBuiltInProgram(id);
+export function loadProgram(id: string): Promise<MajorConfig | null> {
+  return loadBuiltInProgram(id);
 }
