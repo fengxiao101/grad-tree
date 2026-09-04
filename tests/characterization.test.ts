@@ -15,6 +15,7 @@ import {
   getProgramSections,
   calculateProgramAssignedUnits,
   calculateSectionUnits,
+  calculateRequirementUnits,
   getManualSlotCourseCards,
 } from '../src/utils/majorUtils';
 import { lookupCourse } from '../src/data/catalog';
@@ -156,6 +157,46 @@ describe('assignment engine', () => {
         .reduce((sum, section) => sum + calculateSectionUnits(section, assignments, NO_FILLS, cards), 0);
     }
     expect(perProgram).toMatchSnapshot();
+  });
+});
+
+describe('calculateRequirementUnits (the shared implementation)', () => {
+  it('matches the reference interactive formula for every program', () => {
+    const mismatches: string[] = [];
+    for (const config of ALL_PROGRAMS) {
+      const cards = buildPlan(config);
+      const sections = getProgramSections(config);
+      const assignments = computeAssignments(config, cards, NO_TEST_CREDIT);
+      const real = calculateRequirementUnits(sections, assignments, NO_FILLS, cards);
+      const reference = interactiveUnits(sections, assignments, cards);
+      if (real !== reference) mismatches.push(`${config.id}: real=${real} reference=${reference}`);
+    }
+    expect(mismatches).toEqual([]);
+  });
+
+  it('matches the reference printable formula when no affiliations are given', () => {
+    const mismatches: string[] = [];
+    for (const config of ALL_PROGRAMS) {
+      const cards = buildPlan(config);
+      const sections = getProgramSections(config);
+      const assignments = computeAssignments(config, cards, NO_TEST_CREDIT);
+      const real = calculateRequirementUnits(sections, assignments, NO_FILLS, cards);
+      const reference = printableUnits(sections, assignments, cards);
+      if (real !== reference) mismatches.push(`${config.id}: real=${real} reference=${reference}`);
+    }
+    expect(mismatches).toEqual([]);
+  });
+
+  it('filters by affiliation when one is supplied', () => {
+    const config = ALL_PROGRAMS.find(p => p.id === 'cs-bs-2526')!;
+    const sections = getProgramSections(config);
+    const cards = buildPlan(config).map(c => ({ ...c, affiliation: 'major' as const }));
+    const assignments = computeAssignments(config, cards, NO_TEST_CREDIT);
+    const all = calculateRequirementUnits(sections, assignments, NO_FILLS, cards);
+    const majorOnly = calculateRequirementUnits(sections, assignments, NO_FILLS, cards, new Set(['major'] as const));
+    const minorOnly = calculateRequirementUnits(sections, assignments, NO_FILLS, cards, new Set(['minor'] as const));
+    expect(majorOnly).toBe(all);
+    expect(minorOnly).toBe(0);
   });
 });
 

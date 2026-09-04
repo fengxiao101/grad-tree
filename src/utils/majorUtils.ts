@@ -852,6 +852,52 @@ export function isSectionVerificationComplete(
 }
 
 /** Units earned by cards/test credits actually assigned within one requirement section. */
+/**
+ * Units credited toward a set of requirement sections.
+ *
+ * `allowedAffiliations` restricts which cards may count; omitting it counts
+ * every assigned card, which is what the printable document wants.
+ */
+export function calculateRequirementUnits(
+  sections: MajorSection[],
+  assignments: Map<string, Satisfier[]>,
+  manualSlotFills: Record<string, { checked: boolean; note: string }>,
+  cards: CourseCard[],
+  allowedAffiliations?: Set<Affiliation>,
+): number {
+  const cardIds = new Set<string>();
+  const testGroups = new Set<string>();
+  let testUnits = 0;
+  const affiliationAllowed = (card: CourseCard) =>
+    !allowedAffiliations || !card.affiliation || allowedAffiliations.has(card.affiliation);
+
+  for (const section of sections) {
+    const allSlots = [
+      ...section.slots,
+      ...(section.pickOneGroup?.flatMap(group => group.slots) ?? []),
+    ];
+    for (const slot of allSlots) {
+      for (const satisfier of assignments.get(slot.id) ?? []) {
+        if (satisfier.kind === 'card') cardIds.add(satisfier.card.id);
+        else if (!testGroups.has(satisfier.groupId)) {
+          testGroups.add(satisfier.groupId);
+          testUnits += satisfier.units;
+        }
+      }
+      if (slot.type === 'any-approved') {
+        for (const card of getManualSlotCourseCards(manualSlotFills[slot.id], cards)) {
+          if (affiliationAllowed(card)) cardIds.add(card.id);
+        }
+      }
+    }
+  }
+
+  return cards
+    .filter(card => cardIds.has(card.id) && affiliationAllowed(card))
+    .reduce((sum, card) => sum + (card.units ?? parseHighUnit(lookupCourse(card.department, card.courseNumber)?.units ?? '') ?? 0), 0)
+    + testUnits;
+}
+
 export function calculateSectionUnits(
   section: MajorSection,
   assignments: Map<string, Satisfier[]>,

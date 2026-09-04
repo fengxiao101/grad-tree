@@ -25,7 +25,7 @@ import {
   type RequirementArea,
 } from '../utils/requirementNavigation';
 import type { Satisfier } from '../data/testCreditUtils';
-import type { MajorConfig, MajorSection as MajorSectionType, MetaRequirement, Slot, CourseOption, Track, SectionOption } from '../data/majorSchema';
+import type { MajorConfig, MajorSection as MajorSectionType, MetaRequirement, Slot, CourseOption, Track } from '../data/majorSchema';
 import {
   TAG_DISPLAY,
   TAG_COLORS,
@@ -35,6 +35,7 @@ import {
   type RequirementAssignment,
 } from '../types';
 import {
+  calculateRequirementUnits,
   computeAssignments,
   countSectionSlots,
   calculateSectionUnits,
@@ -450,46 +451,6 @@ function OptionsPopover({ options, onSelect }: { options: CourseOption[]; onSele
 
 const EMPTY_FILL = { checked: false, note: '' };
 
-function calculateRequirementUnits(
-  sections: MajorSectionType[],
-  assignments: Map<string, Satisfier[]>,
-  manualSlotFills: Record<string, { checked: boolean; note: string }>,
-  cards: CourseCard[],
-  allowedAffiliations?: Set<Affiliation>,
-): number {
-  const cardIds = new Set<string>();
-  const testGroups = new Set<string>();
-  let testUnits = 0;
-  for (const section of sections) {
-    const allSlots = [
-      ...section.slots,
-      ...(section.pickOneGroup?.flatMap((g: SectionOption) => g.slots) ?? []),
-    ];
-    for (const slot of allSlots) {
-      for (const satisfier of assignments.get(slot.id) ?? []) {
-        if (satisfier.kind === 'card') cardIds.add(satisfier.card.id);
-        else if (!testGroups.has(satisfier.groupId)) {
-          testGroups.add(satisfier.groupId);
-          testUnits += satisfier.units;
-        }
-      }
-      if (slot.type === 'any-approved') {
-        for (const card of getManualSlotCourseCards(manualSlotFills[slot.id], cards)) {
-          if (!allowedAffiliations || !card.affiliation || allowedAffiliations.has(card.affiliation)) {
-            cardIds.add(card.id);
-          }
-        }
-      }
-    }
-  }
-  return cards
-    .filter(card =>
-      cardIds.has(card.id)
-      && (!allowedAffiliations || !card.affiliation || allowedAffiliations.has(card.affiliation))
-    )
-    .reduce((sum, card) => sum + (card.units ?? parseHighUnit(lookupCourse(card.department, card.courseNumber)?.units ?? '') ?? 0), 0)
-    + testUnits;
-}
 
 // onUnpinCard is threaded down from ProgramBlock but not consumed here yet:
 // pinned chips are unpinned through CourseChipHoverCard's own Delete action.
