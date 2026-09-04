@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import {
   GraduationCap, ChevronDown, ChevronRight, CheckCircle2, CheckSquare, Square, Circle,
@@ -9,6 +9,7 @@ import { lookupCourseDetails } from '../data/catalog/lazyFull';
 import { CourseHoverDetail } from './CourseHoverDetail';
 import { EMPTY_FILL, getAccent, renderNoteWithLinks } from './major/helpers';
 import { CollapsibleHeader } from './major/CollapsibleHeader';
+import { useDarkMode } from '../hooks/useDarkMode';
 import { usePlannerStore } from '../store/usePlannerStore';
 import {
   BUILT_IN_COTERM_OPTIONS,
@@ -1308,13 +1309,6 @@ function MetaRequirementsPanel({
 
 // ── Dark mode detection & color utilities ─────────────────────────────────────
 
-function subscribe(cb: () => void) {
-  const obs = new MutationObserver(cb);
-  obs.observe(document.body, { attributeFilter: ['class'] });
-  return () => obs.disconnect();
-}
-function getIsDark() { return document.body.classList.contains('dark-mode-active'); }
-function useDarkMode() { return useSyncExternalStore(subscribe, getIsDark); }
 
 function lightenHex(hex: string): string {
   const r = parseInt(hex.slice(1, 3), 16);
